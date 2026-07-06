@@ -1,0 +1,48 @@
+# keywords.yaml
+# Contract between human strategy and machine execution.
+# The article generator only reads status: approved clusters, and only
+# picks a keyword if its cluster carries an approved `lane`.
+# No lane match, no article. See campaign-lanes.md for lane definitions.
+
+clusters:
+  - id: peer-advisory-alternatives
+    pillar: judgment-infrastructure
+    lane: founder-nomination
+    funnel: application
+    status: approved          # approved | proposed | killed
+    priority: 1
+    cadence: monthly
+    keywords:
+      - term: "YPO alternatives for founders"
+        intent: comparison
+        status: unwritten     # unwritten | drafted | published
+        gsc_impressions: 340
+        gsc_ctr: 0.4
+      - term: "peer group for series B founders"
+        intent: consideration
+        status: published
+        url: /blog/peer-groups-series-b
+
+  - id: vc-fast-pass-signal
+    pillar: judgment-infrastructure
+    lane: vc-fast-pass
+    funnel: application
+    status: proposed
+    priority: 2
+    cadence: monthly
+    keywords:
+      - term: "warm intro to VC vs cold outreach"
+        intent: comparison
+        status: unwritten
+
+  - id: founder-decision-quality
+    pillar: judgment-infrastructure
+    lane: proof-capture
+    funnel: newsletter
+    status: proposed
+    priority: 3
+    cadence: monthly
+    keywords:
+      - term: "how founders get better feedback on hard decisions"
+        intent: informational
+        status: unwritten
