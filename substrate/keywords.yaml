@@ -15,7 +15,8 @@ clusters:
     keywords:
       - term: "YPO alternatives for founders"
         intent: comparison
-        status: unwritten     # unwritten | drafted | published
+        status: drafted       # unwritten | drafted | published
+        draft: content/drafts/ypo-alternatives-for-founders.md
         gsc_impressions: 340
         gsc_ctr: 0.4
       - term: "peer group for series B founders"
