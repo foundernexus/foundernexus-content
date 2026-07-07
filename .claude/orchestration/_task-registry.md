@@ -8,6 +8,6 @@ Status values: `queued · planning · ready · building · in-review · done · 
 | ID  | Date       | Title                                                     | Risk     | Status   | QA   |
 | --- | ---------- | --------------------------------------------------------- | -------- | -------- | ---- |
 | 000 | 2026-07-07 | EXAMPLE — worked comparison-page brief                    | standard | archived | pass |
-| 001 | 2026-07-07 | Draft: how founders get better feedback on hard decisions | standard | ready    | —    |
+| 001 | 2026-07-07 | Draft: how founders get better feedback on hard decisions | standard | archived | pass |
 
 <!-- Add new rows at the bottom via /new-task. Keep newest activity reflected in Status. -->
