@@ -15,7 +15,7 @@ The best founder room is not the one with the biggest network.
 
 It is the one where the decision gets sharper.
 
-For a venture-scale founder, the useful room is usually built around three things:
+For a venture-scale founder, the useful room usually has three things:
 
 Stage fit.
 Live decision context.
@@ -62,4 +62,3 @@ Nominate them because they would make the room sharper.
 This week's FounderNexus note looks at what experienced founders should look for when a traditional peer network stops fitting. The short version: the useful room is not the biggest network or the most familiar logo. It is the room built around stage, decision context, and trust. If a founder is carrying a decision where the wrong move is expensive, the right peer room can change what they do next.
 
 Primary ask: nominate a founder who would make the room sharper.
-
