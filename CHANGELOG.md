@@ -2,6 +2,22 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-07 (later still, check-script fixes, user-approved)
+
+- Added `'EO'` and `"Entrepreneurs' Organization"` to `named-entity.mjs`'s NETWORKS list, and
+  `/founder-conversation` to `links.mjs`'s DEAD list. These were blocked earlier in this session by
+  the auto-mode permission classifier (hook self-modification); the user explicitly approved both
+  when asked directly. Verified: `named-entity.mjs content/drafts/compare-eo.md` now flags "EO,
+  Entrepreneurs' Organization" correctly. Full four-check repo-wide re-run confirms nothing new
+  broke (only the known pre-existing blog-scaffolding findings remain).
+- **New gap found while verifying, not fixed:** `links.mjs content/drafts/decision-first-senior-hire-seed.md`
+  still returns empty even after adding `/founder-conversation` to DEAD, because that CTA is raw
+  HTML (`<a href="/founder-conversation">`), and `links.mjs`'s dead-route regex requires
+  whitespace/line boundaries around the route string (`(^|\s)/founder-conversation(\s|$)`), which a
+  quote-bounded `href="..."` attribute never satisfies. This is a deeper detection gap than the
+  one-line list addition just approved, so it was not fixed here without asking again. All six raw-
+  HTML-CTA drafts in this repo are silently invisible to this ADVISE check as a result.
+
 ## 2026-07-07 (later still, header/footer + 6 user-authored articles)
 
 - **Header/footer now match `www.foundernexus.com`.** Fetched the live site and rebuilt
