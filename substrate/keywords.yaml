@@ -7,7 +7,13 @@
 clusters:
   - id: peer-advisory-alternatives
     pillar: judgment-infrastructure
-    lane: founder-nomination
+    lane: linkedin-assisted-demand
+    asset_type: comparison_page
+    routing_paths:
+      primary: founder-evaluation
+      secondary:
+        - founder-nomination
+        - relationship-reservoir
     funnel: application
     status: approved          # approved | proposed | killed
     priority: 1

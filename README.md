@@ -16,7 +16,7 @@ V0 is manual by design. The repo holds the judgment substrate and review surface
 
 ## Manual V0
 
-1. Pick one lane. Start with `founder-nomination`.
+1. Pick one lane and asset type. For comparison pages, use `substrate/comparison-page-playbook.md`.
 2. Pick one approved unwritten keyword from `substrate/keywords.yaml`.
 3. Draft the article by hand using `substrate/content-standards.md`.
 4. Run the two manual review passes: structure, then voice.

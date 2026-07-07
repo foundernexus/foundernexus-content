@@ -2,13 +2,17 @@
 title: "The Better Founder Room Is Built Around the Decision"
 target_keyword: "YPO alternatives for founders"
 cluster: peer-advisory-alternatives
-lane: founder-nomination
+lane: linkedin-assisted-demand
+asset_type: comparison_page
 pillar: judgment-infrastructure
 funnel: application
 status: held_review
-primary_cta: "Nominate a founder"
-route: "/nominate"
-review_flag: "Target keyword includes a named network. Get Court and legal sign-off before publishing with direct competitive language."
+primary_cta: "Explore whether FounderNexus fits your stage"
+secondary_paths:
+  - "Nominate a founder"
+  - "Stay close"
+route: "pending"
+review_flag: "Target keyword includes a named network and the live CTA route is unresolved. Get Court/legal sign-off and confirm the destination before publishing."
 ---
 
 # The Better Founder Room Is Built Around the Decision
@@ -91,4 +95,6 @@ That is the nomination standard.
 
 FounderNexus is built around trusted, stage-specific rooms for venture-scale founders carrying high-stakes decisions. The point is not more networking. The point is a better decision environment when the wrong move is expensive.
 
-If there is a founder at your stage who would make the room sharper, nominate them.
+If this is the kind of room you are looking for, the next step is not to join another list. It is to decide whether FounderNexus fits the stage and decision you are carrying now.
+
+And if a specific founder came to mind while reading this, that is useful signal too. The right nomination is not a favor. It is a way to protect the quality of the room.

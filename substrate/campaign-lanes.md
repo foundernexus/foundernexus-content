@@ -46,3 +46,11 @@ Rule: an article only generates if its keyword cluster maps to one of these five
 ## Gate rule
 
 Every `keywords.yaml` cluster carries exactly one `lane`. If a proposed keyword doesn't fit one of these five, it gets killed or held. It does not get a sixth lane invented on the fly. New lanes require Robroy and Court sign-off, not a generator default.
+
+## Asset-type note: comparison pages
+
+Comparison pages are an asset type, not a sixth lane. A comparison page usually belongs in `linkedin-assisted-demand` because its first job is to clarify the FounderNexus worldview and warm qualified founder demand.
+
+Use `founder-nomination` for a comparison page only when the page is written for members, VCs, advisors, or trusted sources who are being asked to nominate someone else.
+
+See `comparison-page-playbook.md` for routing rules.

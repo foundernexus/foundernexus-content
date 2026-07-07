@@ -5,10 +5,10 @@ Format: four fields, filled manually until proven worth automating. A fifth fiel
 
 ## Fields
 
-1. **Lane** — which of the five campaign lanes this week's activity sits in.
-2. **What shipped** — the actual content or engagement produced (article title, post, brief actioned).
-3. **Conversations routed** — how many founder conversations this produced, and through which CTA.
-4. **Proof captured** — any new proof asset added to the proof bank, with permission status.
+1. **Lane**: which of the five campaign lanes this week's activity sits in.
+2. **What shipped**: the actual content or engagement produced (article title, post, brief actioned).
+3. **Conversations routed**: how many founder conversations this produced, and through which CTA.
+4. **Proof captured**: any new proof asset added to the proof bank, with permission status.
 
 ## Example (illustrative, not real data)
 
