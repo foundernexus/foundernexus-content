@@ -29,6 +29,14 @@ clusters:
         intent: consideration
         status: published
         url: /blog/peer-groups-series-b
+      - term: "FounderNexus vs EO"
+        intent: comparison
+        status: drafted # user-authored, approved 2026-07-07 by Robroy
+        draft: content/drafts/compare-eo.md
+      - term: "FounderNexus vs Hampton"
+        intent: comparison
+        status: drafted # user-authored, approved 2026-07-07 by Robroy
+        draft: content/drafts/compare-hampton.md
 
   - id: vc-fast-pass-signal
     pillar: judgment-infrastructure
@@ -52,4 +60,31 @@ clusters:
     keywords:
       - term: "how founders get better feedback on hard decisions"
         intent: informational
-        status: unwritten
+        status: drafted
+        draft: content/drafts/founder-decision-quality.md
+
+  - id: stage-decision-guides
+    pillar: judgment-infrastructure
+    lane: linkedin-assisted-demand
+    asset_type: article
+    funnel: application
+    status: approved # user-authored batch, approved 2026-07-07 by Robroy via /orient session
+    priority: 2
+    cadence: monthly
+    keywords:
+      - term: "first senior hire at seed"
+        intent: informational
+        status: drafted
+        draft: content/drafts/decision-first-senior-hire-seed.md
+      - term: "Series A operating layer"
+        intent: informational
+        status: drafted
+        draft: content/drafts/decision-series-a-operating-layer.md
+      - term: "board dynamics after Series B"
+        intent: informational
+        status: drafted
+        draft: content/drafts/decision-board-dynamics-after-series-b.md
+      - term: "founder-led sales limits"
+        intent: informational
+        status: drafted
+        draft: content/drafts/decision-founder-led-sales-limits.md

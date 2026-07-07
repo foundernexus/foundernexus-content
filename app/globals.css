@@ -52,3 +52,138 @@ body {
   border-left-color: #007be4;
   color: #56646f;
 }
+
+/* ── Article components (from the FounderNexus article template set).
+   Raw HTML embedded in a post's markdown body (rehype-raw) can use these classes
+   directly — comparison pages and decision guides rely on them. */
+.markdown-body .eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #007be4;
+  margin-bottom: 14px;
+}
+.markdown-body .callout {
+  background: #f1f8ff;
+  border: 1px solid #d3d6da;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 18px 0;
+}
+.markdown-body .callout h3 {
+  margin-top: 0;
+}
+.markdown-body .callout.fair {
+  border-left: 4px solid #0072ba;
+}
+.markdown-body .pull {
+  background: #f1f8ff;
+  border-left: 4px solid #007be4;
+  border-radius: 0 10px 10px 0;
+  padding: 16px 22px;
+  margin: 22px 0;
+  font-size: 17px;
+  color: #01052a;
+  font-weight: 500;
+}
+.markdown-body .checkbox {
+  background: #f1f5f9;
+  border: 1px solid #d3d6da;
+  border-radius: 12px;
+  padding: 22px 26px;
+  margin: 24px 0;
+}
+.markdown-body .checkbox h3 {
+  margin-top: 0;
+}
+.markdown-body .checkbox ul {
+  list-style: none;
+  padding: 0;
+}
+.markdown-body .checkbox li {
+  padding: 7px 0 7px 28px;
+  position: relative;
+  font-size: 15px;
+}
+.markdown-body .checkbox li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  background: #d3eafd;
+  color: #007be4;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 18px;
+}
+.markdown-body ul.clean {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 14px;
+}
+.markdown-body ul.clean li {
+  padding: 6px 0 6px 22px;
+  position: relative;
+}
+.markdown-body ul.clean li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 14px;
+  width: 9px;
+  height: 2px;
+  background: #007be4;
+}
+.markdown-body table.cmp {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 14.5px;
+}
+.markdown-body table.cmp th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #01052a;
+  padding: 10px 14px;
+}
+.markdown-body table.cmp td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #d3d6da;
+  vertical-align: top;
+}
+.markdown-body table.cmp tr td:first-child {
+  font-weight: 600;
+  color: #01052a;
+  width: 26%;
+}
+.markdown-body table.cmp tr:nth-child(even) td {
+  background: #f1f5f9;
+}
+.markdown-body .softcta {
+  border: 1px solid #d3d6da;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 32px 0 8px;
+  background: #f1f8ff;
+}
+.markdown-body .softcta a {
+  color: #0072ba;
+  font-weight: 700;
+  text-decoration: none;
+}
+.markdown-body .credibility {
+  font-size: 13.5px;
+  color: #56646f;
+  border-top: 1px solid #d3d6da;
+  padding-top: 18px;
+  margin-top: 8px;
+}

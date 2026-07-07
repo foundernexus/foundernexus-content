@@ -2,6 +2,77 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-07 (later still, header/footer + 6 user-authored articles)
+
+- **Header/footer now match `www.foundernexus.com`.** Fetched the live site and rebuilt
+  `app/layout.tsx`'s header (logo, "Blog", "All events" -> `www.foundernexus.com/events`, "Log in"
+  -> `www.foundernexus.com/member-login`, "Seattle, WA") and footer (Company / Contact / Legal
+  columns, phone, Terms/Privacy links to the main site, copyright, tagline) to mirror it. External
+  utility pages (events, login, terms, privacy) link out to the main site since they don't exist on
+  this content property; `/blog` and `/blog/rss.xml` stay local.
+  - Fixed a bug introduced in the same edit: the copyright year used a nonsensical
+    `new Date(0).getFullYear() === 1970` check (a leftover habit from an unrelated context with a
+    `Date()`-usage restriction that does not apply to this Next.js app) which rendered as no year at
+    all in some timezones. Replaced with a plain `new Date().getFullYear()`. Caught via the local
+    preview screenshot before commit, not left in.
+- **Six user-authored articles migrated into `content/drafts/`**, source: standalone styled HTML
+  files the user built previously (`fn-compare-eo.html`, `fn-compare-hampton.html`, and four
+  `fn-decision-*.html` guides), already using this repo's real brand tokens. Converted to Markdown +
+  the required draft front-matter (content-lint schema), body content preserved verbatim (copy
+  unchanged), custom layout blocks (pull-quotes, callouts, checklists, comparison tables) kept as
+  raw HTML in the Markdown body (`rehype-raw` already supports this).
+  - `compare-eo.md`, `compare-hampton.md` -> `status: held_review` (named competitors: EO, Hampton),
+    same gate as the existing YPO draft (content-standards.md §6, comparison-page-playbook.md).
+    **Not cleared to publish** — needs Court + legal sign-off.
+  - `decision-first-senior-hire-seed.md`, `decision-series-a-operating-layer.md`,
+    `decision-board-dynamics-after-series-b.md`, `decision-founder-led-sales-limits.md` ->
+    `status: drafted`, no named competitor, no legal gate. All six share the same open item as the
+    held YPO piece: their CTA (`/founder-conversation`) doesn't exist on this site yet, so none can
+    clear the live-200 SMOKE gate regardless of sign-off status.
+  - Ported the source articles' custom CSS (`.callout`, `.pull`, `.checkbox`, `table.cmp`,
+    `ul.clean`, `.softcta`, `.credibility`, `.eyebrow`) into `app/globals.css`, scoped under
+    `.markdown-body`, using the same brand tokens already in the design system. Render-verified by
+    temporarily copying one decision guide and the Hampton comparison into `content/blog/` locally
+    (never committed there), screenshotting both, then removing them and rebuilding clean before
+    this commit — pull-quotes, checklists, comparison tables, and the CTA box all render correctly.
+  - Registered all six in `substrate/keywords.yaml`: the two comparisons as new keywords under the
+    existing `peer-advisory-alternatives` cluster; the four decision guides under a new cluster
+    `stage-decision-guides` (lane `linkedin-assisted-demand`, `status: approved` — user-authored
+    batch, approved 2026-07-07 by Robroy in this session). Also fixed a miss from the prior task:
+    `founder-decision-quality`'s keyword-level `status` in keywords.yaml was still `unwritten` after
+    that draft was built; corrected to `drafted` with its `draft:` path (substrate/** is
+    scope-fenced from builder agents, so this was the orchestrator's job, not the builder's).
+- **Known gap, not fixed (blocked):** `named-entity.mjs`'s hardcoded network list doesn't include
+  "EO" (only "Entrepreneurs Organization", no apostrophe variant), so it doesn't flag
+  `compare-eo.md` the way it correctly flags `compare-hampton.md`. `links.mjs`'s dead-route list
+  doesn't include `/founder-conversation` (only `/apply`, `/nominate`, `/newsletter`), so it's silent
+  on the new CTA all six of these pieces (well, four of six) use. Both are real, narrow fixes to the
+  check scripts themselves — attempted in this session and blocked by the auto-mode permission
+  classifier as hook self-modification (reasonable: same session that wired the hooks up editing
+  their logic). Flagging here rather than routing around the block. A human approving that specific
+  edit (or a future session with the user present to approve it) should add `'EO'` and
+  `"Entrepreneurs' Organization"` to `NETWORKS` in `named-entity.mjs`, and `'/founder-conversation'`
+  to `DEAD` in `links.mjs`.
+
+## 2026-07-07 (task 001, founder-decision-quality draft)
+
+- Drafted `content/drafts/founder-decision-quality.md` for the approved `founder-decision-quality`
+  keyword cluster, target keyword "how founders get better feedback on hard decisions." Informational
+  article: names the decision-quality problem (founders getting encouragement instead of feedback
+  that could change their mind on a hard call) in the first two sentences, gives founders a
+  three-part filter for weighting outside input (recency of a similar decision, whether it changes
+  the shape of the call, independence from the outcome), and closes on precisely naming the decision
+  before seeking input.
+- Front-matter: `lane: proof-capture`, `cluster: founder-decision-quality`, `asset_type: article`,
+  `primary_cta: "Newsletter signup"`, `status: drafted`, per the brief's routing-rules.md §4 fallback
+  call (proof-capture's table CTA, "Request permission to feature," is an internal ask with no
+  reader-facing route; the lane itself has an open-question flag carried from scaffolding, see
+  brief's Notes and this task's FOLLOW-UPS).
+- 803 words. Self-verified clean on `contract`, `terminology`, `emdash`, `content-lint` against
+  just this file; the four checks' pre-existing findings are all in `content/README.md`,
+  `content/_meta/blog.md`, `content/blog/_TEMPLATE.md`, `content/blog/what-a-good-founder-room-looks-like.md`
+  (the known blog-scaffolding gotcha from the earlier HANDOVER entry), none touched by this task.
+
 ## 2026-07-07 (later, design system)
 
 - Replaced the placeholder dark skin with the real FounderNexus design system (colors, type,

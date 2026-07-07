@@ -4,6 +4,44 @@ Non-obvious calls, with the _why_, so a future session does not re-litigate them
 
 ---
 
+## 2026-07-07 (later still) — Six user-authored articles go to content/drafts/, not content/blog/
+
+**Decision.** All six new user-supplied articles (2 comparisons naming EO/Hampton, 4 decision
+guides) were placed in `content/drafts/` with front-matter following the content-lint schema, not
+`content/blog/` (which is what the Next.js app actually renders live).
+
+**Why.** Two independent gates apply. (1) The two comparison pages name real competitors by name,
+which content-standards.md §6 and comparison-page-playbook.md require Court + legal sign-off for
+before publishing — exactly the same rule already holding the existing YPO draft back. (2) All six
+pieces' CTA points at `/founder-conversation`, a route that doesn't exist on this site, and
+CLAUDE.md's own invariant is explicit: "CTA routes must return a live 200 before publishing."
+Landing any of them in `content/blog/` would make them live and reachable via a real URL
+immediately (no separate publish step exists in this repo's current build), which would violate
+both gates at once. `content/drafts/` is inert (not read by `lib/content/blog.ts`), so it is the
+correct staging area regardless of how finished the copy already looks.
+
+**How to apply:** promoting any of these six to `content/blog/` requires, at minimum, a live
+`/founder-conversation` destination; the two comparisons additionally require a recorded Court +
+legal sign-off. Do not promote on writing-quality grounds alone.
+
+---
+
+## 2026-07-07 (later still) — Left named-entity.mjs / links.mjs gaps unfixed after a permission block
+
+**Decision.** Did not add `'EO'` to `named-entity.mjs`'s NETWORKS list or `/founder-conversation` to
+`links.mjs`'s DEAD list, even though both are real, narrow, clearly-justified one-line fixes that
+this session's own new content exposed.
+
+**Why.** The auto-mode permission classifier blocked the edit as hook self-modification: the same
+session that wrote `.claude/settings.json` wiring these scripts into the PreToolUse/PostToolUse
+pipeline then tried to edit the scripts' enforcement logic, with no explicit user request for that
+specific change. That is a reasonable thing to gate even though the fix itself is correct and
+low-risk. Did not attempt to route around it (e.g., via a different tool). Documented the exact
+needed change in `CHANGELOG.md` and `HANDOVER.md` instead, for a session where the user is present
+to explicitly approve it.
+
+---
+
 ## 2026-07-07 — Adopt the v3 agent OS, adapted for a content repo
 
 **Decision.** Install the regression-gated agent OS. Slug `fnx`; roles `planner / builder / qa`;
@@ -87,3 +125,24 @@ A 5-lens multi-agent review (each finding independently refuted) surfaced 5 conf
 - **(major)** `content-lint` flagged quoted-but-valid lanes (`lane: "linkedin-assisted-demand"`) as invalid because the front-matter parser kept the quotes. Fixed by stripping one surrounding quote pair.
 - **(minor)** `contract` had the same quote bug on `lane` / `status` / `draft`. Fixed.
 - **(minor)** `scope-fence`'s `globToRegex` was case-sensitive, so `Substrate/**` bypassed a `substrate/**` fence on the Windows case-insensitive filesystem. Fixed with the `i` flag.
+
+---
+
+## 2026-07-07 (task 001) — founder-decision-quality CTA and asset_type calls
+
+**Decision.** Drafted `content/drafts/founder-decision-quality.md` with `primary_cta: "Newsletter
+signup"` routed to `/newsletter`, and `asset_type: article` (not `comparison_page` or another
+value), keeping the `proof-capture` lane as pre-assigned in `keywords.yaml` rather than
+reassigning it.
+
+**Why.** `proof-capture`'s own table CTA (`routing-rules.md` §2, "Request permission to feature")
+is an internal ask aimed at an existing member going on record, not a reader-facing CTA — this
+piece has no member subject and no interview. Per routing-rules.md §4's fallback rule ("if a
+keyword cluster's lane is ambiguous, or an asset doesn't cleanly fit a lane, default to the
+lowest-commitment ask: newsletter signup"), used newsletter signup instead. `asset_type: article`
+was chosen because it is the closest match to what content-standards.md and campaign-lanes.md
+describe for a general point-of-view informational piece; no comparison, no named network, no
+interview subject, so `comparison_page` (the only other asset_type seen in this repo, on the YPO
+draft) does not fit. Did not reassign the `proof-capture` lane itself, per the brief's explicit
+instruction to draft as written and flag the mismatch in FOLLOW-UPS rather than silently
+overriding a human-approved `keywords.yaml` assignment.
