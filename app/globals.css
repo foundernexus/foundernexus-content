@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── FounderNexus placeholder skin (dark, minimal, high-contrast). ───────────
-   Brand tokens live in tailwind.config.ts. Long-form post prose uses the dark
-   github-markdown theme (imported in app/layout.tsx), blended in below. */
+/* ── FounderNexus skin (white surfaces, deep navy text, decisive blue actions).
+   Brand tokens live in tailwind.config.ts, sourced from the design system export
+   (tokens/colors.css). Long-form post prose uses the light github-markdown theme
+   (imported in app/layout.tsx), blended in below. */
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -19,14 +20,14 @@ body {
 }
 
 ::selection {
-  background: #c7a45a;
-  color: #0b0e14;
+  background: #d3eafd; /* blue-100 */
+  color: #01052a; /* navy-900 */
 }
 
-/* Blend github-markdown-dark into our palette + a few editorial touches. */
+/* Blend github-markdown-light into our palette + a few editorial touches. */
 .markdown-body {
   background: transparent !important;
-  color: #e8e9ec;
+  color: #01052a;
   font-family: inherit;
   font-size: 1.02rem;
   line-height: 1.75;
@@ -41,13 +42,13 @@ body {
   margin-top: 2.2em;
 }
 .markdown-body a {
-  color: #d8be7e;
+  color: #007be4;
   text-underline-offset: 3px;
 }
 .markdown-body a:hover {
-  color: #e8d9ae;
+  color: #0072ba;
 }
 .markdown-body blockquote {
-  border-left-color: #c7a45a;
-  color: #c6ccd6;
+  border-left-color: #007be4;
+  color: #56646f;
 }

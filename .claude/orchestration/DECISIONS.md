@@ -1,6 +1,6 @@
 # fnx Decision Log
 
-Non-obvious calls, with the *why*, so a future session does not re-litigate them. Append only.
+Non-obvious calls, with the _why_, so a future session does not re-litigate them. Append only.
 
 ---
 
@@ -64,11 +64,26 @@ guards `keywords.yaml` validity regardless.
 
 ---
 
+## 2026-07-07 (later) — Ship `settings.json` as-designed; don't retro-fix the blog-content false positives yet
+
+**Decision.** Enable the hooks exactly as specified in `.claude/orchestration/README.md` §Enforcement
+hooks, without also touching `terminology.mjs` / `emdash.mjs` / `content-lint.mjs` to exclude the
+new blog scaffolding files that now trip them (`content/README.md`, `content/_meta/blog.md`,
+`content/blog/_TEMPLATE.md`).
+
+**Why.** The ratchet model (`verify-ratchet.mjs`) only blocks _new_ findings versus a task's own
+baseline snapshot; pre-existing findings — including these — never block anything. Widening the
+checks' scope is a real, separate decision (what should content-lint even require of a template or
+index file?) that deserves its own task and brief, not a silent side-effect of an enablement pass.
+Logged in `HANDOVER.md` 2026-07-07 (later) so it isn't lost.
+
+---
+
 ## 2026-07-08 — Adversarial hook review found + fixed 5 real defects (pre-enablement)
 
 A 5-lens multi-agent review (each finding independently refuted) surfaced 5 confirmed defects, now fixed and re-verified. Hooks remain OFF pending `settings.json` + the Phase-4 proofs.
 
-- **(major, Law 3)** A could-not-run baseline (check exits 3 at dispatch) wrote an empty file *indistinguishable from a clean baseline*, so `verify-ratchet` blocked on PRE-EXISTING failures — and the same fail-closed path hit any ratchet check added to the manifest *after* a snapshot. Fixed: `baseline-snapshot` writes a `<id>.norun` sentinel for could-not-run; `verify-ratchet` skips (fail-open) on a sentinel **or** a missing baseline file. A truly clean baseline is still an empty `<id>` file that enforces absolutely.
+- **(major, Law 3)** A could-not-run baseline (check exits 3 at dispatch) wrote an empty file _indistinguishable from a clean baseline_, so `verify-ratchet` blocked on PRE-EXISTING failures — and the same fail-closed path hit any ratchet check added to the manifest _after_ a snapshot. Fixed: `baseline-snapshot` writes a `<id>.norun` sentinel for could-not-run; `verify-ratchet` skips (fail-open) on a sentinel **or** a missing baseline file. A truly clean baseline is still an empty `<id>` file that enforces absolutely.
 - **(major)** `content-lint` flagged quoted-but-valid lanes (`lane: "linkedin-assisted-demand"`) as invalid because the front-matter parser kept the quotes. Fixed by stripping one surrounding quote pair.
 - **(minor)** `contract` had the same quote bug on `lane` / `status` / `draft`. Fixed.
 - **(minor)** `scope-fence`'s `globToRegex` was case-sensitive, so `Substrate/**` bypassed a `substrate/**` fence on the Windows case-insensitive filesystem. Fixed with the `i` flag.

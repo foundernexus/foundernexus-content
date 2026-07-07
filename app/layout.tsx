@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import "github-markdown-css/github-markdown-dark.css";
+import "github-markdown-css/github-markdown-light.css";
+import Image from "next/image";
 import Link from "next/link";
+import { plusJakartaSans, roboto } from "@/lib/fonts";
 import { SITE, BRAND, LOGO } from "@/lib/site";
 
 export const viewport: Viewport = {
-  themeColor: "#0B0E14",
+  themeColor: "#F9F9F9",
 };
 
 export const metadata: Metadata = {
@@ -15,7 +17,8 @@ export const metadata: Metadata = {
     template: `%s | ${BRAND}`,
   },
   description: "Judgment infrastructure for venture-scale founders.",
-  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  robots:
+    "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   openGraph: {
     type: "website",
     siteName: BRAND,
@@ -34,7 +37,13 @@ export const metadata: Metadata = {
 const orgLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "Organization", "@id": `${SITE}/#org`, name: BRAND, url: SITE, logo: LOGO },
+    {
+      "@type": "Organization",
+      "@id": `${SITE}/#org`,
+      name: BRAND,
+      url: SITE,
+      logo: LOGO,
+    },
     {
       "@type": "WebSite",
       "@id": `${SITE}/#website`,
@@ -45,22 +54,40 @@ const orgLd = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${plusJakartaSans.variable} ${roboto.variable}`}
+    >
       <body className="min-h-screen flex flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd).replace(/</g, "\\u003c") }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(orgLd).replace(/</g, "\\u003c"),
+          }}
         />
         <header className="sticky top-0 z-10 border-b border-line/80 bg-ink/80 backdrop-blur">
           <div className="mx-auto max-w-5xl px-4 h-16 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-              <span className="inline-block h-2 w-2 rounded-full bg-accent" aria-hidden />
-              {BRAND}
+            <Link href="/" className="flex items-center" aria-label={BRAND}>
+              <Image
+                src="/brand/foundernexus-wordmark.png"
+                alt={BRAND}
+                width={1982}
+                height={250}
+                priority
+                className="h-6 w-auto"
+              />
             </Link>
             <nav className="text-sm">
-              <Link href="/blog" className="text-muted hover:text-fg transition-colors">
+              <Link
+                href="/blog"
+                className="text-muted hover:text-fg transition-colors"
+              >
                 Blog
               </Link>
             </nav>

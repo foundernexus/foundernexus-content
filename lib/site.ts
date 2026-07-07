@@ -4,4 +4,4 @@
 
 export const SITE = "https://foundernexus.com"; // your origin, NO trailing slash (placeholder)
 export const BRAND = "FounderNexus";
-export const LOGO = `${SITE}/logo.png`; // absolute URL to your logo (used in JSON-LD)
+export const LOGO = `${SITE}/brand/foundernexus-mark-square.jpeg`; // absolute URL to your logo (used in JSON-LD)

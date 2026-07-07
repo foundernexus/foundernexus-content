@@ -1,0 +1,58 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/scripts/dangerous-edit.mjs" },
+          { "type": "command", "command": "node .claude/hooks/scripts/scope-fence.mjs" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/scripts/dangerous-command.mjs" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/scripts/advise.mjs" },
+          { "type": "command", "command": "node .claude/hooks/scripts/format.mjs" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/scripts/verify-ratchet.mjs" },
+          { "type": "command", "command": "node .claude/hooks/scripts/doc-gate.mjs" }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/scripts/verify-ratchet.mjs" },
+          { "type": "command", "command": "node .claude/hooks/scripts/doc-gate.mjs" }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node .claude/hooks/scripts/precompact-snapshot.mjs" }
+        ]
+      }
+    ]
+  }
+}
