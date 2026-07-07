@@ -1,0 +1,65 @@
+{
+  "slug": "fnx",
+  "notes": "Content-ops repo: no typecheck/test/build. Checks are dependency-free Node scripts (no jq/python/prettier/yamllint available). Contract of a check script: print a normalized failure set to stdout (one per line, sorted); exit 0 = ran (stdout is authoritative); exit 3 = could-not-run (fail-open). verify-ratchet.mjs diffs `now - baseline` where baseline lives in .claude/tasks/.baseline-<NNN>/<id>. Behavior decides whether it blocks; event decides when it runs.",
+  "checks": [
+    {
+      "id": "contract",
+      "cmd": "node .claude/hooks/scripts/checks/contract.mjs",
+      "behavior": "ratchet",
+      "event": "stop",
+      "scope": "repo",
+      "normalize": "keywords.yaml contract violations (cluster/lane/status/draft-path), sorted",
+      "baseline_observed": "green (valid 2026-07-07)"
+    },
+    {
+      "id": "terminology",
+      "cmd": "node .claude/hooks/scripts/checks/terminology.mjs",
+      "behavior": "ratchet",
+      "event": "stop",
+      "scope": "content+social",
+      "normalize": "file:line: retired-term hits (strict set: 'Tier N', 'Chapter chair'), sorted",
+      "baseline_observed": "green (product content clean 2026-07-07)"
+    },
+    {
+      "id": "emdash",
+      "cmd": "node .claude/hooks/scripts/checks/emdash.mjs",
+      "behavior": "ratchet",
+      "event": "stop",
+      "scope": "content+social",
+      "normalize": "file:line em-dash hits, sorted",
+      "baseline_observed": "green (0 across all markdown 2026-07-07)"
+    },
+    {
+      "id": "content-lint",
+      "cmd": "node .claude/hooks/scripts/checks/content-lint.mjs",
+      "behavior": "ratchet",
+      "event": "stop",
+      "scope": "content",
+      "normalize": "file: rule (missing front-matter key / invalid lane / missing TL;DR), sorted",
+      "baseline_observed": "green (the one draft passes 2026-07-07)"
+    },
+    {
+      "id": "named-entity",
+      "cmd": "node .claude/hooks/scripts/checks/named-entity.mjs",
+      "behavior": "advise",
+      "event": "posttooluse",
+      "scope": "changed-files",
+      "normalize": "none",
+      "baseline_observed": "red-by-design (YPO draft flagged; held_review — acceptable). Cannot enforce a human sign-off, so it can never be RATCHET."
+    },
+    {
+      "id": "links",
+      "cmd": "node .claude/hooks/scripts/checks/links.mjs",
+      "behavior": "advise",
+      "event": "posttooluse",
+      "scope": "changed-files",
+      "normalize": "none",
+      "baseline_observed": "red (known 404 CTA routes /apply /nominate /newsletter). Live-200 is network + out-of-band, so it stays SMOKE."
+    },
+    {
+      "id": "smoke",
+      "cmd": "MANUAL: verify each live CTA route returns 200; run the human dual-pass voice review (content-standards.md §7); confirm Court+legal sign-off for any named-network piece.",
+      "behavior": "smoke"
+    }
+  ]
+}
