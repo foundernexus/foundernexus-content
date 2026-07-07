@@ -5,8 +5,9 @@ orchestrator keeps this current — it is the fast index a cold session reads vi
 
 Status values: `queued · planning · ready · building · in-review · done · archived · blocked · qa-failed`.
 
-| ID  | Date       | Title                                   | Risk     | Status   | QA   |
-|-----|------------|-----------------------------------------|----------|----------|------|
-| 000 | 2026-07-07 | EXAMPLE — worked comparison-page brief  | standard | archived | pass |
+| ID  | Date       | Title                                                     | Risk     | Status   | QA   |
+| --- | ---------- | --------------------------------------------------------- | -------- | -------- | ---- |
+| 000 | 2026-07-07 | EXAMPLE — worked comparison-page brief                    | standard | archived | pass |
+| 001 | 2026-07-07 | Draft: how founders get better feedback on hard decisions | standard | ready    | —    |
 
 <!-- Add new rows at the bottom via /new-task. Keep newest activity reflected in Status. -->

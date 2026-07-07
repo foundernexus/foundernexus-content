@@ -15,13 +15,13 @@ clusters:
         - founder-nomination
         - relationship-reservoir
     funnel: application
-    status: approved          # approved | proposed | killed
+    status: approved # approved | proposed | killed
     priority: 1
     cadence: monthly
     keywords:
       - term: "YPO alternatives for founders"
         intent: comparison
-        status: drafted       # unwritten | drafted | published
+        status: drafted # unwritten | drafted | published
         draft: content/drafts/ypo-alternatives-for-founders.md
         gsc_impressions: 340
         gsc_ctr: 0.4
@@ -46,7 +46,7 @@ clusters:
     pillar: judgment-infrastructure
     lane: proof-capture
     funnel: newsletter
-    status: proposed
+    status: approved # approved 2026-07-07 by Robroy via /orient session
     priority: 3
     cadence: monthly
     keywords:
