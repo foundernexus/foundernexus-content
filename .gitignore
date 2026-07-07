@@ -1,0 +1,18 @@
+# Secrets (also denied by .claude/settings.json permission rules)
+.env
+.env.*
+secrets/
+
+# Node (should any tooling land later)
+node_modules/
+
+# Transient dispatch state (the registry + briefs ARE committed; these are not)
+.claude/tasks/.active-task
+.claude/tasks/.active-scope
+.claude/tasks/.baseline-*/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
