@@ -90,6 +90,12 @@ export default function RootLayout({
               >
                 Blog
               </Link>
+              <Link
+                href="/social"
+                className="text-muted hover:text-fg transition-colors"
+              >
+                Social
+              </Link>
               <a
                 href="https://www.foundernexus.com/events"
                 className="text-muted hover:text-fg transition-colors"

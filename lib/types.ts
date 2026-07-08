@@ -36,7 +36,14 @@ export interface Post {
 
 export interface PostsResponse {
   data: Post[];
-  meta: { pagination: { page: number; pageSize: number; pageCount: number; total: number } };
+  meta: {
+    pagination: {
+      page: number;
+      pageSize: number;
+      pageCount: number;
+      total: number;
+    };
+  };
 }
 
 export interface BlogHub {
@@ -44,4 +51,19 @@ export interface BlogHub {
   subtitle: string;
   featuredPost: Post;
   seo: Seo;
+}
+
+// Internal review surface for social/queue/*-derivatives.md (LinkedIn/newsletter drafts
+// atomized from a published post). Never indexed, never auto-posted — a human reads these
+// here and sends them manually per engagement-guardrails.md.
+export interface SocialDerivative {
+  slug: string; // e.g. "founder-nexus-vs-eo" (matches the source blog post's slug)
+  title: string; // pulled from the matching blog post, falls back to a humanized slug
+  sourceArticle: string; // repo-relative path from front-matter
+  lane?: string;
+  assetType?: string;
+  status?: string;
+  primaryCta?: string;
+  route?: string;
+  content: string; // raw markdown body (the derivative sections)
 }
