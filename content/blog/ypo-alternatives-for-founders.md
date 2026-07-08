@@ -76,7 +76,7 @@ First, the stage is close enough. The room does not have to be identical, but th
 
 Second, the decision is live enough. The room should not be a discussion club. A founder should be able to bring a real decision and leave with sharper context, better questions, and a practical next step.
 
-Third, the trust standard is high enough. A good room is not made by filling seats. It is made by protecting candor. The wrong person can make a room quieter, less honest, or less useful. Fit is not a vanity filter. It is part of the product.
+Third, the trust standard is high enough. A good room protects candor rather than fills seats. The wrong person can make a room quieter, less honest, or less useful, so fit is part of the product, not a vanity filter.
 
 This is where many founder networks blur. They sell access, but the founder needs curation. They create membership, but the founder needs room quality. They produce conversation, but the founder needs judgment.
 
@@ -120,8 +120,8 @@ Would they bring a real decision, useful candor, and enough operating context to
 
 That is the nomination standard.
 
-FounderNexus is built around trusted, stage-specific rooms for venture-scale founders carrying high-stakes decisions. The point is not more networking. The point is a better decision environment when the wrong move is expensive.
+FounderNexus is built around trusted, stage-specific rooms for venture-scale founders carrying high-stakes decisions. The aim is a better decision environment for the moment the wrong move is expensive, not another network to belong to.
 
 If this is the kind of room you are looking for, [the next step is not to join another list](https://www.foundernexus.com/registration). It is to decide whether FounderNexus fits the stage and decision you are carrying now.
 
-And if a specific founder came to mind while reading this, that is useful signal too. The right nomination is not a favor. It is a way to protect the quality of the room.
+And if a specific founder came to mind while reading this, that is useful signal too. A good nomination protects the quality of the room, which serves everyone already in it more than it does the founder you put forward.
