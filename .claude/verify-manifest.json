@@ -57,6 +57,15 @@
       "baseline_observed": "red (known 404 CTA routes /apply /nominate /newsletter). Live-200 is network + out-of-band, so it stays SMOKE."
     },
     {
+      "id": "slop",
+      "cmd": "node .claude/hooks/scripts/checks/slop.mjs",
+      "behavior": "advise",
+      "event": "posttooluse",
+      "scope": "changed-files",
+      "normalize": "none",
+      "baseline_observed": "green after the 2026-07-08 sweep. High-precision Part-A anti-slop patterns only (throat-clearing, jargon, meta, vague declaratives); Part-B house-voice items (the name-the-decision contrast, three-part lists, adverbs) are QA-owned judgment calls, deliberately not machine-checked. Adapted from stop-slop (Hardik Pandya, MIT). See substrate/anti-slop.md."
+    },
+    {
       "id": "smoke",
       "cmd": "MANUAL: verify each live CTA route returns 200; run the human dual-pass voice review (content-standards.md §7); confirm Court+legal sign-off for any named-network piece.",
       "behavior": "smoke"

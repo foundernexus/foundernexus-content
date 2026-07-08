@@ -19,7 +19,7 @@ Nominating someone you like is easy and mostly harmless to you. It is not harmle
 
 ## LinkedIn, FounderNexus Voice
 
-Every seat in a stage-based room is load-bearing. A nomination is not an invitation to a party. It's a vote about whose pattern recognition the rest of the room will lean on when the stakes are high.
+Every seat in a stage-based room is load-bearing. A nomination is not an invitation to a party. It's a vote about whose pattern recognition the rest of the room will lean on when a decision is expensive to get wrong.
 
 So the test is simple: would this founder raise the standard of the conversation, or just add a name to it?
 

@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/what-makes-a-founder-worth-nominating"
@@ -41,7 +45,7 @@ TL;DR: a good nomination is not the founder you like most or owe a favor to. It 
 
 So here is the decision in front of you: nominate this founder, or not. The trap is answering it as a question about the relationship, when it is really a question about the room. Nominating someone you like is easy and mostly harmless to you. It is not harmless to the eight other founders whose next hard decision depends on who is sitting at the table with them.
 
-A stage-based room works the way [a good founder room works](/blog/what-a-good-founder-room-looks-like): it is judged by whether it sharpens the decision in front of a founder, not by the size of the network or the logos in it. That means every seat is load-bearing. A nomination is not an invitation to a party. It is a vote about whose pattern recognition the rest of the room will lean on when the stakes are high.
+A stage-based room works the way [a good founder room works](/blog/what-a-good-founder-room-looks-like): it is judged by whether it sharpens the decision in front of a founder, not by the size of the network or the logos in it. That means every seat is load-bearing. A nomination is not an invitation to a party. It is a vote about whose pattern recognition the rest of the room will lean on when a decision is expensive to get wrong.
 
 ## The nomination test
 

@@ -17,37 +17,37 @@ This file is **reference**. Executable steps live in the Skill
    window is disposable scratch; the repo is memory. This is the defense against goal drift:
    compaction is lossy and drops "don't do X" constraints first.
 2. **Lower each guarantee to the right layer.** Prompts are followed ~70–90% of the time;
-   hooks execute at 100%. If a rule *must* hold, it belongs in a hook, not a sentence.
-3. **A hook fails open on its own malfunction.** Only a parsed, genuine, *new* failure blocks
-   (exit 2). A check that *cannot run* (missing tool, no baseline, parser error) warns to
+   hooks execute at 100%. If a rule _must_ hold, it belongs in a hook, not a sentence.
+3. **A hook fails open on its own malfunction.** Only a parsed, genuine, _new_ failure blocks
+   (exit 2). A check that _cannot run_ (missing tool, no baseline, parser error) warns to
    stderr and exits 0. A hook that blocks because it is broken is worse than no hook.
 
-| If it is a…                    | It belongs in…                          |
-|--------------------------------|-----------------------------------------|
-| Fact Claude should always hold | `CLAUDE.md`                             |
-| Multi-step procedure           | a Skill (`.claude/skills/`)             |
-| Rule that must hold every time | a hook (`.claude/settings.json`)        |
-| Noisy/parallel work to isolate | a subagent (+ git worktree)             |
+| If it is a…                    | It belongs in…                   |
+| ------------------------------ | -------------------------------- |
+| Fact Claude should always hold | `CLAUDE.md`                      |
+| Multi-step procedure           | a Skill (`.claude/skills/`)      |
+| Rule that must hold every time | a hook (`.claude/settings.json`) |
+| Noisy/parallel work to isolate | a subagent (+ git worktree)      |
 
 ---
 
 ## The four roles
 
-| Role | Who | Reads | Writes | Spawns |
-|---|---|---|---|---|
-| **Orchestrator** | the main session | everything | task briefs, the registry; integrates results; curates learnings into durable docs | planner / builder / qa; all helper agents; authors Dynamic Workflows |
-| **`fnx-planner`** | spawned, read-only on content | the brief + pointed files | the brief's **Plan** section (a `reports/NNN` for large work) | — (requests research from the orchestrator) |
-| **`fnx-builder`** | spawned, full tools | the brief | the content + same-change docs + the brief's **Result** | — |
-| **`fnx-qa`** | spawned, cannot edit | the brief's acceptance criteria (**not** the builder's story) | nothing — returns a verdict the orchestrator records | — |
+| Role              | Who                           | Reads                                                         | Writes                                                                             | Spawns                                                               |
+| ----------------- | ----------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Orchestrator**  | the main session              | everything                                                    | task briefs, the registry; integrates results; curates learnings into durable docs | planner / builder / qa; all helper agents; authors Dynamic Workflows |
+| **`fnx-planner`** | spawned, read-only on content | the brief + pointed files                                     | the brief's **Plan** section (a `reports/NNN` for large work)                      | — (requests research from the orchestrator)                          |
+| **`fnx-builder`** | spawned, full tools           | the brief                                                     | the content + same-change docs + the brief's **Result**                            | —                                                                    |
+| **`fnx-qa`**      | spawned, cannot edit          | the brief's acceptance criteria (**not** the builder's story) | nothing — returns a verdict the orchestrator records                               | —                                                                    |
 
 > **Hard platform constraint: a subagent cannot spawn another subagent.** Only the main
 > session orchestrates. Fan-out: **small** → the orchestrator spawns helpers and hands
 > distilled results into the brief (point, never paste); **large** (audits, migrations,
 > many independent units) → the orchestrator authors a **Dynamic Workflow** where background
-> subagents *can* nest.
+> subagents _can_ nest.
 
 The orchestrator holds product taste and strategy; spawned agents don't — so the brief
-carries the *why* and the standards, and QA checks product/quality criteria, not just "does it parse."
+carries the _why_ and the standards, and QA checks product/quality criteria, not just "does it parse."
 
 ---
 
@@ -63,7 +63,7 @@ A file `.claude/tasks/NNN-slug.md`, mirrored in `_task-registry.md`:
 - **building** — `/dispatch-task` makes the task active and **snapshots the baseline first**
   (writes `.active-task`, `.active-scope`, and `.baseline-NNN/`), then the builder implements.
   The verify hooks ratchet against that baseline, so the builder physically cannot finish
-  having *added* a failure.
+  having _added_ a failure.
 - **in-review** — qa verifies adversarially against the criteria, returns a verdict. Pass →
   done; fail → one bounded fix loop → re-scope.
 - **done** — shipped + docs updated (doc-gate enforced this; the orchestrator confirms the
@@ -94,22 +94,23 @@ Every check carries a **behavior** (tool reliability decides it) and an **event*
 decides it). Source of truth: `.claude/verify-manifest.json`.
 
 - **RATCHET** — block only on failures NEW vs the task baseline. Clean baseline ⇒ absolute
-  (any failure blocks). Default for any parseable check, *even a red one*.
+  (any failure blocks). Default for any parseable check, _even a red one_.
 - **ADVISE** — run + surface, never block. For crashing/flaky tools or signals you cannot
   enforce (e.g. a human sign-off). Promotes to RATCHET when it becomes enforceable.
 - **SMOKE** — a manual checklist line, not a hook.
 
 This repo has no typecheck/test/build. Its checks (all Node, no external deps):
 
-| id | what it enforces | behavior | event |
-|---|---|---|---|
-| `contract` | `substrate/keywords.yaml` stays a valid machine contract (lane gate, status enums, draft paths) | RATCHET | Stop |
-| `terminology` | no NEW retired term in shipped content (`Tier N`, `Chapter chair`) | RATCHET | Stop |
-| `emdash` | no NEW em dash in shipped content | RATCHET | Stop |
-| `content-lint` | draft front-matter complete, valid lane, TL;DR present | RATCHET | Stop |
-| `named-entity` | flags named-network content needing Court+legal sign-off | ADVISE | PostToolUse |
-| `links` | internal links resolve; known-404 CTA routes flagged | ADVISE | PostToolUse |
-| `smoke` | live CTA 200, human dual-pass voice review, sign-off confirmation | SMOKE | manual |
+| id             | what it enforces                                                                                          | behavior | event       |
+| -------------- | --------------------------------------------------------------------------------------------------------- | -------- | ----------- |
+| `contract`     | `substrate/keywords.yaml` stays a valid machine contract (lane gate, status enums, draft paths)           | RATCHET  | Stop        |
+| `terminology`  | no NEW retired term in shipped content (`Tier N`, `Chapter chair`)                                        | RATCHET  | Stop        |
+| `emdash`       | no NEW em dash in shipped content                                                                         | RATCHET  | Stop        |
+| `content-lint` | draft front-matter complete, valid lane, TL;DR present                                                    | RATCHET  | Stop        |
+| `named-entity` | flags named-network content needing Court+legal sign-off                                                  | ADVISE   | PostToolUse |
+| `links`        | internal links resolve; known-404 CTA routes flagged                                                      | ADVISE   | PostToolUse |
+| `slop`         | mechanical AI-slop phrasing (Part-A of `anti-slop.md`: throat-clearing, jargon, meta, vague declaratives) | ADVISE   | PostToolUse |
+| `smoke`        | live CTA 200, human dual-pass voice review (incl. `anti-slop.md` Part-B), sign-off confirmation           | SMOKE    | manual      |
 
 Because the ratchets compare against the baseline, a future messy baseline still only blocks
 **new** violations — so this generalizes without per-repo cleanup.
@@ -148,7 +149,7 @@ Deny permission rules (a deny beats any allow): `Read(./.env)`, `Read(./.env.*)`
   planner = Opus; qa = Opus (a weak grader rubber-stamps); builder = Opus (Sonnet only for
   trivially mechanical slices); helper/search = Sonnet floor. Pinned in each agent's frontmatter.
 - **Context discipline:** quality degrades ~40% context use; the orchestrator externalizes
-  state to `HANDOVER.md` *before* the band, then checkpoint-and-resets. `PreCompact` is the net.
+  state to `HANDOVER.md` _before_ the band, then checkpoint-and-resets. `PreCompact` is the net.
 
 ## Result contracts + finish protocol
 

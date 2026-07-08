@@ -11,12 +11,12 @@ FounderNexus is judgment infrastructure for venture-scale founders, Stage 2 to 3
 
 Use only current vocabulary. Legacy terms are permanently retired, even in casual reference.
 
-| Use | Never |
-|---|---|
-| Stage 1 to 4 | Tier 1 to 5 |
-| Nexus Partner | Chapter chair |
-| Stage-based room | Chapter |
-| Session | Event (except in existing URLs) |
+| Use              | Never                           |
+| ---------------- | ------------------------------- |
+| Stage 1 to 4     | Tier 1 to 5                     |
+| Nexus Partner    | Chapter chair                   |
+| Stage-based room | Chapter                         |
+| Session          | Event (except in existing URLs) |
 
 A draft containing a retired term fails review automatically. No exceptions for "just this once."
 
@@ -52,5 +52,10 @@ No article generates without an approved lane in `campaign-lanes.md`. Keyword vo
 
 **Pass 1, structure:** lane assigned, terminology clean, every claim sourced, CTA matches `routing-rules.md`.
 **Pass 2, voice:** reads like a specific founder conversation, no filler, no em dashes, TL;DR present.
+Run the voice pass against `anti-slop.md`: the `slop.mjs` advisory check catches the mechanical
+Part-A patterns (throat-clearing, jargon, false agency, meta-commentary, vague declaratives); the
+reviewer judges the Part-B house-voice items (is the "name the decision" contrast used once or
+turned into a five-deep tic; are short fragments stacked). Score the five dimensions in
+`anti-slop.md`; below 35/50 the piece goes back for a voice revision.
 
 A draft that fails either pass returns to generation with the specific failure noted, not a generic "try again."

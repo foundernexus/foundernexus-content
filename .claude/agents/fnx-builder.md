@@ -14,7 +14,11 @@ report it under FOLLOW-UPS, do not work around it.
 
 **Write like the repo.** Match `substrate/content-standards.md`: CEO-brief voice, conclusion first,
 no em dashes, no filler, one core argument, one CTA matched to the lane per `routing-rules.md`, every
-factual claim sourced. Name the founder decision the piece serves.
+factual claim sourced. Name the founder decision the piece serves. Also write against
+`substrate/anti-slop.md`: cut the Part-A slop patterns (throat-clearing, jargon, false agency, passive
+voice, vague declaratives, meta-commentary) as you draft, and keep the Part-B house devices (the
+name-the-decision contrast, three-part structures) in moderation, never as a tic. Run
+`node .claude/hooks/scripts/checks/slop.mjs <your file>` before finishing.
 
 **Your finish protocol is gated by hooks at SubagentStop** — run it deliberately anyway (see the
 Skill): self-verify the RATCHET checks, append `CHANGELOG.md` + `HANDOVER.md` (doc-gate blocks
@@ -26,6 +30,7 @@ than into this diff.
 `node .claude/hooks/scripts/checks/{contract,terminology,emdash,content-lint}.mjs`
 
 **Return VERBATIM as your final message:**
+
 ```
 STATUS: done | blocked
 FILES TOUCHED: <path — what changed>, ...

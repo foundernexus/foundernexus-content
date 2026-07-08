@@ -39,8 +39,10 @@ node .claude/hooks/scripts/checks/terminology.mjs   # retired terms in content/ 
 node .claude/hooks/scripts/checks/emdash.mjs         # em dashes
 node .claude/hooks/scripts/checks/content-lint.mjs   # draft front-matter / lane / TL;DR
 ```
-No typecheck/test/build exist; these are the checks. `named-entity` + `links` are advisory; live-200,
-the dual-pass voice review, and sign-off are manual SMOKE steps.
+
+No typecheck/test/build exist; these are the checks. `named-entity`, `links`, and `slop` are advisory
+(`slop` = `substrate/anti-slop.md` Part-A mechanical patterns); live-200, the dual-pass voice review
+(which runs the full `anti-slop.md`, Part-A + Part-B), and sign-off are manual SMOKE steps.
 
 ## Drive it
 
