@@ -2,6 +2,27 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-08 (Vistage/Chief published; named-entity.mjs fixed) — user-approved
+
+- **Published the 2 held comparisons** (`founder-nexus-vs-vistage`, `founder-nexus-vs-chief`) live,
+  on the user's explicit approval. Recorded as "publish approved 2026-07-08 by Robroy (not a formal
+  Court/legal review)" in `keywords.yaml`, same framing as EO/Hampton/YPO. Both had already passed
+  QA's adversarial factual audit. Promoted to `content/blog/` with real covers, atomized to
+  `social/queue/` (competitor never named in the social body copy, verified by grep — same discipline
+  as the EO/Hampton derivatives). Tasks 011/012 archived, registry `archived`/pass. `content/drafts/`
+  is empty again. 22 blog posts live.
+- **Fixed `named-entity.mjs` (two gaps, user-approved hook edit):**
+  1. Added "Chief" to the NETWORKS list, so it now auto-flags (previously silent — the front-matter
+     `review_flag` had been the only automated gate for the Chief draft).
+  2. Taught the check to distinguish PUBLISHED surfaces (`content/blog/`, `social/queue/`) from the
+     pre-publish gate (`content/drafts/`). Published competitor content now emits an informational
+     note ("PUBLISHED surface; publish-time sign-off assumed, re-confirm only if legal status
+     changed") instead of the false "NO sign-off marker — needs Court + legal" alarm that fired
+     because the live blog schema drops the draft's `review_flag`. Drafts still get the real
+     pre-publish gate message. Verified: Chief now caught; the 3 live EO/Hampton/YPO posts show the
+     informational note; the (now-published) Vistage/Chief show it too.
+- Verified: contract/terminology/emdash/links clean repo-wide; `next build` clean at 52 static pages.
+
 ## 2026-07-08 (9-article batch: 7 published, 2 held; new Founder Nomination lane)
 
 - User asked for more articles across all four proposed directions. Scoped to 9 (tasks 006-014),

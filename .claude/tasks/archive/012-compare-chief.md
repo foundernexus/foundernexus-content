@@ -3,7 +3,7 @@
 - **ID:** 012
 - **Title:** Draft: FounderNexus vs Chief
 - **Risk:** standard
-- **Status:** blocked
+- **Status:** done
 - **Created:** 2026-07-08
 - **Owner:** orchestrator
 - **Origin:** `substrate/keywords.yaml` cluster `peer-advisory-alternatives`, keyword "FounderNexus vs Chief"

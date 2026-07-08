@@ -1,20 +1,40 @@
 ---
 title: "FounderNexus vs Vistage: An Honest Comparison"
-target_keyword: "FounderNexus vs Vistage"
 slug: "founder-nexus-vs-vistage"
-cluster: "peer-advisory-alternatives"
-lane: "linkedin-assisted-demand"
-asset_type: "comparison_page"
-status: "held_review"
-review_flag: "Names Vistage (a competitor). Needs Court + legal sign-off before publishing, per content-standards.md §6 and the comparison-page-playbook. Do not self-publish. Every Vistage claim is stated in general, neutral terms."
-primary_cta: "Talk with a Nexus Partner"
-route: "https://cal.com/karink/nexus-partner-intro-call"
-shortDescription: "A fair comparison of Vistage and FounderNexus. Who Vistage is genuinely right for, who FounderNexus is built for, and how to tell which room fits your decisions."
-publishedAt: "2026-07-08T18:10:00.000Z"
-updatedAt: "2026-07-08T18:10:00.000Z"
+shortDescription: "Vistage is one of the most established executive peer-advisory organizations there is. FounderNexus is built narrowly for venture-scale founders. How to tell which room fits."
+publishedAt: "2026-07-08T21:30:00.000Z"
+updatedAt: "2026-07-08T21:30:00.000Z"
+cover: "/images/blog/founder-nexus-vs-vistage/cover.png"
+coverAlt: "FounderNexus members in a standing conversation at an event"
 tags: ["Peer Advisory", "Comparison"]
 postType: "Comparison"
 author: "FounderNexus Team"
+
+seo:
+  metaTitle: "FounderNexus vs Vistage: An Honest Comparison | FounderNexus"
+  metaDescription: "A fair comparison of Vistage and FounderNexus: who Vistage's broad executive peer groups fit, who FounderNexus's stage-matched founder rooms are built for, and how to tell them apart."
+  canonicalURL: "https://foundernexus.com/blog/founder-nexus-vs-vistage"
+  ogTitle: "FounderNexus vs Vistage: An Honest Comparison"
+  ogDescription: "A broad executive peer group and coach for the long haul, or a stage-matched founder room convened around the call you're carrying."
+  ogType: "article"
+  shareImage: "/images/blog/founder-nexus-vs-vistage/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "FounderNexus vs Vistage: An Honest Comparison"
+    description: "A fair comparison of Vistage and FounderNexus: who Vistage's broad executive peer groups fit, who FounderNexus's stage-matched founder rooms are built for, and how to tell them apart."
+    image: "https://foundernexus.com/images/blog/founder-nexus-vs-vistage/cover.png"
+    datePublished: "2026-07-08T21:30:00.000Z"
+    dateModified: "2026-07-08T21:30:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/founder-nexus-vs-vistage"
 ---
 
 TL;DR: the decision here is which room you want in your corner, a broad executive peer group and coach for the long haul, or a stage-matched founder room convened around the specific call you're carrying. Vistage is one of the most established executive peer-advisory organizations there is, and for a lot of leaders it's a genuinely good home. This is the fair version: who Vistage fits, who FounderNexus is built for, and how to tell the two apart.

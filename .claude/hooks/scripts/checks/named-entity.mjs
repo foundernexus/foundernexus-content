@@ -18,6 +18,7 @@ const NETWORKS = [
   "EO",
   "Entrepreneurs' Organization",
   "Entrepreneurs Organization",
+  "Chief",
 ];
 
 function hasSignoff(text) {
@@ -32,15 +33,24 @@ function scan(files) {
     const text = read(f);
     if (!text) continue;
     const relp = rel(f);
+    // content/blog/ + social/queue/ are PUBLISHED surfaces: the sign-off decision
+    // was already made at publish time (recorded in keywords.yaml / CHANGELOG), and
+    // the live blog schema does not carry the draft's review_flag. So a competitor
+    // named there is informational (re-confirm only if legal status changed), NOT a
+    // pre-publish "needs sign-off" alarm. content/drafts/ is the pre-publish gate.
+    const published =
+      /^content\/blog\//.test(relp) || /^social\/queue\//.test(relp);
     const found = new Set();
     for (const n of NETWORKS) {
       const esc = n.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       if (new RegExp("\\b" + esc + "\\b", "i").test(text)) found.add(n.trim());
     }
     if (found.size) {
-      const mark = hasSignoff(text)
-        ? "has a sign-off/held-review marker — CONFIRM Court + legal actually signed before publishing"
-        : "NO sign-off marker — needs Court + legal per content-standards.md §6";
+      const mark = published
+        ? "PUBLISHED surface; publish-time sign-off assumed (re-confirm only if legal status changed)"
+        : hasSignoff(text)
+          ? "has a sign-off/held-review marker — CONFIRM Court + legal actually signed before publishing"
+          : "NO sign-off marker — needs Court + legal per content-standards.md §6";
       out.push(`${relp}: names ${[...found].join(", ")} (${mark})`);
     }
   }

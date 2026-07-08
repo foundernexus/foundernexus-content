@@ -39,12 +39,12 @@ clusters:
         url: /blog/founder-nexus-vs-hampton
       - term: "FounderNexus vs Vistage"
         intent: comparison
-        status: drafted # names Vistage; held_review pending Court+legal sign-off (QA passed 2026-07-08)
-        draft: content/drafts/compare-vistage.md
+        status: published # names Vistage; publish approved 2026-07-08 by Robroy (not a formal Court/legal review)
+        url: /blog/founder-nexus-vs-vistage
       - term: "FounderNexus vs Chief"
         intent: comparison
-        status: drafted # names Chief; held_review pending Court+legal sign-off (QA passed 2026-07-08)
-        draft: content/drafts/compare-chief.md
+        status: published # names Chief; publish approved 2026-07-08 by Robroy (not a formal Court/legal review)
+        url: /blog/founder-nexus-vs-chief
 
   - id: vc-fast-pass-signal
     pillar: judgment-infrastructure
