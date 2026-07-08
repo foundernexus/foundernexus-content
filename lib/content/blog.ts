@@ -42,7 +42,10 @@ interface PostFrontmatter {
   seo?: Partial<RawSeo>;
 }
 
-function mapSeo(raw: Partial<RawSeo> | undefined, fallbackCanonical: string): Seo {
+function mapSeo(
+  raw: Partial<RawSeo> | undefined,
+  fallbackCanonical: string,
+): Seo {
   return {
     metaTitle: raw?.metaTitle ?? "",
     metaDescription: raw?.metaDescription ?? "",
@@ -79,10 +82,15 @@ function fileToPost(fileName: string, index: number): Post {
     shortDescription: fm.shortDescription,
     publishedAt: fm.publishedAt ?? "",
     updatedAt: fm.updatedAt ?? fm.publishedAt ?? "",
-    cover: fm.cover ? { url: fm.cover, alternativeText: fm.coverAlt ?? null } : undefined,
+    cover: fm.cover
+      ? { url: fm.cover, alternativeText: fm.coverAlt ?? null }
+      : undefined,
     tags: mapTags(fm.tags),
     postType: fm.postType,
-    readingTime: fm.readingTime && fm.readingTime > 0 ? fm.readingTime : estimateReadingTime(content),
+    readingTime:
+      fm.readingTime && fm.readingTime > 0
+        ? fm.readingTime
+        : estimateReadingTime(content),
     author: fm.author,
     seo: mapSeo(fm.seo, `${SITE}/blog/${slug}`),
   };
@@ -112,7 +120,10 @@ export function getPosts(params?: {
 }): PostsResponse {
   const all = getAllPosts();
   const total = all.length;
-  const pageSize = Number(params?.pageSize) > 0 ? Number(params!.pageSize) : Math.max(1, total);
+  const pageSize =
+    Number(params?.pageSize) > 0
+      ? Number(params!.pageSize)
+      : Math.max(1, total);
   const page = Number(params?.page) > 0 ? Number(params!.page) : 1;
   const start = (page - 1) * pageSize;
   return {
@@ -132,6 +143,37 @@ export function getPost(slug: string): Post | null {
   return getAllPosts().find((p) => p.slug === slug) ?? null;
 }
 
+// How many posts render in the /blog listing grid per page.
+export const BLOG_PAGE_SIZE = 9;
+
+export interface BlogListing {
+  featured: Post | null; // the hero, only on page 1
+  items: Post[]; // grid posts for this page (excludes the featured post)
+  page: number;
+  pageCount: number;
+  total: number;
+}
+
+// Paginated listing. Page 1 pulls out the featured post as a hero and grids the
+// rest; pages 2+ have no hero and just grid their slice of the remaining posts.
+// pageCount is computed over the non-featured posts so the hero never double-counts.
+export function getBlogListing(page: number): BlogListing {
+  const all = getAllPosts();
+  const hub = getBlogHub();
+  const featured = hub?.featuredPost ?? all[0] ?? null;
+  const rest = featured ? all.filter((p) => p.slug !== featured.slug) : all;
+  const pageCount = Math.max(1, Math.ceil(rest.length / BLOG_PAGE_SIZE));
+  const p = Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
+  const start = (p - 1) * BLOG_PAGE_SIZE;
+  return {
+    featured: p === 1 ? featured : null,
+    items: rest.slice(start, start + BLOG_PAGE_SIZE),
+    page: p,
+    pageCount,
+    total: all.length,
+  };
+}
+
 export function getBlogHub(): BlogHub | undefined {
   if (!fs.existsSync(META_FILE)) return undefined;
   const { data } = matter(fs.readFileSync(META_FILE, "utf8"));
@@ -143,7 +185,9 @@ export function getBlogHub(): BlogHub | undefined {
   };
   const posts = getAllPosts();
   const featuredPost =
-    (fm.featuredPostSlug && posts.find((p) => p.slug === fm.featuredPostSlug)) || posts[0];
+    (fm.featuredPostSlug &&
+      posts.find((p) => p.slug === fm.featuredPostSlug)) ||
+    posts[0];
   if (!featuredPost) return undefined;
   return {
     title: fm.title ?? "",
