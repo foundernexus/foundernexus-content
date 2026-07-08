@@ -56,6 +56,9 @@ If you are deciding whether to change pricing, hire your first senior GTM leader
 
 That is why stage matters. A founder turning early traction into repeatability does not need the same room as one navigating board dynamics or a market expansion. The room should be organized around the decision the founder is actually carrying.
 
+![FounderNexus members at a community dinner, in conversation over the table](/images/blog/what-a-good-founder-room-looks-like/inline-1.png)
+_A room is built one real conversation at a time, not by list size._
+
 ## The three tests of a useful room
 
 A good founder room passes three tests.

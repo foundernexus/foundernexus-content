@@ -52,6 +52,19 @@ body {
   border-left-color: #007be4;
   color: #56646f;
 }
+.markdown-body img {
+  border-radius: 16px;
+  border: 1px solid #d3d6da;
+  margin: 2em 0 0.5em;
+}
+.markdown-body img + em {
+  display: block;
+  margin-top: -0.25em;
+  margin-bottom: 2em;
+  font-size: 0.85rem;
+  color: #56646f;
+  text-align: center;
+}
 
 /* ── Article components (from the FounderNexus article template set).
    Raw HTML embedded in a post's markdown body (rehype-raw) can use these classes

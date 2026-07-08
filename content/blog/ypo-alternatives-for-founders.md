@@ -65,6 +65,9 @@ A Stage 2 founder trying to turn traction into repeatability does not need the s
 
 That is the standard: the room should be organized around the decision the founder is actually carrying.
 
+![FounderNexus members gathered at an evening event](/images/blog/ypo-alternatives-for-founders/inline-1.png)
+_The room, not the roster, is the point._
+
 ## The right room has three tests
 
 A useful founder room passes three tests.

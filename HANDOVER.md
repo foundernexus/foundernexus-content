@@ -259,3 +259,168 @@ registry row -> `archived`/`pass`, `.active-task`/`.active-scope`/`.baseline-001
   task), documented repeatedly, not touched again without a specific request to rescope the check.
 - **Next moves:** the `vc-fast-pass-signal` keyword is approved but unwritten — natural next content
   task if more pipeline throughput is wanted. Otherwise nothing outstanding from this session.
+
+---
+
+## 2026-07-07 (task 002) — warm-intro-vs-cold-outreach draft built
+
+- **State:** `content/drafts/warm-intro-vs-cold-outreach.md` is drafted (status `in-review` after
+  this entry). Comparison piece for the `vc-fast-pass-signal` cluster, target keyword "warm intro to
+  VC vs cold outreach." Answers the trade-off a fundraising founder actually faces: spend limited
+  outreach hours on cold VC email or on building warm-introduction paths. Names that decision in the
+  first two sentences of the body. `lane: vc-fast-pass` (the allowed alternate lane per
+  `comparison-page-playbook.md`, since this comparison is specifically about fundraising access, not
+  the default `linkedin-assisted-demand`). Single primary CTA, "Explore whether FounderNexus fits
+  your stage," to the real, confirmed-live `https://www.foundernexus.com/registration`. 843 words.
+- **This task ran in parallel with sibling tasks 003/004/005** (same `vc-fast-pass-signal` cluster,
+  different keywords) in the same working directory, no worktree isolation. This entry describes
+  only task 002's file; see each sibling task's own Result/HANDOVER entry for its state.
+- **Self-verify:** `contract`, `terminology`, `emdash` all clean repo-wide; `content-lint` scoped
+  directly to this file returns zero output. Direct greps confirm zero em dashes and zero retired
+  terms in the file itself.
+- **No invented statistics:** every outreach/response claim is phrased as observation (e.g. "some
+  VCs genuinely read cold inbound," never a fabricated response-rate percentage or invented VC
+  quote), per this lane's specific exposure to that temptation (brief's Notes section flagged it).
+- **No sign-off gate:** no named competitor or network in this piece, so unlike the held EO/Hampton/
+  YPO drafts, no Court/legal review blocker applies.
+- **Not resolved, carried from every prior draft this session:** the CTA route
+  (`/registration`) itself is confirmed live, but this piece (like every drafted-not-published piece)
+  still needs the human dual-pass voice review and QA verdict before promotion to `content/blog/`.
+- **Next moves:** QA reviews task 002 against the brief's Definition of Done. If the parallel
+  siblings (003/004/005) also land clean, the `vc-fast-pass-signal` cluster goes from one unwritten
+  keyword to potentially all four drafted in a single batch, worth checking cluster status in
+  `substrate/keywords.yaml` once all four resolve.
+
+---
+
+## 2026-07-07 — Task 003: fast-pass-into-vc-conversations drafted
+
+- **New draft:** `content/drafts/fast-pass-into-vc-conversations.md`. Informational/mechanism piece
+  for the `vc-fast-pass-signal` cluster, target keyword "how founders get a fast-pass into VC
+  conversations." `lane: vc-fast-pass`, `asset_type: article`, `pillar: judgment-infrastructure`,
+  `funnel: application`, `status: drafted`. Single primary CTA, "Explore whether FounderNexus fits
+  your stage," to the confirmed-live `https://www.foundernexus.com/registration`. 1,103 words.
+- **This task ran in parallel with sibling tasks 002/004/005** (same `vc-fast-pass-signal` cluster,
+  different keywords) in the same working directory, no worktree isolation. This entry describes
+  only task 003's file; see each sibling task's own Result/HANDOVER entry for its state.
+- **Structure:** matches the `first-senior-hire-seed.md` decision-guide shape per the brief's
+  pointer, three named sub-decisions (what's true about your traction, who has standing to vouch
+  for you, is your story ready for the thirty minutes it earns), a pull-quote after the framing
+  section and again in the closing section, and a pre-ask checklist block.
+- **Self-verify:** `contract`, `terminology`, `emdash` all clean repo-wide (exit 0, zero output);
+  `content-lint` scoped directly to this file returns zero output.
+- **No invented statistics, no fabricated proof:** this is explicitly not a proof story per the
+  brief's Notes (do not invent a member's fundraising outcome). Every claim about how a warm intro
+  or a vouch functions is phrased as observation, no named individuals, no fabricated VC quotes.
+- **No sign-off gate:** no named competitor or network referenced, so no Court/legal review blocker
+  applies, unlike the held EO/Hampton/YPO drafts.
+- **Not resolved, carried from every prior draft this session:** the CTA route is confirmed live,
+  but this piece still needs the human dual-pass voice review and QA verdict before promotion to
+  `content/blog/`.
+- **Next moves:** QA reviews task 003 against the brief's Definition of Done. Registry row updated
+  to `in-review`. Brief's Result section filled with the same detail as above.
+
+---
+
+## 2026-07-07 (task 004) — what-gets-a-vc-to-read-your-deck draft built
+
+- **State:** `content/drafts/what-gets-a-vc-to-read-your-deck.md` is drafted (status `in-review`
+  after this entry). Informational article for the `vc-fast-pass-signal` cluster, target keyword
+  "what actually gets a VC to read your deck." Front-matter: `lane: vc-fast-pass`,
+  `cluster: vc-fast-pass-signal`, `asset_type: article`, `pillar: judgment-infrastructure`,
+  `funnel: application`, single `primary_cta` to the real, confirmed-live
+  `https://www.foundernexus.com/registration`. 837 words.
+- **Argument:** a deck is not evaluated on formatting, it is filtered by trust in the sender first.
+  Three-part breakdown of what earns the read (who forwarded it, what the sender is vouching for,
+  whether the sender has skin in being right), closing on the actual founder decision, who to get
+  to send the deck, not how to polish it. Sets up the warm-intro path implicitly; never pitches
+  FounderNexus's Fast-Pass mechanism by name in the body.
+- **This task ran in parallel with sibling tasks 002/003/005** (same `vc-fast-pass-signal` cluster,
+  different keywords) in the same working directory, no worktree isolation. This entry describes
+  only task 004's file; see each sibling task's own Result/HANDOVER entry for its state.
+- **Self-verify:** `contract`, `terminology`, `emdash` all exit 0 clean; `content-lint` scoped
+  directly to this file returns zero output. Direct greps confirm zero em dashes and zero retired
+  terms in the file itself.
+- **No invented statistics:** every claim about investor triage/referral behavior is phrased as
+  observation (e.g. "investors triage on exactly that signal," "investors remember who sent them
+  something worth their time"), no fabricated response times, percentages, or attention-span
+  numbers anywhere in the piece.
+- **No sign-off gate:** no named competitor or network in this piece, so no Court/legal review
+  blocker applies.
+- **Not resolved, carried from every prior draft this session:** the CTA route (`/registration`)
+  is confirmed live, but this piece still needs the human dual-pass voice review and QA verdict
+  before promotion to `content/blog/`.
+- **Next moves:** QA reviews task 004 against the brief's Definition of Done. If sibling tasks
+  002/003/005 also land clean, the `vc-fast-pass-signal` cluster goes from one unwritten keyword
+  to all four drafted in a single batch.
+
+---
+
+## 2026-07-07 (task 005) — cold-email-to-vcs draft built
+
+- **State:** `content/drafts/cold-email-to-vcs.md` drafted for cluster `vc-fast-pass-signal`,
+  keyword "cold email to VCs: does it ever work." 965 words. Front-matter: `lane: vc-fast-pass`,
+  `cluster: vc-fast-pass-signal`, `asset_type: article`, `pillar: judgment-infrastructure`,
+  `funnel: application`, `status: drafted`, single `primary_cta` pointing to
+  `https://www.foundernexus.com/registration` per the brief's explicit instruction (no ambiguity
+  to resolve here, unlike task 001's CTA-fallback question).
+- **This task ran in parallel with sibling tasks 002/003/004** (same `vc-fast-pass-signal` cluster,
+  different keywords) in the same working directory, no worktree isolation. Hit two CHANGELOG.md
+  write races from concurrent sibling appends mid-task; resolved by re-reading immediately before
+  each retry rather than forcing an overwrite. This entry describes only task 005's file; see each
+  sibling task's own Result/HANDOVER entry for its state.
+- **Content approach:** the brief flagged that `content/drafts/warm-intro-vs-cold-outreach.md`
+  (task 002) already covers the broad warm-vs-cold trade-off, so this piece deliberately does not
+  re-run that comparison. It assumes a founder has already decided to try cold email and answers a
+  narrower, mechanical question: under what specific conditions does a cold email actually get a
+  reply. Structure: reframe "does it work" around the real unit (a reply, not a term sheet), five
+  named conditions where it works (stage-and-thesis match, one piece of evidence instead of a
+  pitch, sub-150-word length, smallest possible ask, a real follow-up cadence), four named failure
+  modes (templated volume, firm mismatch, no evidence, one-and-done sending), and a closing
+  decision frame for where to spend the next hour of outreach effort.
+- **No invented statistics:** every claim is phrased as observation or attributed to "founders' own
+  reporting of what worked," never a fabricated success-rate number for cold email, per the brief's
+  explicit prohibition. No named individuals, no fabricated VC quotes, no named competitor or
+  network, so no Court/legal sign-off gate applies.
+- **Self-verify:** `contract`, `terminology`, `emdash` all clean repo-wide (exit 0, zero output);
+  `content-lint` scoped directly to `content/drafts/cold-email-to-vcs.md` returns zero output
+  (fully clean).
+- **Not resolved, carried from every prior draft this session:** this piece still needs the human
+  dual-pass voice review and a QA verdict before promotion to `content/blog/`. Word count (965)
+  sits comfortably inside the 800-1400 pillar range.
+- **Next moves:** QA reviews task 005 against the brief's Definition of Done, in particular the
+  differentiation-from-task-002 criterion. Registry row updated to `in-review`. Brief's Result
+  section filled with the same detail as above.
+
+---
+
+## 2026-07-07 (VC cluster shipped + /social + hero treatment + inline images) — session arc closed
+
+- **State:** `vc-fast-pass-signal` is fully drafted and published (4/4 keywords). Tasks 002-005
+  archived, QA verdicts recorded (2 of 4 needed a fix-then-ship pass — see CHANGELOG for exactly
+  what was wrong and how it was fixed: a sentence-order miss, a content-overlap pair, an unsourced
+  stat). `content/drafts/` is empty again. 13 posts live in `content/blog/`, 12 files in
+  `social/queue/`.
+- **New, permanent:** `/social` — an internal, `noindex` review surface for the social queue,
+  mirroring `/blog`. Self-contained (`lib/content/social.ts` + `app/social/`), one nav link added.
+  Delete both to remove it entirely; nothing else depends on it.
+- **New, permanent:** every cover image (index cards + post hero) now carries a navy tint +
+  gradient overlay (`hero-navy` token, `#061B2C`) for a moodier, more premium read. Applies
+  automatically to any future post's cover — no per-post work needed.
+- **New, permanent:** `.markdown-body img` + caption styling in `globals.css`. Any post that adds
+  `![alt](path)` followed by an italic caption line gets the rounded-corner/border/centered-caption
+  treatment automatically. 4 posts got a real inline photo this session
+  (`what-a-good-founder-room-looks-like`, `ypo-alternatives-for-founders`, `founder-decision-
+quality`, `what-gets-a-vc-to-read-your-deck`) — specifically the ones with no other visual break.
+  The other 9 posts already have `.pull`/`.checkbox`/table components and were left alone.
+- **Gotcha reconfirmed:** changing image files on disk (cover or inline) needs `rm -rf .next` before
+  the next build/preview, or Next's image-optimization cache serves stale bytes at the same path.
+  This bit a second time this session even after being documented once already — treat it as a
+  standing rule for any future image-swap work in this repo, not a one-off fix.
+- **Guardrail behavior worth remembering:** publishing content the user only asked to "generate" is
+  not authorized by that request alone, even mid-session, even following an otherwise-similar
+  earlier pattern. The classifier correctly blocked a publish attempt here; the fix was a direct
+  AskUserQuestion, not inferring consent from momentum. Don't assume today's "yes, publish X" covers
+  tomorrow's (or even ten-minutes-later's) different batch Y.
+- **Next moves:** none outstanding. Photo library still has unused images if more posts get covers
+  or inline art later (used roughly 17 of ~24 available across covers + inline so far).

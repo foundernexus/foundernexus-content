@@ -53,6 +53,9 @@ Advisors, friends, and fellow founders default to encouragement or generic patte
 
 The result is a founder who has talked to ten people about a hard call and still cannot point to a single conversation that changed their mind. That is the tell. Feedback that only confirms what you already believed is not feedback. It is company.
 
+![A FounderNexus speaker addressing the room from a seated position](/images/blog/founder-decision-quality/inline-1.png)
+_The right conversation changes the shape of the decision, not just your confidence in it._
+
 ## What good feedback on a hard decision actually looks like
 
 Good feedback on a founder-level decision has three properties, and it is worth checking any input against all three before weighting it.

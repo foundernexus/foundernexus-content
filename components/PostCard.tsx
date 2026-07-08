@@ -7,7 +7,11 @@ function formatDate(iso: string): string {
   const d = new Date(iso);
   return Number.isNaN(d.getTime())
     ? ""
-    : d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+    : d.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
 }
 
 export default function PostCard({ post }: { post: Post }) {
@@ -25,6 +29,14 @@ export default function PostCard({ post }: { post: Post }) {
             className="object-cover"
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           />
+          <div
+            className="absolute inset-0 bg-hero-navy/45 mix-blend-multiply"
+            aria-hidden
+          />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-hero-navy/40 via-transparent to-hero-navy/10"
+            aria-hidden
+          />
         </div>
       )}
       <div className="p-5">
@@ -37,7 +49,9 @@ export default function PostCard({ post }: { post: Post }) {
           {post.title}
         </h3>
         {post.shortDescription && (
-          <p className="mt-2 text-sm text-muted line-clamp-3">{post.shortDescription}</p>
+          <p className="mt-2 text-sm text-muted line-clamp-3">
+            {post.shortDescription}
+          </p>
         )}
         <div className="mt-4 text-xs text-muted">
           {formatDate(post.publishedAt)} · {post.readingTime} min read

@@ -45,7 +45,11 @@ function formatDate(iso: string): string {
   const d = new Date(iso);
   return Number.isNaN(d.getTime())
     ? ""
-    : d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+    : d.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -59,7 +63,12 @@ export default async function BlogPostPage({ params }: Props) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE}/blog` },
-      { "@type": "ListItem", position: 3, name: post.title, item: `${SITE}/blog/${post.slug}` },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `${SITE}/blog/${post.slug}`,
+      },
     ],
   };
 
@@ -70,13 +79,18 @@ export default async function BlogPostPage({ params }: Props) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(post.seo.structuredData).replace(/</g, "\\u003c"),
+            __html: JSON.stringify(post.seo.structuredData).replace(
+              /</g,
+              "\\u003c",
+            ),
           }}
         />
       )}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd).replace(/</g, "\\u003c") }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLd).replace(/</g, "\\u003c"),
+        }}
       />
 
       <nav className="text-sm text-muted mb-8">
@@ -110,6 +124,14 @@ export default async function BlogPostPage({ params }: Props) {
             className="object-cover"
             sizes="(min-width: 1024px) 1024px, 100vw"
             priority
+          />
+          <div
+            className="absolute inset-0 bg-hero-navy/45 mix-blend-multiply"
+            aria-hidden
+          />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-hero-navy/40 via-transparent to-hero-navy/10"
+            aria-hidden
           />
         </div>
       )}

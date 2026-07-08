@@ -2,6 +2,136 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-07 (VC Fast-Pass cluster published; /social review surface; premium hero treatment; inline images)
+
+- **VC Fast-Pass cluster complete.** User asked to generate articles for the `vc-fast-pass-signal`
+  keyword set; expanded it from 1 to 4 keywords (user-approved via AskUserQuestion), dispatched 4
+  parallel `fnx-builder` agents (tasks 002-005, no worktree isolation — each builder explicitly
+  told to self-verify directly rather than rely on hooks, since `.active-task` can't represent 4
+  concurrent tasks), then 4 parallel `fnx-qa` agents plus a targeted cross-check for content
+  overlap. QA found 3 real issues: task 003's decision-naming sentence landed in sentences 3-4 of
+  the TL;DR instead of 1-2 (fixed by reordering); tasks 003/004 both independently derived the same
+  "credibility transfer" mechanism as their core argument (fixed by narrowing 004 to an inbox-triage
+  - sourcing-sequencing angle, leaving 003 to own the "three decisions to earn a vouch" framework);
+    task 005 had an unsourced "roughly doubles reply odds" quantified claim (fixed by rewording to a
+    qualitative, unquantified observation). Re-verified clean after fixes.
+  * First publish attempt was correctly blocked by the auto-mode classifier: the user asked to
+    "generate" articles, not publish them — publishing needed a separate explicit confirmation
+    (asked via AskUserQuestion, user said yes). 3 of 4 files had already been written to
+    `content/blog/` before the block fired; left as-is once confirmed rather than reverting.
+  * Published: `warm-intro-vs-cold-outreach.md`, `fast-pass-into-vc-conversations.md`,
+    `what-gets-a-vc-to-read-your-deck.md`, `cold-email-to-vcs.md`. Real cover photos (boardroom/
+    speaker/dinner event photography), `keywords.yaml` updated to `published`, atomized to
+    `social/queue/` (4 new derivative files), tasks 002-005 archived with recorded QA verdicts.
+- **New `/social` section** (`app/social/page.tsx`, `app/social/[slug]/page.tsx`,
+  `lib/content/social.ts`), an internal review surface for `social/queue/*.md` derivative drafts,
+  mirroring `/blog`'s structure. `noindex, nofollow` on both routes (internal, never public search-
+  indexed); title auto-resolved from the matching published post via `getPost()`; front-matter
+  metadata rendered is deliberately minimal (source/CTA/route/lane only — `review_flag` internal
+  notes stay in the source file, not shown on the page, since anyone with the URL can reach this
+  unauthenticated). Added a "Social" link to the header nav alongside "Blog". Self-contained and
+  easily removable per the user's own framing ("this is all internal and we can remove it anytime").
+- **Premium hero treatment.** Added a `hero-navy` Tailwind color (`#061B2C`, the design system's own
+  "rich navy, dark surfaces, event hero" token) and a two-layer overlay (flat 45% multiply tint +
+  a subtle top-to-bottom gradient) on every cover image, in both `PostCard.tsx` (blog index cards)
+  and `app/blog/[slug]/page.tsx` (post hero). Verified via computed-style inspection
+  (`rgba(6,27,44,0.45)` + `mix-blend-mode: multiply`), not just visual guess, since the effect can
+  be subtle in a compressed screenshot depending on the source photo's brightness.
+- **Inline images.** Added real event photos (not just cover art) to the 4 posts that had no other
+  visual break (no `.pull`/`.checkbox`/`.callout`/table components): `what-a-good-founder-room-
+looks-like`, `ypo-alternatives-for-founders`, `founder-decision-quality`,
+  `what-gets-a-vc-to-read-your-deck`. Each inserted at a natural section break with an italic
+  caption. Added `.markdown-body img` + `img + em` caption styling to `globals.css` (rounded
+  corners, border, centered caption) so any future inline image gets this treatment automatically.
+  The other 9 posts already have `.pull`/`.checkbox`/table components breaking up their text, so
+  were left as-is rather than force-fitting a photo in.
+- **Gotcha, recurrence:** the Next.js image-optimization cache issue from the earlier cover-photo
+  batch recurred conceptually — not the exact same bug, but confirms `rm -rf .next && npm run build`
+  should be the default rebuild pattern any time cover/inline image files change on disk, not just
+  a one-off fix for that earlier incident.
+- Verified: `contract`/`terminology`/`emdash`/`links` all clean repo-wide. `next build` clean at 34
+  static pages (13 blog posts + 12 social queue pages + statics). Screenshot- and DOM-verified: hero
+  overlay computed styles, inline image rendering with caption, no console errors on any checked page.
+
+## 2026-07-07 (task 005) — cold-email-to-vcs draft built
+
+- **New draft:** `content/drafts/cold-email-to-vcs.md` for cluster `vc-fast-pass-signal`, keyword
+  "cold email to VCs: does it ever work." 965 words. Answers the question mechanically, not
+  philosophically: cold email works under specific, nameable conditions (stage-and-thesis-matched
+  firm, one piece of evidence instead of a pitch, sub-150-word length, smallest-possible ask, a real
+  follow-up cadence), and fails reliably outside them (templated volume, firm mismatch, no evidence,
+  one-and-done sending). No invented statistics; every claim is phrased as observation or attributed
+  to founders' own reporting of what worked, never a fabricated success-rate number for cold email.
+- **Differentiated from task 002** (`warm-intro-vs-cold-outreach.md`), which already covers the
+  broad warm-vs-cold trade-off and where to spend outreach hours. This piece assumes a founder has
+  already decided to try cold email and goes one layer deeper: the specific mechanics that separate
+  a cold email that gets a reply from one that gets archived. No side-by-side warm/cold comparison
+  table repeated here.
+- **Front-matter:** `lane: vc-fast-pass`, `cluster: vc-fast-pass-signal`, `asset_type: article`,
+  `status: drafted`, single `primary_cta` pointing to `https://www.foundernexus.com/registration`
+  per the brief's explicit instruction.
+- Verified: `contract`/`terminology`/`emdash` clean repo-wide; `content-lint` scoped to this file
+  returns zero output (fully clean).
+
+## 2026-07-07 (task 004) — what-gets-a-vc-to-read-your-deck draft built
+
+- **New draft:** `content/drafts/what-gets-a-vc-to-read-your-deck.md` for the `vc-fast-pass-signal`
+  cluster, target keyword "what actually gets a VC to read your deck." `lane: vc-fast-pass`,
+  `asset_type: article`, `primary_cta: "https://www.foundernexus.com/registration"`. 837 words.
+- **Argument:** a deck gets read because of who sent it and what that sender is vouching for, not
+  because of formatting or polish. Names the founder decision, who to get to send the deck rather
+  than how to improve it, in the TL;DR and reinforces it in the first body sentence. Three-part
+  breakdown of what actually earns the read (who forwarded it, what the sender is vouching for,
+  whether the sender has skin in being right), then closes on the sourcing decision a fundraising
+  founder actually needs to make. Implicitly sets up the warm-intro path without naming
+  FounderNexus's Fast-Pass mechanism as a pitch in the body.
+- **No invented statistics:** every claim about investor triage behavior is phrased as observation
+  (e.g. "investors triage on exactly that signal," "investors remember who sent them something
+  worth their time"); no fabricated numbers, timings, or percentages anywhere in the piece.
+- **Self-verify clean on this file:** `contract`, `terminology`, `emdash` all exit 0 with no
+  repo-wide new findings; `content-lint` scoped to this file returns zero output.
+
+## 2026-07-07 (task 003: fast-pass into VC conversations, drafted)
+
+- **New draft:** `content/drafts/fast-pass-into-vc-conversations.md`, targeting the unwritten
+  `vc-fast-pass-signal` keyword "how founders get a fast-pass into VC conversations." Front-matter:
+  `lane: vc-fast-pass`, `cluster: vc-fast-pass-signal`, `pillar: judgment-infrastructure`,
+  `funnel: application`, `status: drafted`, single `primary_cta` routed to
+  `https://www.foundernexus.com/registration` (matches the resolution used across every other
+  published piece this session).
+- Informational/mechanism piece, not a proof story: explains why a trusted vouch carries more
+  signal than volume outreach or a name-drop, and structures the underlying founder decision as
+  three named sub-decisions (traction fact pattern, who has standing to vouch, is the story ready),
+  a pull-quote after each key claim, and a pre-ask checklist block, matching the
+  `first-senior-hire-seed.md` decision-guide shape per the brief's structure pointer.
+  No invented statistics, no fabricated VC quotes, no named individuals or member outcomes; every
+  claim is phrased as observation about how referral trust works.
+- 1,103 words, within the 800-1400 pillar-article range.
+- Verified clean: `contract`, `terminology`, `emdash` (repo-wide) and `content-lint` (scoped to this
+  file) all exit 0, zero output.
+
+## 2026-07-07 (task 002) — warm-intro-vs-cold-outreach draft built
+
+- **New draft:** `content/drafts/warm-intro-vs-cold-outreach.md` for the `vc-fast-pass-signal`
+  cluster, target keyword "warm intro to VC vs cold outreach." `lane: vc-fast-pass` (allowed
+  alternate lane per `comparison-page-playbook.md` since the comparison is specifically about
+  fundraising access), `asset_type: comparison_page`, `primary_cta: "Explore whether FounderNexus
+fits your stage"` routed to the real, confirmed-live `https://www.foundernexus.com/registration`
+  (same resolution used for every prior piece this session; no dedicated `/fast-pass` page exists).
+  843 words.
+- **Structure:** adapted `founder-nexus-vs-eo.md`'s honest-both-sides shape (fair case for the
+  alternative, then the differentiated case, side-by-side table, how to decide) without copying its
+  comparison-table format literally, since there's no single named alternative here, cold outreach
+  is a channel, not a competitor. Names the founder's actual decision, where to spend limited
+  outreach hours, cold email or warm-path building, in the first two sentences of the body.
+- **No invented statistics:** every claim about outreach/response behavior is phrased as observation
+  (e.g. "some VCs genuinely read cold inbound," "a deck arriving via a trusted introduction gets read
+  differently") with no fabricated response rates and no invented VC quotes.
+- **No sign-off gate:** no named competitor or network in this piece, unlike the held EO/Hampton/YPO
+  drafts, so no Court/legal review blocker applies here.
+- **Self-verify:** `contract`, `terminology`, `emdash` clean repo-wide; `content-lint` clean when
+  scoped directly to this file (zero output on all four).
+
 ## 2026-07-07 (cleanup + atomization)
 
 - **keywords.yaml cleanup:**

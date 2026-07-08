@@ -17,6 +17,7 @@ const config: Config = {
         accent: "#007BE4", // primary action blue (blue-500)
         "accent-soft": "#0072BA", // action hover (blue-600)
         "accent-ink": "#FFFFFF", // text on accent-colored surfaces
+        "hero-navy": "#061B2C", // rich navy hero-image tint (tokens/colors.css: "dark surfaces, event hero")
       },
       fontFamily: {
         sans: [
