@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/cold-email-to-vcs"
@@ -43,7 +47,7 @@ The question a fundraising founder actually needs answered isn't "does cold emai
 
 ## What "working" means for a cold email
 
-Before judging whether cold email works, define what a win looks like. A cold email's job is not to raise money. It's to get a reply that leads to a first call. Everything downstream of that call depends on the business, the market, and the deck, not the email. So the honest question narrows to: under what conditions does a cold email reliably get a reply worth having.
+Before judging whether cold email works, define what a win looks like. A cold email's job is to get a reply that leads to a first call, nothing more. It won't raise the money. Everything downstream of that call depends on the business, the market, and the deck, not the email. So the honest question narrows to: under what conditions does a cold email reliably get a reply worth having.
 
 That reframe matters because founders who conclude "cold email doesn't work" are often judging it against the wrong outcome, a term sheet, instead of the outcome it can actually produce, a first conversation.
 
@@ -61,9 +65,9 @@ That reframe matters because founders who conclude "cold email doesn't work" are
 
 ## Where it reliably fails
 
-**Templated volume.** The moment a VC recognizes the shape of a template, and most have seen thousands, the email reads as a sign the founder didn't do the one thing that would have made it work: research. Volume without targeting doesn't approximate a good warm intro. It approximates spam.
+**Templated volume.** The moment a VC recognizes the shape of a template, and most have seen thousands, the email reads as a sign the founder didn't do the one thing that would have made it work: research. Volume without targeting reads as spam, and a VC's inbox already sorts it there.
 
-**Firm mismatch.** A fund that only writes Series B checks getting a pre-seed cold email isn't going to reply "wrong stage, but let me help." They're going to archive it. The reply rate on mismatched cold email isn't low. It's close to zero, and no amount of writing skill fixes a targeting problem.
+**Firm mismatch.** A fund that only writes Series B checks getting a pre-seed cold email isn't going to reply "wrong stage, but let me help." They're going to archive it. The reply rate on mismatched cold email sits close to zero, and no amount of writing skill fixes a targeting problem.
 
 **No evidence, all narrative.** "We're passionate founders solving a massive problem" contains zero information a VC can act on. It can't be verified, compared, or pattern-matched against anything they've seen work. It reads as noise regardless of how true it is.
 
@@ -71,7 +75,7 @@ That reframe matters because founders who conclude "cold email doesn't work" are
 
 ## What this means for where you spend the hour
 
-If a founder has an hour of outreach time tonight, the cold-email-specific question isn't whether to write a cold email. It's whether they can currently produce all four conditions above for a specific, well-matched fund: real targeting, one piece of evidence, a short ask, a follow-up plan already decided before the first email goes out. If yes, that hour is well spent on a cold email. If any of those four is missing, the better use of the hour is usually fixing the missing condition first, building the target list, finding the evidence, deciding the follow-up cadence, rather than sending a weaker email now and hoping.
+If a founder has an hour of outreach time tonight, the cold-email-specific test is whether they can currently produce all four conditions above for a specific, well-matched fund: real targeting, one piece of evidence, a short ask, a follow-up plan already decided before the first email goes out. If yes, that hour is well spent on a cold email. If any of those four is missing, the better use of the hour is usually fixing the missing condition first, building the target list, finding the evidence, deciding the follow-up cadence, rather than sending a weaker email now and hoping.
 
 Cold email to VCs isn't a channel to write off, and it isn't a shortcut either. It works in proportion to how much of the qualifying work happens before the send button, which is exactly the discipline a fundraising founder needs regardless of which channel they're using.
 

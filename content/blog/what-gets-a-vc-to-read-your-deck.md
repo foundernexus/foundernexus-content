@@ -47,7 +47,7 @@ A founder polishing slides the night before an outreach push is solving the wron
 
 ## What an inbox is actually doing
 
-An investor's inbox is not a queue that eventually gets to everyone. It is a triage system, and the sorting happens before content is read. In practice that comes down to one thing: who sent it, and whether that sender's judgment is already trusted. A deck with no trusted source attached fails that sort before anyone reaches slide two, no matter how the slides read.
+An investor's inbox triages rather than works through a queue that eventually reaches everyone, and the sorting happens before content is read. In practice that comes down to one thing: who sent it, and whether that sender's judgment is already trusted. A deck with no trusted source attached fails that sort before anyone reaches slide two, no matter how the slides read.
 
 This is why two founders with comparable companies and comparable decks get wildly different outcomes from the same outreach effort. The deck is nearly identical. The path it traveled is not.
 
@@ -68,7 +68,7 @@ Founders typically finish the deck, then start looking for someone to send it. T
 
 Founders who get this right start building the relevant relationships in the room before they need anything from them, well ahead of the fundraise, so that by the time the deck exists, the question is not "who could I ask" but "who already knows my work well enough to answer for it." That sequencing, relationship first, deck second, ask last, is the actual lever, and it is a scheduling decision as much as a networking one.
 
-The deck still matters once it is open. But the founder decision that determines whether it gets opened at all is a sourcing decision, made well before the deck is finished, about who is willing to put their name on it.
+The deck still matters once it is open. But whether it gets opened at all comes down to sourcing: deciding, well before the deck is finished, who is willing to put their name on it.
 
 <div class="softcta">
 <p><strong>Want to see where that kind of trusted introduction actually comes from?</strong> Talk it through with a Senior Nexus Partner. Twenty minutes, no pitch.</p>

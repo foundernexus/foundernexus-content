@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/cofounder-conflict"
@@ -39,13 +43,13 @@ seo:
 
 TL;DR: the decision in front of you is not whether you and your co-founder are fighting. It's whether this is a fixable problem with roles, communication, or expectations, or a fundamental disagreement about where the company is going. Most conflict is the first kind and gets treated like the second. Some is the second kind and gets papered over as the first. Naming which one you're actually in is the whole job.
 
-The decision in front of you is not whether you can keep working together. It's whether the thing you disagree about is fixable inside the partnership, or is a disagreement about the partnership itself. Almost every founder in a hard stretch asks the first question first, when the second is the one that actually determines what to do. Those two problems look nearly identical from the inside, especially when you're tired, and they call for opposite responses.
+The decision in front of you is whether the thing you disagree about is fixable inside the partnership, or is a disagreement about the partnership itself. That is a different question from whether you can keep working together, and almost every founder in a hard stretch asks the working-together one first, when the other is the one that actually determines what to do. Those two problems look nearly identical from the inside, especially when you're tired, and they call for opposite responses.
 
 ## The distinction that actually matters
 
 Fixable friction is conflict about how. Who owns which decisions. How you communicate under pressure. Whether one of you feels the workload has drifted out of balance. How much runway the company should burn before the next raise. These are real, they can be corrosive, and left unaddressed they can end a company. But they are problems with the operating relationship, and operating relationships can be renegotiated.
 
-A fundamental split is conflict about what and where. You no longer agree on what the company is for, who it serves, or what winning looks like. One of you wants a venture-scale outcome and the other has quietly decided they want a smaller, more controllable business. One of you believes the current strategy is the company and the other believes it was a phase. That is not a communication problem wearing a disguise. It's a disagreement about the destination, and no amount of better meetings fixes a disagreement about where you're going.
+A fundamental split is conflict about what and where. You no longer agree on what the company is for, who it serves, or what winning looks like. One of you wants a venture-scale outcome and the other has quietly decided they want a smaller, more controllable business. One of you believes the current strategy is the company and the other believes it was a phase. Underneath the poor communication is a disagreement about the destination, and no amount of better meetings fixes a disagreement about where you're going.
 
 <div class="pull">Friction is a fight about how you run the company. A split is a fight about what company you're running. You can renegotiate the first inside the partnership. The second, you usually can't, because there's no shared company left to renegotiate over.</div>
 
@@ -82,7 +86,7 @@ Enduring a conflict is not the same as trying to resolve it. Before you treat a 
 
 If the conflict is about roles and trust is intact, the work is renegotiation, and it's worth doing deliberately rather than hoping it resolves itself. Redraw who owns what. Put the imbalance on the table before it hardens into resentment. Get the hard conversation out of your head and into the room.
 
-If the conflict is about direction, and a direct conversation confirms you want different companies, then the kindest and most rational move is usually to stop treating that as a failure to communicate and start treating it as a real decision about the future of the business. A split handled early, while there's still goodwill, protects the company and both founders far better than one dragged out until the goodwill is gone. The worst outcome isn't splitting. It's spending a year pretending a direction problem is a communication problem while the company absorbs the cost of both of you rowing against each other.
+If the conflict is about direction, and a direct conversation confirms you want different companies, then the kindest and most rational move is usually to stop treating that as a failure to communicate and start treating it as a real decision about the future of the business. A split handled early, while there's still goodwill, protects the company and both founders far better than one dragged out until the goodwill is gone. The worst outcome here is spending a year pretending a direction problem is a communication problem while the company absorbs the cost of both of you rowing against each other. That is far more damaging than the split itself.
 
 <div class="pull">The most useful input here isn't a framework for hard conversations. It's a founder who has sat exactly where you are, made the call to repair or to part, and can tell you plainly which signals turned out to matter and which were just the noise of a hard week.</div>
 

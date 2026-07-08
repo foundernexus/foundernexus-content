@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/who-belongs-in-a-founder-room"
@@ -39,7 +43,7 @@ seo:
 
 TL;DR: fit is not about whether a founder is impressive. It's about whether this specific person, in this specific room, would sharpen the decisions on the table or just widen the roster. Three tests answer that: are they at a close enough stage, would they bring a live decision, and would they protect the room's candor instead of spending it.
 
-When you think about nominating someone, the real question is not whether they're a good founder. It's whether this person makes this room better, or just bigger. Those are different decisions, and the second one is the one that quietly degrades a room over time.
+When you think about nominating someone, put aside whether they're a good founder. What you actually need to know is whether this person makes this room better, or just bigger. Those are different decisions, and the second one is the one that quietly degrades a room over time.
 
 A room does not get worse because someone weak joins. It gets worse because someone who doesn't fit joins and nobody wanted to say so. The seat gets filled, the conversation drifts a little wider, the candor drops a notch, and no single nomination looks like the cause. Fit is the thing that protects against that. So before you put a name forward, run the founder you have in mind against the room you actually have, not the room in the abstract.
 
@@ -55,7 +59,7 @@ The honest version of this test is uncomfortable. Sometimes the founder you most
 
 ## Test two: would they bring a live decision, or a highlight reel
 
-A founder room is not a discussion club, and the second test flushes out the difference. Would this person show up with a decision they're actually carrying, or with a version of themselves they want the room to see?
+A founder room runs on real decisions, not conversation, and the second test flushes out who brings which. Would this person show up with a decision they're actually carrying, or with a version of themselves they want the room to see?
 
 Some founders are genuinely useful in every setting except the one that requires them to be exposed. They give sharp advice and never bring a real problem. In a networking context that's fine. In a decision room it's a slow leak, because the room runs on founders putting live, unresolved calls on the table and letting peers pressure-test them. One person who only ever performs teaches everyone else that performing is what the room is for.
 
@@ -63,7 +67,7 @@ The test is simple to apply. Picture the founder in a session where it's their t
 
 ## Test three: would they protect the candor or spend it
 
-The third test is the one that matters most and gets checked least. A room's most valuable asset is candor, and candor is fragile. Would this founder protect it, or would their presence make everyone else a little more careful about what they say?
+The third test is the one that matters most and gets checked least. A room's most valuable asset is candor, and candor is fragile. Ask yourself whether this founder's presence would make everyone else a little more careful about what they say.
 
 Candor drops for specific reasons. Someone competitive with a person already in the room. Someone who might repeat what they heard. Someone whose status makes others perform instead of confess. Someone who treats other founders' disclosures as material rather than trust. None of these founders is a bad person. They're just a bad fit for this room, and the cost lands on everyone else, quietly, in the form of slightly safer conversations.
 

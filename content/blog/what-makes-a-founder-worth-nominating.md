@@ -43,9 +43,9 @@ seo:
 
 TL;DR: a good nomination is not the founder you like most or owe a favor to. It is the founder whose presence would make the room sharper for everyone in it. Nominate when someone would raise the standard of the conversation. Hold when the honest answer is that you just want to do them a kindness.
 
-So here is the decision in front of you: nominate this founder, or not. The trap is answering it as a question about the relationship, when it is really a question about the room. Nominating someone you like is easy and mostly harmless to you. It is not harmless to the eight other founders whose next hard decision depends on who is sitting at the table with them.
+So here is the decision in front of you: nominate this founder, or not. The trap is answering it as a question about the relationship when the room is what is actually at stake. Nominating someone you like is easy and mostly harmless to you. It costs the eight other founders whose next hard decision depends on who is sitting at the table with them.
 
-A stage-based room works the way [a good founder room works](/blog/what-a-good-founder-room-looks-like): it is judged by whether it sharpens the decision in front of a founder, not by the size of the network or the logos in it. That means every seat is load-bearing. A nomination is not an invitation to a party. It is a vote about whose pattern recognition the rest of the room will lean on when a decision is expensive to get wrong.
+A stage-based room works the way [a good founder room works](/blog/what-a-good-founder-room-looks-like): it is judged by whether it sharpens the decision in front of a founder, not by the size of the network or the logos in it. That means every seat is load-bearing. A nomination is a vote about whose pattern recognition the rest of the room will lean on when a decision is expensive to get wrong, not an invitation to a party.
 
 ## The nomination test
 
@@ -65,13 +65,13 @@ First, stage relevance. The room is organized around the decisions its founders 
 
 Second, contribution over consumption. The strongest members show up to make other founders' decisions better, not only to mine the room for their own. You usually already know which kind someone is. Ask yourself whether, when this person hears a peer's hard problem, their instinct is to help think it through or to redirect to their own situation. A room full of takers quietly dies. A room of contributors compounds.
 
-Third, candor they can be trusted with. A good room protects candor as part of the product, not as a nicety. The founder you nominate will hear things said plainly that would never be said on a stage or a group chat. The question is not only whether they will keep it confidential. It is whether they will match it, whether they will tell the truth in return when a peer is about to make an expensive mistake.
+Third, candor they can be trusted with. A good room protects candor as part of the product, not as a nicety. The founder you nominate will hear things said plainly that would never be said on a stage or a group chat. Keeping it confidential is table stakes. What you are really testing is whether they will match it, whether they will tell the truth in return when a peer is about to make an expensive mistake.
 
 ## The founders to hold on
 
 It is worth naming the ones not to nominate, because they are the easy yeses.
 
-The founder who would be flattered to be asked, but is a stage or two off from the room's live decisions. The impressive name whose presence would add wattage without adding relevance. The friend you want to do a solid for. The founder who is clearly looking for access or deal flow more than judgment. None of these are bad founders. They are simply the wrong answer to the specific question the room is asking.
+The founder who would be flattered to be asked, but is a stage or two off from the room's live decisions. The impressive name whose presence would add wattage without adding relevance. The friend you want to do a solid for. The founder who is clearly looking for access or deal flow more than judgment. Every one of them is a fine founder and the wrong answer to the specific question the room is asking.
 
 <div class="checkbox">
 <h3>Before you nominate, sit with these</h3>

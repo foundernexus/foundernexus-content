@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/fast-pass-into-vc-conversations"
@@ -39,7 +43,7 @@ seo:
 
 TL;DR: the founder decision underneath a VC fast-pass is not "who do I know who can make an intro." It is what would need to be true about your story, your traction, and your relationships before anyone with a reputation to protect would put their name behind you. A fast-pass is not a favor a well-connected friend grants; it is what happens when a trusted third party stakes their own credibility on a specific claim about your company.
 
-The real question is not who do you know who can make an introduction. It is what would need to be true about you before someone with a reputation to protect would risk it. Most founders skip that question and treat the warm intro as a networking problem instead: meet more people, collect more contacts, ask more generously, and eventually someone forwards your deck to a partner who actually reads it. That gets you a bigger list. It rarely gets you a faster path, because the thing that makes an intro work was never the intro itself.
+The question that actually decides a fast-pass is what would need to be true about you before someone with a reputation to protect would risk it. Most founders skip that question and treat the warm intro as a networking problem instead: meet more people, collect more contacts, ask more generously, and eventually someone forwards your deck to a partner who actually reads it. That gets you a bigger list. It rarely gets you a faster path, because the thing that makes an intro work was never the intro itself.
 
 ## Why a name-drop is not the same as a warm intro
 
@@ -53,7 +57,7 @@ This is why volume outreach and warm intros are not the same activity scaled dif
 
 ## Decision one: what is actually true about your traction right now
 
-Before anyone can vouch for you, they need something concrete to vouch for. Not a vision. A fact pattern: a specific number that moved, a specific customer who renewed, a specific problem you solved that most companies at your stage have not solved yet. Founders who get fast-passed tend to be able to state that fact pattern in one sentence, unprompted.
+Before anyone can vouch for you, they need something concrete to vouch for, and a vision does not qualify. They need a fact pattern: a specific number that moved, a specific customer who renewed, a specific problem you solved that most companies at your stage have not solved yet. Founders who get fast-passed tend to be able to state that fact pattern in one sentence, unprompted.
 
 The founders who struggle here are usually not short on progress. They are short on a clear read of which piece of their progress is actually the compelling one. That read requires some distance from the day-to-day, which is exactly what is hardest to get by yourself.
 
@@ -70,7 +74,7 @@ This is the part founders most often get backward. They look for the person with
 
 ## Decision three: is your story ready to survive the thirty minutes it earns
 
-A fast-pass buys you attention. It does not buy you a check. If the intro works and you get the call, the only thing that matters next is whether your story holds up once someone is actually listening closely. A tight story is not a longer pitch. It is a shorter one: the problem, why now, why you, and the one number that proves you are onto something.
+A fast-pass buys you attention. It does not buy you a check. If the intro works and you get the call, the only thing that matters next is whether your story holds up once someone is actually listening closely. A tight story is shorter than the pitch you think you owe them: the problem, why now, why you, and the one number that proves you are onto something.
 
 Founders who burn a hard-earned intro usually do it the same way: they treat the warm path as the finish line instead of the starting gate, and show up with the same scattered pitch they would have given a cold contact. The intro got them in the room. It did not make the thirty minutes any less unforgiving.
 
@@ -87,7 +91,7 @@ Founders who burn a hard-earned intro usually do it the same way: they treat the
 
 ## The mechanism, not the shortcut
 
-A fast-pass into VC conversations is not a hack around the slow way of building relationships and traction. It is what the slow way looks like once it compounds: real progress, witnessed by people with real standing, communicated in a story tight enough to survive scrutiny. Founders who chase the intro before the substance usually get the intro once and never again, because the person who vouched for them learns fast whether that was a good bet.
+A fast-pass into VC conversations is what the slow way of building relationships and traction looks like once it compounds, not a hack around it: real progress, witnessed by people with real standing, communicated in a story tight enough to survive scrutiny. Founders who chase the intro before the substance usually get the intro once and never again, because the person who vouched for them learns fast whether that was a good bet.
 
 <div class="pull">The fastest path into a VC's calendar is being the kind of company someone with a reputation to protect is eager to describe.</div>
 
