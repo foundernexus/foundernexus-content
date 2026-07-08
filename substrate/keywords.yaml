@@ -60,8 +60,8 @@ clusters:
     keywords:
       - term: "how founders get better feedback on hard decisions"
         intent: informational
-        status: drafted
-        draft: content/drafts/founder-decision-quality.md
+        status: published
+        url: /blog/founder-decision-quality
 
   - id: stage-decision-guides
     pillar: judgment-infrastructure
@@ -74,17 +74,17 @@ clusters:
     keywords:
       - term: "first senior hire at seed"
         intent: informational
-        status: drafted
-        draft: content/drafts/decision-first-senior-hire-seed.md
+        status: published
+        url: /blog/first-senior-hire-seed
       - term: "Series A operating layer"
         intent: informational
-        status: drafted
-        draft: content/drafts/decision-series-a-operating-layer.md
+        status: published
+        url: /blog/series-a-operating-layer
       - term: "board dynamics after Series B"
         intent: informational
-        status: drafted
-        draft: content/drafts/decision-board-dynamics-after-series-b.md
+        status: published
+        url: /blog/board-dynamics-after-series-b
       - term: "founder-led sales limits"
         intent: informational
-        status: drafted
-        draft: content/drafts/decision-founder-led-sales-limits.md
+        status: published
+        url: /blog/founder-led-sales-limits

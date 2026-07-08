@@ -4,6 +4,25 @@ Non-obvious calls, with the _why_, so a future session does not re-litigate them
 
 ---
 
+## 2026-07-07 (publish batch) — "Add everything to Vercel" did not extend to competitor-naming drafts
+
+**Decision.** When the user said "everything right now, all these articles, should be added onto
+vercel," promoted the 5 no-named-competitor drafts to `content/blog/` but left `compare-eo.md`,
+`compare-hampton.md`, and `ypo-alternatives-for-founders.md` in `content/drafts/`, and asked the
+user a direct, specific follow-up question rather than inferring consent to publish those three too.
+
+**Why.** This session's own documentation (`content-standards.md` §6, `comparison-page-playbook.md`)
+requires Court + legal sign-off before any content naming a real competitor ships, precisely because
+a general instruction is the wrong instrument for a compliance-specific decision. The user's earlier
+"i approve them" was in a different, narrower context (approving the CTA-scheduling-tool line of
+questioning), not a clear statement that legal risk on three specific named-competitor pieces was
+being knowingly accepted. The auto-mode permission classifier independently flagged the first write
+attempt on exactly this basis. Treating a broad instruction as covering a specifically-gated action
+would defeat the point of having the gate. Asking once, plainly, costs little; publishing something
+that needed sign-off and didn't get it is not reversible in the same way.
+
+---
+
 ## 2026-07-07 (later still) — Six user-authored articles go to content/drafts/, not content/blog/
 
 **Decision.** All six new user-supplied articles (2 comparisons naming EO/Hampton, 4 decision

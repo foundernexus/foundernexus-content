@@ -1,18 +1,41 @@
 ---
 title: "How the Board Relationship Actually Changes After Series B"
-target_keyword: "board dynamics after Series B"
-cluster: stage-decision-guides
-lane: linkedin-assisted-demand
-asset_type: article
-pillar: judgment-infrastructure
-funnel: application
-status: drafted
-primary_cta: "Talk with a Nexus Partner"
-route: "pending"
-review_flag: "No named competitor, no legal gate. CTA route (/founder-conversation) does not exist on this site yet, same open item as the other held/drafted pieces."
----
+slug: "board-dynamics-after-series-b"
+shortDescription: "Nobody warns you about the real shift. The hardest part of scaling isn't hitting the plan. It's that the people now judging the plan have never run your company, and they have real power over it."
+publishedAt: "2026-07-07T17:40:00.000Z"
+updatedAt: "2026-07-07T17:40:00.000Z"
+cover: "/images/blog/board-dynamics-after-series-b/cover.png"
+coverAlt: "Abstract cover graphic for the FounderNexus blog post on board dynamics after Series B"
+tags: ["Series B", "Governance"]
+postType: "Guide"
+author: "FounderNexus Team"
 
-# How the board relationship actually changes after Series B
+seo:
+  metaTitle: "How the Board Relationship Actually Changes After Series B | FounderNexus"
+  metaDescription: "After Series B the board stops being cheerleaders and becomes governance. The decisions founders face in managing a real board, and the mistakes that quietly erode trust."
+  canonicalURL: "https://foundernexus.com/blog/board-dynamics-after-series-b"
+  ogTitle: "How the Board Relationship Actually Changes After Series B"
+  ogDescription: "The people now judging the plan have never run your company, and they have real power over it."
+  ogType: "article"
+  shareImage: "/images/blog/board-dynamics-after-series-b/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "How the Board Relationship Actually Changes After Series B"
+    description: "After Series B the board stops being cheerleaders and becomes governance. The decisions founders face in managing a real board."
+    image: "https://foundernexus.com/images/blog/board-dynamics-after-series-b/cover.png"
+    datePublished: "2026-07-07T17:40:00.000Z"
+    dateModified: "2026-07-07T17:40:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/board-dynamics-after-series-b"
+---
 
 TL;DR: nobody warns you about the real shift. The hardest part of scaling isn't hitting the plan. It's that the people now judging the plan have never run your company, and they have real power over it.
 
@@ -59,7 +82,4 @@ Founders who manage boards well after Series B treat it as a deliberate, year-ro
 
 <div class="pull">The most useful prep for a hard board meeting isn't a better deck. It's a founder who has sat across from the same dynamic and can tell you exactly how they kept control of the room.</div>
 
-<div class="softcta">
-<p><strong>If this is the decision you're carrying right now,</strong> that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.</p>
-<p><a href="/founder-conversation">Talk it through with a Nexus Partner &rarr;</a></p>
-</div>
+If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.

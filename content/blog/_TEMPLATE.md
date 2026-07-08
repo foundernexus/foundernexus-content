@@ -1,14 +1,14 @@
 ---
 title: "Your Post Title"
-slug: "your-post-slug"                       # URL: /blog/your-post-slug
+slug: "your-post-slug" # URL: /blog/your-post-slug
 shortDescription: "One- or two-sentence summary shown on cards and the hub."
-publishedAt: "2026-01-01T09:00:00.000Z"      # ISO 8601 — drives sort order + displayed date
-updatedAt: "2026-01-01T09:00:00.000Z"        # ISO 8601 — drives sitemap lastModified
+publishedAt: "2026-01-01T09:00:00.000Z" # ISO 8601 — drives sort order + displayed date
+updatedAt: "2026-01-01T09:00:00.000Z" # ISO 8601 — drives sitemap lastModified
 cover: "/images/blog/your-post-slug/cover.png"
 coverAlt: "Describe the cover image for accessibility/SEO"
 tags: ["Tag One", "Tag Two"]
-postType: "Article"                          # free-form label (Article, Guide, Case Study)
-readingTime: 5                               # minutes (UI also auto-computes from body)
+postType: "Article" # free-form label (Article, Guide, Case Study)
+readingTime: 5 # minutes (UI also auto-computes from body)
 author: "FounderNexus Team"
 
 # ── SEO ─────────────────────────────────────────────────────────────────────
@@ -19,7 +19,7 @@ seo:
   ogTitle: "Your Post Title"
   ogDescription: "Open Graph / social description."
   ogType: "article"
-  shareImage: "/images/blog/your-post-slug/cover.png"   # og:image (absolute-ized by metadataBase)
+  shareImage: "/images/blog/your-post-slug/cover.png" # og:image (absolute-ized by metadataBase)
   metaRobots: "index, follow"
   structuredData:
     "@context": "https://schema.org"
@@ -33,7 +33,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/logo.png" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/your-post-slug"
@@ -43,6 +47,7 @@ seo:
 
 Standard Markdown. `##`/`###` headings auto-feed the in-page table of contents.
 Lists, **bold**, _italic_, [links](/blog), `code`, fenced code blocks, tables, and
+
 > blockquotes (styled callouts) all render.
 
 Follow the FounderNexus content standards: conclusion first, no em dashes, no filler,

@@ -1,18 +1,41 @@
 ---
 title: "When Founder-Led Sales Stops Being Enough"
-target_keyword: "founder-led sales limits"
-cluster: stage-decision-guides
-lane: linkedin-assisted-demand
-asset_type: article
-pillar: judgment-infrastructure
-funnel: application
-status: drafted
-primary_cta: "Talk with a Nexus Partner"
-route: "pending"
-review_flag: "No named competitor, no legal gate. CTA route (/founder-conversation) does not exist on this site yet, same open item as the other held/drafted pieces."
----
+slug: "founder-led-sales-limits"
+shortDescription: "Founder-led sales is a superpower right up until it becomes a ceiling. And the hard part is the timing: stepping away from it feels like failure at exactly the moment you need to commit to doing it."
+publishedAt: "2026-07-07T17:50:00.000Z"
+updatedAt: "2026-07-07T17:50:00.000Z"
+cover: "/images/blog/founder-led-sales-limits/cover.png"
+coverAlt: "Abstract cover graphic for the FounderNexus blog post on founder-led sales limits"
+tags: ["Sales", "Growth"]
+postType: "Guide"
+author: "FounderNexus Team"
 
-# When founder-led sales stops being enough
+seo:
+  metaTitle: "When Founder-Led Sales Stops Being Enough | FounderNexus"
+  metaDescription: "Founder-led sales gets you to early traction, then quietly becomes the ceiling. How to tell when it's time to build a real sales motion, and the decisions that make or break the transition."
+  canonicalURL: "https://foundernexus.com/blog/founder-led-sales-limits"
+  ogTitle: "When Founder-Led Sales Stops Being Enough"
+  ogDescription: "Stepping away from founder-led sales feels like failure at exactly the moment you need to commit to doing it."
+  ogType: "article"
+  shareImage: "/images/blog/founder-led-sales-limits/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "When Founder-Led Sales Stops Being Enough"
+    description: "Founder-led sales gets you to early traction, then quietly becomes the ceiling. How to tell when it's time to build a real sales motion."
+    image: "https://foundernexus.com/images/blog/founder-led-sales-limits/cover.png"
+    datePublished: "2026-07-07T17:50:00.000Z"
+    dateModified: "2026-07-07T17:50:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/founder-led-sales-limits"
+---
 
 TL;DR: founder-led sales is a superpower right up until it becomes a ceiling. And the hard part is the timing: stepping away from it feels like failure at exactly the moment you need to commit to doing it.
 
@@ -59,7 +82,4 @@ The founders who make this transition well treat founder-led sales as a phase to
 
 <div class="pull">The most useful voice here is a founder who just made this exact handoff. Someone who can tell you what they built before the hire, and what they wish they'd built a lot sooner.</div>
 
-<div class="softcta">
-<p><strong>If this is the decision you're carrying right now,</strong> that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.</p>
-<p><a href="/founder-conversation">Talk it through with a Nexus Partner &rarr;</a></p>
-</div>
+If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.

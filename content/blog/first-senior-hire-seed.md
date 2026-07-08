@@ -1,18 +1,41 @@
 ---
 title: "Your First Senior Hire at Seed: The Decisions That Actually Matter"
-target_keyword: "first senior hire at seed"
-cluster: stage-decision-guides
-lane: linkedin-assisted-demand
-asset_type: article
-pillar: judgment-infrastructure
-funnel: application
-status: drafted
-primary_cta: "Talk with a Nexus Partner"
-route: "pending"
-review_flag: "No named competitor, no legal gate. CTA route (/founder-conversation) does not exist on this site yet, same open item as the other held/drafted pieces."
----
+slug: "first-senior-hire-seed"
+shortDescription: "The first real executive hire is one of the most consequential calls a seed founder makes. It looks like a hiring decision. It's really a decision about what the company needs to become next."
+publishedAt: "2026-07-07T17:20:00.000Z"
+updatedAt: "2026-07-07T17:20:00.000Z"
+cover: "/images/blog/first-senior-hire-seed/cover.png"
+coverAlt: "Abstract cover graphic for the FounderNexus blog post on the first senior hire at seed"
+tags: ["Seed Stage", "Hiring"]
+postType: "Guide"
+author: "FounderNexus Team"
 
-# Your first senior hire at seed: the decisions that actually matter
+seo:
+  metaTitle: "Your First Senior Hire at Seed: The Decisions That Actually Matter | FounderNexus"
+  metaDescription: "An honest guide to the first senior hire at seed stage: when the seat is real, how to tell a builder from a manager in builder's clothing, and the failure modes founders hit most."
+  canonicalURL: "https://foundernexus.com/blog/first-senior-hire-seed"
+  ogTitle: "Your First Senior Hire at Seed: The Decisions That Actually Matter"
+  ogDescription: "It looks like a hiring decision. It's really a decision about what the company needs to become next."
+  ogType: "article"
+  shareImage: "/images/blog/first-senior-hire-seed/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "Your First Senior Hire at Seed: The Decisions That Actually Matter"
+    description: "An honest guide to the first senior hire at seed stage: when the seat is real, and the failure modes founders hit most."
+    image: "https://foundernexus.com/images/blog/first-senior-hire-seed/cover.png"
+    datePublished: "2026-07-07T17:20:00.000Z"
+    dateModified: "2026-07-07T17:20:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/first-senior-hire-seed"
+---
 
 TL;DR: the first real executive hire is one of the most consequential calls a seed founder makes, and one of the most deceptively reversible-looking. It looks like a hiring decision. It's really a decision about what the company needs to become next.
 
@@ -62,7 +85,4 @@ The founders who get this right treat the first senior hire as a decision about 
 
 <div class="pull">The most useful input on this decision isn't a framework. It's a founder one stage ahead who made the same call last year, and can tell you plainly what they'd do differently.</div>
 
-<div class="softcta">
-<p><strong>If this is the decision you're carrying right now,</strong> that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.</p>
-<p><a href="/founder-conversation">Talk it through with a Nexus Partner &rarr;</a></p>
-</div>
+If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.

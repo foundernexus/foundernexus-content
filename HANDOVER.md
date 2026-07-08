@@ -156,3 +156,32 @@ registry row -> `archived`/`pass`, `.active-task`/`.active-scope`/`.baseline-001
   the held YPO piece before any of the three can move toward publish. The `/founder-conversation`,
   `/newsletter`, `/apply`, `/nominate` 404s block every current draft's live-200 gate — building
   those real destination pages/routes is the actual unblock for "ship something," not more drafting.
+
+---
+
+## 2026-07-07 (publish batch) — 5 of 8 drafts are live; 3 competitor-naming pieces held back
+
+- **State:** `content/blog/` now has 6 posts (up from 1): `first-senior-hire-seed`,
+  `series-a-operating-layer`, `board-dynamics-after-series-b`, `founder-led-sales-limits`,
+  `founder-decision-quality`, plus the original `what-a-good-founder-room-looks-like` sample. All
+  five new ones are live on whatever this Vercel deployment serves once pushed. CTAs on all of them
+  now point to the real `https://www.foundernexus.com/registration`, confirmed live by fetching the
+  actual site (not assumed). `content/drafts/` now holds only the three pieces that name a real
+  competitor: `compare-eo.md`, `compare-hampton.md`, `ypo-alternatives-for-founders.md`.
+- **The CTA-404 gate is resolved for these 5** (and, if the sign-off question resolves, the fix
+  applies identically to the other 3 — same real `/registration` link, nothing new to build). This
+  was the correct unblock CLAUDE.md's own invariant asked for: a real page, not a fabricated route.
+- **Not resolved, explicitly held:** the user's instruction to "add everything to Vercel" was broad
+  enough that it plausibly covered the 3 competitor-naming pieces too, but publishing named-
+  competitor content live is exactly the gate `content-standards.md` §6 and
+  `comparison-page-playbook.md` exist to enforce, and the auto-mode permission classifier blocked
+  the first attempt on those grounds. Did not route around it. The orchestrator should get an
+  explicit, specific answer (not inferred from a general instruction) before promoting
+  `compare-eo.md`, `compare-hampton.md`, or `ypo-alternatives-for-founders.md` to `content/blog/`.
+- **Bonus fix:** `content/blog/_TEMPLATE.md` and the sample post's stale `/logo.png` JSON-LD
+  references now point at the real `/brand/foundernexus-mark-square.jpeg` (closes the "not done"
+  item from the design-system HANDOVER entry).
+- **Next moves:** get the explicit answer on the 3 held pieces. If yes: same mechanical promotion
+  (front-matter conversion, cover art, delete the draft, flip keywords.yaml to published) as this
+  batch, CTA already resolves cleanly to `/registration`. If no: they stay in `content/drafts/`
+  indefinitely until sign-off actually happens.

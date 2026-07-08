@@ -1,18 +1,41 @@
 ---
 title: "What Actually Changes at the Series A Operating Layer"
-target_keyword: "Series A operating layer"
-cluster: stage-decision-guides
-lane: linkedin-assisted-demand
-asset_type: article
-pillar: judgment-infrastructure
-funnel: application
-status: drafted
-primary_cta: "Talk with a Nexus Partner"
-route: "pending"
-review_flag: "No named competitor, no legal gate. CTA route (/founder-conversation) does not exist on this site yet, same open item as the other held/drafted pieces."
----
+slug: "series-a-operating-layer"
+shortDescription: "The money is the visible part of a Series A. The harder part is invisible: the exact way you ran the company to get here is the way it stops working from here on."
+publishedAt: "2026-07-07T17:30:00.000Z"
+updatedAt: "2026-07-07T17:30:00.000Z"
+cover: "/images/blog/series-a-operating-layer/cover.png"
+coverAlt: "Abstract cover graphic for the FounderNexus blog post on the Series A operating layer"
+tags: ["Series A", "Operating Model"]
+postType: "Guide"
+author: "FounderNexus Team"
 
-# What actually changes at the Series A operating layer
+seo:
+  metaTitle: "What Actually Changes at the Series A Operating Layer | FounderNexus"
+  metaDescription: "The Series A operating layer: what changes when the company stops being run by heroics and starts needing a system. The decisions founders face and the failure modes."
+  canonicalURL: "https://foundernexus.com/blog/series-a-operating-layer"
+  ogTitle: "What Actually Changes at the Series A Operating Layer"
+  ogDescription: "The exact way you ran the company to get to Series A is the way it stops working from here on."
+  ogType: "article"
+  shareImage: "/images/blog/series-a-operating-layer/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "What Actually Changes at the Series A Operating Layer"
+    description: "What changes when the company stops being run by heroics and starts needing a system."
+    image: "https://foundernexus.com/images/blog/series-a-operating-layer/cover.png"
+    datePublished: "2026-07-07T17:30:00.000Z"
+    dateModified: "2026-07-07T17:30:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/series-a-operating-layer"
+---
 
 TL;DR: the money is the visible part of a Series A. The harder part is invisible: the exact way you ran the company to get here is the way it stops working from here on.
 
@@ -59,7 +82,4 @@ The founders who get the Series A operating layer right treat it as a change in 
 
 <div class="pull">The most useful input here isn't an org-design framework. It's a founder one stage ahead who rebuilt their own operating layer last year, and can tell you honestly what they held onto for far too long.</div>
 
-<div class="softcta">
-<p><strong>If this is the decision you're carrying right now,</strong> that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.</p>
-<p><a href="/founder-conversation">Talk it through with a Nexus Partner &rarr;</a></p>
-</div>
+If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.

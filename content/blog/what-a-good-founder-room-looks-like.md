@@ -32,7 +32,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/logo.png" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/what-a-good-founder-room-looks-like"

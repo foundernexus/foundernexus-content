@@ -1,14 +1,40 @@
 ---
 title: "How Founders Get Better Feedback on Hard Decisions"
-target_keyword: "how founders get better feedback on hard decisions"
-cluster: founder-decision-quality
-lane: proof-capture
-asset_type: article
-pillar: judgment-infrastructure
-funnel: newsletter
-status: drafted
-primary_cta: "Newsletter signup"
-route: "/newsletter"
+slug: "founder-decision-quality"
+shortDescription: "Most founders facing a hard decision are not short on feedback. They are short on feedback close enough to the problem to change their mind."
+publishedAt: "2026-07-07T17:10:00.000Z"
+updatedAt: "2026-07-07T17:10:00.000Z"
+cover: "/images/blog/founder-decision-quality/cover.png"
+coverAlt: "Abstract cover graphic for the FounderNexus blog post on decision feedback quality"
+tags: ["Decision Quality", "Judgment"]
+postType: "Article"
+author: "FounderNexus Team"
+
+seo:
+  metaTitle: "How Founders Get Better Feedback on Hard Decisions | FounderNexus"
+  metaDescription: "Most founders facing a hard decision are not short on feedback. They are short on feedback close enough to the problem to change their mind. A three-part filter for weighting input."
+  canonicalURL: "https://foundernexus.com/blog/founder-decision-quality"
+  ogTitle: "How Founders Get Better Feedback on Hard Decisions"
+  ogDescription: "The fix is not more opinions. It is a narrower filter for whose input counts before you act."
+  ogType: "article"
+  shareImage: "/images/blog/founder-decision-quality/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "How Founders Get Better Feedback on Hard Decisions"
+    description: "Most founders facing a hard decision are not short on feedback. They are short on feedback close enough to the problem to change their mind."
+    image: "https://foundernexus.com/images/blog/founder-decision-quality/cover.png"
+    datePublished: "2026-07-07T17:10:00.000Z"
+    dateModified: "2026-07-07T17:10:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/founder-decision-quality"
 ---
 
 TL;DR: Most founders facing a hard decision are not short on feedback. They are short on feedback that is close enough to the problem to change their mind. The fix is not more opinions. It is a narrower filter for whose input counts before you act.
@@ -49,4 +75,4 @@ None of this works if the decision stays vague. "Should I raise now" is not a de
 
 The instinct to seek more input on a hard call is correct. The mistake is treating all input as equal. A founder who is deliberate about who gets a vote, and precise about what they are actually asking, gets sharper answers with fewer conversations, not more of them.
 
-If you want more of this kind of thinking in your inbox, [sign up for the FounderNexus newsletter](/newsletter).
+If you want more of this kind of thinking in your world, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration).
