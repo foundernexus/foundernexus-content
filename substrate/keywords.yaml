@@ -21,8 +21,8 @@ clusters:
     keywords:
       - term: "YPO alternatives for founders"
         intent: comparison
-        status: drafted # unwritten | drafted | published
-        draft: content/drafts/ypo-alternatives-for-founders.md
+        status: published # unwritten | drafted | published. Names YPO; publish approved 2026-07-07 by Robroy (not a formal Court/legal review)
+        url: /blog/ypo-alternatives-for-founders
         gsc_impressions: 340
         gsc_ctr: 0.4
       - term: "peer group for series B founders"
@@ -31,12 +31,12 @@ clusters:
         url: /blog/peer-groups-series-b
       - term: "FounderNexus vs EO"
         intent: comparison
-        status: drafted # user-authored, approved 2026-07-07 by Robroy
-        draft: content/drafts/compare-eo.md
+        status: published # user-authored; names EO; publish approved 2026-07-07 by Robroy (not a formal Court/legal review)
+        url: /blog/founder-nexus-vs-eo
       - term: "FounderNexus vs Hampton"
         intent: comparison
-        status: drafted # user-authored, approved 2026-07-07 by Robroy
-        draft: content/drafts/compare-hampton.md
+        status: published # user-authored; names Hampton; publish approved 2026-07-07 by Robroy (not a formal Court/legal review)
+        url: /blog/founder-nexus-vs-hampton
 
   - id: vc-fast-pass-signal
     pillar: judgment-infrastructure

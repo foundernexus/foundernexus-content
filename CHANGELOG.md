@@ -2,6 +2,27 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-07 (final publish: remaining 3 competitor-naming pieces, user-confirmed)
+
+- User explicitly confirmed publishing `compare-eo.md`, `compare-hampton.md`, and the held
+  `ypo-alternatives-for-founders.md` draft live, after being asked directly (not inferred from the
+  earlier general "add everything" instruction). Recorded precisely as **"publish approved
+  2026-07-07 by Robroy"** in `substrate/keywords.yaml` — not claimed as a formal Court/legal review,
+  since that did not happen; this is the user's own explicit decision, made with the sign-off rule
+  already surfaced to them twice.
+- Promoted all three to `content/blog/` (`founder-nexus-vs-eo.md`, `founder-nexus-vs-hampton.md`,
+  `ypo-alternatives-for-founders.md`), same schema conversion + CTA fix as the prior 5 (all now link
+  to the confirmed-live `https://www.foundernexus.com/registration`). Deleted the `content/drafts/`
+  sources; `content/drafts/` is now empty. `keywords.yaml` flipped from `drafted`/`draft:` to
+  `published`/`url:` for all three.
+- Verified: `contract`/`terminology`/`emdash` clean (only the known pre-existing scaffolding
+  findings remain, unchanged). `next build` clean, 17 static pages. Render-verified
+  `founder-nexus-vs-eo` directly: comparison table renders, CTA resolves to
+  `https://www.foundernexus.com/registration` (checked via DOM query, not just visually), no
+  console errors.
+- **State now:** all 9 posts in `content/blog/` are live once this push deploys. `content/drafts/`
+  is empty. Every CTA across every published piece points to the same real, existing page.
+
 ## 2026-07-07 (publish batch: 5 of 8 drafts promoted to content/blog/)
 
 - **User instruction:** "everything right now, all these articles, should be added onto vercel and

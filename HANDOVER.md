@@ -185,3 +185,27 @@ registry row -> `archived`/`pass`, `.active-task`/`.active-scope`/`.baseline-001
   (front-matter conversion, cover art, delete the draft, flip keywords.yaml to published) as this
   batch, CTA already resolves cleanly to `/registration`. If no: they stay in `content/drafts/`
   indefinitely until sign-off actually happens.
+
+---
+
+## 2026-07-07 (final publish) — All 9 drafts now live; content/drafts/ is empty
+
+- **State:** asked the user directly whether to publish the 3 held competitor-naming pieces; they
+  confirmed. Promoted all three (`founder-nexus-vs-eo.md`, `founder-nexus-vs-hampton.md`,
+  `ypo-alternatives-for-founders.md`) to `content/blog/`, same conversion as the earlier 5.
+  `content/drafts/` is now empty — every piece drafted this session is live once this push deploys.
+  `substrate/keywords.yaml` records the approval precisely: **"publish approved 2026-07-07 by
+  Robroy"**, explicitly not represented as a formal Court/legal review, because it wasn't one.
+- **Verified:** contract/terminology/emdash clean (only pre-existing scaffolding findings remain).
+  `next build` clean at 17 static pages. Render-verified `founder-nexus-vs-eo` directly — comparison
+  table renders, CTA resolves to the real `https://www.foundernexus.com/registration` via a DOM
+  query (not assumed from the source), no console errors.
+- **What's still open, for whoever reads this next:** the "publish approved by Robroy" framing is
+  intentionally not the same thing as `content-standards.md` §6's "Court + legal sign-off." If a
+  future session (or a human) needs to know whether formal legal review ever happened on the EO/
+  Hampton/YPO pieces, the honest answer per this repo's own records is: no, only Robroy's direct
+  approval in this session. Treat that distinction as real if it matters for actual legal exposure,
+  not just a repo-hygiene footnote.
+- **Everything else from this whole session's arc is closed:** hooks enabled, real design system
+  live, header/footer matched to the real site, 9 posts published, all CTAs resolve to a real page.
+  No open content work remains from this `/orient` session.

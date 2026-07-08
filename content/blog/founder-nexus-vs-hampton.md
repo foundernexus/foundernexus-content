@@ -1,20 +1,41 @@
 ---
 title: "FounderNexus vs Hampton: An Honest Comparison for Founders"
-target_keyword: "FounderNexus vs Hampton"
-cluster: peer-advisory-alternatives
-lane: linkedin-assisted-demand
-asset_type: comparison_page
-pillar: judgment-infrastructure
-funnel: application
-status: held_review
-primary_cta: "Talk with a Nexus Partner"
-secondary_paths:
-  - "Explore whether FounderNexus fits your stage"
-route: "pending"
-review_flag: "Names a competitor (Hampton) by name. Needs Court + legal sign-off per content-standards.md §6 and comparison-page-playbook.md before publishing. CTA route (/founder-conversation) does not exist on this site yet either."
----
+slug: "founder-nexus-vs-hampton"
+shortDescription: "A fair, close comparison of Hampton and FounderNexus, the two invite-only founder communities most often evaluated side by side. Who each is genuinely built for."
+publishedAt: "2026-07-07T18:20:00.000Z"
+updatedAt: "2026-07-07T18:20:00.000Z"
+cover: "/images/blog/founder-nexus-vs-hampton/cover.png"
+coverAlt: "Abstract cover graphic for the FounderNexus blog post comparing FounderNexus and Hampton"
+tags: ["Peer Advisory", "Comparison"]
+postType: "Comparison"
+author: "FounderNexus Team"
 
-# FounderNexus vs Hampton: an honest comparison
+seo:
+  metaTitle: "FounderNexus vs Hampton: An Honest Comparison | FounderNexus"
+  metaDescription: "A fair, close comparison of Hampton and FounderNexus, the two invite-only founder communities most often evaluated side by side. Who each is genuinely built for."
+  canonicalURL: "https://foundernexus.com/blog/founder-nexus-vs-hampton"
+  ogTitle: "FounderNexus vs Hampton: An Honest Comparison"
+  ogDescription: "The two invite-only founder communities most often evaluated side by side. Who each is genuinely built for."
+  ogType: "article"
+  shareImage: "/images/blog/founder-nexus-vs-hampton/cover.png"
+  metaRobots: "index, follow"
+  structuredData:
+    "@context": "https://schema.org"
+    "@type": "Article"
+    headline: "FounderNexus vs Hampton: An Honest Comparison"
+    description: "A fair, close comparison of Hampton and FounderNexus, and who each is genuinely built for."
+    image: "https://foundernexus.com/images/blog/founder-nexus-vs-hampton/cover.png"
+    datePublished: "2026-07-07T18:20:00.000Z"
+    dateModified: "2026-07-07T18:20:00.000Z"
+    author: { "@type": "Organization", name: "FounderNexus" }
+    publisher:
+      "@type": "Organization"
+      name: "FounderNexus"
+      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+    mainEntityOfPage:
+      "@type": "WebPage"
+      "@id": "https://foundernexus.com/blog/founder-nexus-vs-hampton"
+---
 
 TL;DR: of everything out there, Hampton is the community FounderNexus gets compared to most. Both are invite-only, both are built for founders, both take curation seriously. Here's the honest read on where they actually part ways.
 
@@ -66,5 +87,5 @@ But if you're specifically venture-scale, and your sharpest need is a room of fo
 
 <div class="softcta">
 <p><strong>Carrying a decision right now?</strong> Talk it through with a Senior Nexus Partner. Twenty minutes, no pitch, and an honest read on whether we have the right room for what you're working through.</p>
-<p><a href="/founder-conversation">Talk with a Nexus Partner &rarr;</a>. For venture-scale founders, no application required to have the conversation.</p>
+<p><a href="https://www.foundernexus.com/registration">See whether FounderNexus fits your stage &rarr;</a>. For venture-scale founders, no application required to have the conversation.</p>
 </div>
