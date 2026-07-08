@@ -5,7 +5,7 @@ shortDescription: "Founder-led sales is a superpower right up until it becomes a
 publishedAt: "2026-07-07T17:50:00.000Z"
 updatedAt: "2026-07-07T17:50:00.000Z"
 cover: "/images/blog/founder-led-sales-limits/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on founder-led sales limits"
+coverAlt: "A speaker presenting a go-to-market and pricing talk to a room of FounderNexus members"
 tags: ["Sales", "Growth"]
 postType: "Guide"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/founder-led-sales-limits"
@@ -82,4 +86,4 @@ The founders who make this transition well treat founder-led sales as a phase to
 
 <div class="pull">The most useful voice here is a founder who just made this exact handoff. Someone who can tell you what they built before the hire, and what they wish they'd built a lot sooner.</div>
 
-If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.
+If this is the decision you're carrying right now, that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it. [Talk it through with a Nexus Partner &rarr;](https://cal.com/karink/nexus-partner-intro-call)

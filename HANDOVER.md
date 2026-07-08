@@ -209,3 +209,26 @@ registry row -> `archived`/`pass`, `.active-task`/`.active-scope`/`.baseline-001
 - **Everything else from this whole session's arc is closed:** hooks enabled, real design system
   live, header/footer matched to the real site, 9 posts published, all CTAs resolve to a real page.
   No open content work remains from this `/orient` session.
+
+---
+
+## 2026-07-07 (real assets) — Real cover photos + real scheduling link, both user-supplied
+
+- **State:** all 9 posts now use real event photography for covers (from
+  `~/foundernexus/09-assets/events/foundernexus-event-images`, user-approved) instead of gradient
+  placeholders, with accurate `coverAlt` text. The 6 pieces whose copy explicitly promises "talk to
+  a Nexus Partner" (EO/Hampton comparisons + all 4 `stage-decision-guides`) now link to the real
+  `https://cal.com/karink/nexus-partner-intro-call` instead of `/registration` — the earlier publish
+  batch had put those two things (call-promising copy, application-form link) in contradiction
+  without anyone noticing until the user supplied the real scheduling link and it became obvious.
+  `ypo-alternatives-for-founders.md` and `founder-decision-quality.md` stay on `/registration`
+  (their copy never promised a call).
+- **Gotcha for future cover-image work:** regenerating `cover.png` at an unchanged path does not
+  reliably bust Next's image-optimization cache mid-session. If a cover looks stale after a rebuild,
+  `rm -rf .next && npm run build` before concluding the file itself is wrong. Caught this via a
+  screenshot that still showed the old placeholder after a normal rebuild + fresh preview server.
+- **Verified:** contract/terminology/emdash/links all clean. `next build` clean at 17 pages after
+  the cache clear. Screenshot-verified real photos render on the blog index; DOM-query-verified the
+  EO page's CTA resolves to the exact Cal.com URL, not just visually inspected.
+- **Next moves:** none outstanding from this session. If more cover art is needed later, the same
+  event-photo folder likely has unused images (only 9 of ~24 available photos were used).

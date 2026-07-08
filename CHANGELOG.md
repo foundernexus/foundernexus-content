@@ -2,6 +2,38 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-07 (real cover photos + real scheduling CTA)
+
+- **Real cover photos.** User pointed at `~/foundernexus/09-assets/events/foundernexus-event-images`
+  (real event photography: boardroom sessions, speaker talks, a community dinner) and approved using
+  it for all 9 posts' covers. Picked one photo per post by topical fit (e.g. the "Signals &
+  Implications... Founder-led Sales" boardroom slide photo for `founder-led-sales-limits`; the
+  Gururaj Pandurangi "Surviving the Saasapocalypse... GTM and Pricing" talk photo was the other GTM-
+  relevant option but the sales-signals one matched more precisely). Cropped each to 1200x630 (cover
+  fit, `sharp`'s attention-based crop) via a one-off script, run from inside the repo so `sharp`
+  resolved, then deleted — not committed as a permanent script. Replaced every gradient-placeholder
+  `cover.png` and rewrote every `coverAlt` from "Abstract cover graphic..." to an accurate
+  description of the real photo.
+  - **Caught and fixed a caching gotcha:** after regenerating `cover.png` at the same path, the
+    `/blog` index kept serving the old placeholder for `what-a-good-founder-room-looks-like` even
+    after a rebuild + fresh preview server — Next's image-optimization cache doesn't invalidate on
+    same-path content changes across a `next build` unless `.next/` is cleared. Fixed with
+    `rm -rf .next && npm run build`. Verified via screenshot before/after, not assumed fixed.
+- **Real scheduling link.** User supplied `https://cal.com/karink/nexus-partner-intro-call`. This
+  exposed a copy/destination mismatch introduced during the earlier publish batch: `founder-nexus-
+vs-eo.md` and `founder-nexus-vs-hampton.md`'s softcta blocks explicitly promise "Talk it through
+  with a Senior Nexus Partner... no application required," but the link pointed at `/registration`
+  (an application form) — a direct contradiction. Restored each of the 6 pieces whose source copy
+  originally said "Talk it through with a Nexus Partner" (the EO/Hampton comparisons + all 4
+  `stage-decision-guides` pieces) to that exact anchor text, now pointed at the real Cal.com link.
+  Left `ypo-alternatives-for-founders.md` and `founder-decision-quality.md` on `/registration` —
+  their copy never promised a direct call, so no mismatch existed there.
+- Verified: `contract`/`terminology`/`emdash`/`links` all clean (zero output — `links.mjs` doesn't
+  flag `cal.com` since its DEAD list is same-origin paths only). `next build` clean at 17 static
+  pages after the cache clear. Render-verified via screenshot (blog index shows real photos on both
+  the featured card and below) and a DOM query confirming the EO page's CTA resolves to the exact
+  Cal.com URL.
+
 ## 2026-07-07 (final publish: remaining 3 competitor-naming pieces, user-confirmed)
 
 - User explicitly confirmed publishing `compare-eo.md`, `compare-hampton.md`, and the held

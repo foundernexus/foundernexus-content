@@ -5,7 +5,7 @@ shortDescription: "Most founders facing a hard decision are not short on feedbac
 publishedAt: "2026-07-07T17:10:00.000Z"
 updatedAt: "2026-07-07T17:10:00.000Z"
 cover: "/images/blog/founder-decision-quality/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on decision feedback quality"
+coverAlt: "FounderNexus members in a boardroom discussion, presentation screen visible"
 tags: ["Decision Quality", "Judgment"]
 postType: "Article"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/founder-decision-quality"

@@ -5,7 +5,7 @@ shortDescription: "The first real executive hire is one of the most consequentia
 publishedAt: "2026-07-07T17:20:00.000Z"
 updatedAt: "2026-07-07T17:20:00.000Z"
 cover: "/images/blog/first-senior-hire-seed/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on the first senior hire at seed"
+coverAlt: "FounderNexus members talking in small groups after a speaker event"
 tags: ["Seed Stage", "Hiring"]
 postType: "Guide"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/first-senior-hire-seed"
@@ -85,4 +89,4 @@ The founders who get this right treat the first senior hire as a decision about 
 
 <div class="pull">The most useful input on this decision isn't a framework. It's a founder one stage ahead who made the same call last year, and can tell you plainly what they'd do differently.</div>
 
-If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.
+If this is the decision you're carrying right now, that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it. [Talk it through with a Nexus Partner &rarr;](https://cal.com/karink/nexus-partner-intro-call)

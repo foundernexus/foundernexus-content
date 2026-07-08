@@ -5,7 +5,7 @@ shortDescription: "Nobody warns you about the real shift. The hardest part of sc
 publishedAt: "2026-07-07T17:40:00.000Z"
 updatedAt: "2026-07-07T17:40:00.000Z"
 cover: "/images/blog/board-dynamics-after-series-b/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on board dynamics after Series B"
+coverAlt: "FounderNexus members in a boardroom discussion during a speaker briefing"
 tags: ["Series B", "Governance"]
 postType: "Guide"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/board-dynamics-after-series-b"
@@ -82,4 +86,4 @@ Founders who manage boards well after Series B treat it as a deliberate, year-ro
 
 <div class="pull">The most useful prep for a hard board meeting isn't a better deck. It's a founder who has sat across from the same dynamic and can tell you exactly how they kept control of the room.</div>
 
-If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.
+If this is the decision you're carrying right now, that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it. [Talk it through with a Nexus Partner &rarr;](https://cal.com/karink/nexus-partner-intro-call)

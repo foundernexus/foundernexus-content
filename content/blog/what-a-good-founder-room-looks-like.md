@@ -5,7 +5,7 @@ shortDescription: "The best founder room is not the biggest network. It is the o
 publishedAt: "2026-07-08T09:00:00.000Z"
 updatedAt: "2026-07-08T09:00:00.000Z"
 cover: "/images/blog/what-a-good-founder-room-looks-like/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on founder rooms"
+coverAlt: "FounderNexus members gathered around a boardroom table for a session"
 tags: ["Peer Advisory", "Judgment"]
 postType: "Article"
 readingTime: 5

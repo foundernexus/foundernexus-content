@@ -5,7 +5,7 @@ shortDescription: "A fair, close comparison of Hampton and FounderNexus, the two
 publishedAt: "2026-07-07T18:20:00.000Z"
 updatedAt: "2026-07-07T18:20:00.000Z"
 cover: "/images/blog/founder-nexus-vs-hampton/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post comparing FounderNexus and Hampton"
+coverAlt: "A FounderNexus speaker event with members seated and listening"
 tags: ["Peer Advisory", "Comparison"]
 postType: "Comparison"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/founder-nexus-vs-hampton"
@@ -87,5 +91,5 @@ But if you're specifically venture-scale, and your sharpest need is a room of fo
 
 <div class="softcta">
 <p><strong>Carrying a decision right now?</strong> Talk it through with a Senior Nexus Partner. Twenty minutes, no pitch, and an honest read on whether we have the right room for what you're working through.</p>
-<p><a href="https://www.foundernexus.com/registration">See whether FounderNexus fits your stage &rarr;</a>. For venture-scale founders, no application required to have the conversation.</p>
+<p><a href="https://cal.com/karink/nexus-partner-intro-call">Talk with a Nexus Partner &rarr;</a>. For venture-scale founders, no application required to have the conversation.</p>
 </div>

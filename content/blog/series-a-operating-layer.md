@@ -5,7 +5,7 @@ shortDescription: "The money is the visible part of a Series A. The harder part 
 publishedAt: "2026-07-07T17:30:00.000Z"
 updatedAt: "2026-07-07T17:30:00.000Z"
 cover: "/images/blog/series-a-operating-layer/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on the Series A operating layer"
+coverAlt: "FounderNexus members in a boardroom session with a presentation on screen"
 tags: ["Series A", "Operating Model"]
 postType: "Guide"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/series-a-operating-layer"
@@ -82,4 +86,4 @@ The founders who get the Series A operating layer right treat it as a change in 
 
 <div class="pull">The most useful input here isn't an org-design framework. It's a founder one stage ahead who rebuilt their own operating layer last year, and can tell you honestly what they held onto for far too long.</div>
 
-If this is the decision you're carrying right now, [see whether FounderNexus fits your stage](https://www.foundernexus.com/registration). A small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it.
+If this is the decision you're carrying right now, that's exactly what a FounderNexus room is for: a small group of founders at your stage, convened around the call in front of you, pressure-testing it with people who've made it. [Talk it through with a Nexus Partner &rarr;](https://cal.com/karink/nexus-partner-intro-call)

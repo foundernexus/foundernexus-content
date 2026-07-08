@@ -5,7 +5,7 @@ shortDescription: "The best founder room is not the one with the most impressive
 publishedAt: "2026-07-07T18:00:00.000Z"
 updatedAt: "2026-07-07T18:00:00.000Z"
 cover: "/images/blog/ypo-alternatives-for-founders/cover.png"
-coverAlt: "Abstract cover graphic for the FounderNexus blog post on founder room quality"
+coverAlt: "FounderNexus members in a boardroom, city skyline visible through the windows"
 tags: ["Peer Advisory", "Judgment"]
 postType: "Comparison"
 author: "FounderNexus Team"
@@ -31,7 +31,11 @@ seo:
     publisher:
       "@type": "Organization"
       name: "FounderNexus"
-      logo: { "@type": "ImageObject", url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg" }
+      logo:
+        {
+          "@type": "ImageObject",
+          url: "https://foundernexus.com/brand/foundernexus-mark-square.jpeg",
+        }
     mainEntityOfPage:
       "@type": "WebPage"
       "@id": "https://foundernexus.com/blog/ypo-alternatives-for-founders"
