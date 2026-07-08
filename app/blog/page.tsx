@@ -9,7 +9,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const hub = getBlogHub();
   const canonical = hub?.seo.canonicalURL || `${SITE}/blog`;
   return {
-    title: hub?.seo.metaTitle ? { absolute: hub.seo.metaTitle } : `Blog | ${BRAND}`,
+    title: hub?.seo.metaTitle
+      ? { absolute: hub.seo.metaTitle }
+      : `Blog | ${BRAND}`,
     description: hub?.seo.metaDescription,
     alternates: {
       canonical,
@@ -26,17 +28,23 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function BlogIndex() {
   const hub = getBlogHub();
-  const { data: posts } = getPosts({ pageSize: 9 });
+  const { data: posts } = getPosts(); // all posts (pageSize defaults to total)
   const featured = hub?.featuredPost;
   const rest = posts.filter((p) => p.slug !== featured?.slug);
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-14">
       <header className="mb-12">
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">Writing</p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight">{hub?.title || "Blog"}</h1>
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+          Writing
+        </p>
+        <h1 className="mt-3 text-4xl font-semibold tracking-tight">
+          {hub?.title || "Blog"}
+        </h1>
         {hub?.subtitle && (
-          <p className="mt-3 text-muted max-w-2xl leading-relaxed">{hub.subtitle}</p>
+          <p className="mt-3 text-muted max-w-2xl leading-relaxed">
+            {hub.subtitle}
+          </p>
         )}
       </header>
 
@@ -65,9 +73,13 @@ export default function BlogIndex() {
               {featured.title}
             </h2>
             {featured.shortDescription && (
-              <p className="mt-3 text-muted leading-relaxed">{featured.shortDescription}</p>
+              <p className="mt-3 text-muted leading-relaxed">
+                {featured.shortDescription}
+              </p>
             )}
-            <span className="mt-5 text-sm font-medium text-accent-soft">Read article →</span>
+            <span className="mt-5 text-sm font-medium text-accent-soft">
+              Read article →
+            </span>
           </div>
         </Link>
       )}
