@@ -232,3 +232,30 @@ registry row -> `archived`/`pass`, `.active-task`/`.active-scope`/`.baseline-001
   EO page's CTA resolves to the exact Cal.com URL, not just visually inspected.
 - **Next moves:** none outstanding from this session. If more cover art is needed later, the same
   event-photo folder likely has unused images (only 9 of ~24 available photos were used).
+
+---
+
+## 2026-07-07 (cleanup + atomization) — Substrate cleaned up, 7 pieces atomized to social/queue/
+
+- **State:** `vc-fast-pass-signal` approved (still unwritten). `founder-decision-quality` moved from
+  `proof-capture` to `linkedin-assisted-demand` (correcting a mismatch flagged since task 001).
+  `terminology`/`emdash` are fully clean repo-wide for the first time since the blog was merged
+  (fixed the last 2 source files, `content/README.md` + `content/blog/_TEMPLATE.md`). All 7 pieces
+  published this session now have social derivatives in `social/queue/` matching the existing YPO
+  file's 5-part format; the YPO file's own stale `content/drafts/` reference is fixed too.
+- **Discipline held:** the EO/Hampton social derivatives never name the competitor in the actual
+  post copy, same rule as the blog pieces themselves, verified by grepping body content directly
+  (not just trusting the intent). `named-entity.mjs` still flags those 3 derivative files, but only
+  via their `source_article` front-matter field, not body text, confirmed before treating it as
+  expected-not-a-bug.
+- **Nothing here is sent.** These are drafts sitting in `social/queue/`. Per
+  `engagement-guardrails.md` §1, a human reviews and clicks send on each one, on every platform,
+  every time. Posting them is not something to automate later without revisiting that rule directly.
+- **Left alone on purpose:** `content-lint`'s front-matter-key findings on the blog-scaffolding files
+  (`content/blog/_TEMPLATE.md`, `content/_meta/blog.md`, and every real post, since none carry the
+  draft-schema's `target_keyword`/`cluster`/`lane`/`asset_type`/`primary_cta` keys) are a structural
+  mismatch between `content-lint.mjs`'s scope (built for `content/drafts/`) and `content/blog/`'s
+  real schema (`PostFrontmatter`). Non-blocking (ADVISE in effect, RATCHET only without an active
+  task), documented repeatedly, not touched again without a specific request to rescope the check.
+- **Next moves:** the `vc-fast-pass-signal` keyword is approved but unwritten — natural next content
+  task if more pipeline throughput is wanted. Otherwise nothing outstanding from this session.

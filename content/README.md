@@ -1,6 +1,6 @@
 # Content authoring kit (blog)
 
-No CMS. A post is one Markdown file in git. This is exactly how a human *and* an AI
+No CMS. A post is one Markdown file in git. This is exactly how a human _and_ an AI
 agent author a post: write the `.md`, drop images, open a PR.
 
 ## Structure
@@ -26,13 +26,13 @@ public/images/blog/<slug>/…   ← post images (cover + inline), referenced as 
 4. Run `node scripts/optimize-images.mjs` (optional; no-op until `sharp` is installed).
 5. `npm run build` (or `npm run dev`) → open `/blog` and `/blog/<slug>`; view source and confirm
    `<title>`, `<link rel="canonical">`, `og:*`, and the `application/ld+json` block are present.
-6. Commit the `.md` + images and open a PR — it ships on the next deploy.
+6. Commit the `.md` + images and open a PR. It ships on the next deploy.
 
 ## House style (from `substrate/content-standards.md`)
 
 Conclusion first (lead with a TL;DR), no em dashes, no filler, one core argument, one CTA
 matched to the lane. Name the founder decision the piece helps someone make. Never use retired
-terms (Stage 1-4 not Tier; Nexus Partner not Chapter chair; Session not Event).
+terms (Stage 1-4 not Tier; Nexus Partner not the old chapter-lead title; Session not Event).
 
 The `seo.canonicalURL`, `cover`, and per-project origin all assume `https://foundernexus.com`
-via `lib/site.ts` — change `SITE`/`BRAND`/`LOGO` there if the domain changes.
+via `lib/site.ts`. Change `SITE`/`BRAND`/`LOGO` there if the domain changes.

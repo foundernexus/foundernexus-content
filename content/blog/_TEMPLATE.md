@@ -2,8 +2,8 @@
 title: "Your Post Title"
 slug: "your-post-slug" # URL: /blog/your-post-slug
 shortDescription: "One- or two-sentence summary shown on cards and the hub."
-publishedAt: "2026-01-01T09:00:00.000Z" # ISO 8601 — drives sort order + displayed date
-updatedAt: "2026-01-01T09:00:00.000Z" # ISO 8601 — drives sitemap lastModified
+publishedAt: "2026-01-01T09:00:00.000Z" # ISO 8601, drives sort order + displayed date
+updatedAt: "2026-01-01T09:00:00.000Z" # ISO 8601, drives sitemap lastModified
 cover: "/images/blog/your-post-slug/cover.png"
 coverAlt: "Describe the cover image for accessibility/SEO"
 tags: ["Tag One", "Tag Two"]

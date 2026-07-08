@@ -4,6 +4,23 @@ Non-obvious calls, with the _why_, so a future session does not re-litigate them
 
 ---
 
+## 2026-07-07 (cleanup) — Reassign founder-decision-quality's lane, don't just flag it forever
+
+**Decision.** Changed `founder-decision-quality`'s lane in `keywords.yaml` from `proof-capture` to
+`linkedin-assisted-demand`, on explicit "get everything cleaned up" instruction from the user.
+
+**Why.** This was flagged three separate times without being fixed: by `fnx-builder` in task 001's
+FOLLOW-UPS, independently confirmed by `fnx-qa`, and repeated in two HANDOVER entries. `proof-
+capture`'s own definition (`campaign-lanes.md` §5) is member interviews and case studies with an
+internal "permission to feature" ask; this piece has no interview subject and is a general point-
+of-view article. `linkedin-assisted-demand` is the pattern it actually matches: a point-of-view
+pillar article meant to atomize into LinkedIn posts, which is exactly what happened this session.
+A flag that never gets resolved stops being useful documentation and starts being noise; once a
+correction is unambiguous and explicitly authorized, make it rather than re-flagging it a fourth
+time.
+
+---
+
 ## 2026-07-07 (publish batch) — "Add everything to Vercel" did not extend to competitor-naming drafts
 
 **Decision.** When the user said "everything right now, all these articles, should be added onto

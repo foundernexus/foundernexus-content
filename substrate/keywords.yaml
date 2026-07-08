@@ -42,7 +42,7 @@ clusters:
     pillar: judgment-infrastructure
     lane: vc-fast-pass
     funnel: application
-    status: proposed
+    status: approved # approved 2026-07-07 by Robroy
     priority: 2
     cadence: monthly
     keywords:
@@ -52,7 +52,10 @@ clusters:
 
   - id: founder-decision-quality
     pillar: judgment-infrastructure
-    lane: proof-capture
+    lane: linkedin-assisted-demand # reassigned from proof-capture 2026-07-07: this is a general
+    # point-of-view piece with no member interview/case-study subject, so proof-capture's own
+    # definition (campaign-lanes.md §5) never fit; flagged at draft time in task 001's FOLLOW-UPS,
+    # confirmed by QA, now corrected. See DECISIONS.md.
     funnel: newsletter
     status: approved # approved 2026-07-07 by Robroy via /orient session
     priority: 3

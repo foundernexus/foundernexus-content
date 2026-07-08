@@ -1,13 +1,13 @@
 ---
-source_article: content/drafts/ypo-alternatives-for-founders.md
+source_article: content/blog/ypo-alternatives-for-founders.md
 lane: linkedin-assisted-demand
 asset_type: comparison_page
-status: held_review
+status: published # published 2026-07-07, publish approved by Robroy (not a formal Court/legal review)
 primary_cta: "Explore whether FounderNexus fits your stage"
 secondary_paths:
   - "Nominate a founder"
   - "Stay close"
-route: "pending"
+route: "https://www.foundernexus.com/registration"
 review_flag: "Keep named-network language out of social derivatives unless Court approves."
 ---
 

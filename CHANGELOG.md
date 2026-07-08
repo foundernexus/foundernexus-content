@@ -2,6 +2,46 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-07 (cleanup + atomization)
+
+- **keywords.yaml cleanup:**
+  - `vc-fast-pass-signal` cluster approved by Robroy (was `proposed`). Its one keyword ("warm intro
+    to VC vs cold outreach") is still `unwritten` — approved to draft, not drafted.
+  - `founder-decision-quality`'s lane reassigned from `proof-capture` to `linkedin-assisted-demand`.
+    `proof-capture` (member interviews/case studies, "permission to feature") never fit this
+    general point-of-view piece; flagged in task 001's FOLLOW-UPS, confirmed by QA, now corrected.
+- **Scaffolding gotcha resolved.** `content/README.md` and `content/blog/_TEMPLATE.md` were the last
+  source of the long-documented "blog-scaffolding gotcha" for `terminology`/`emdash` (tracked since
+  the hooks-enablement entry). Fixed both: reworded the "Chapter chair" reference in README.md's own
+  style-guide sentence to describe the retired term without literally containing the matched phrase
+  (still fully legible as documentation), and swapped 3 em dashes for periods/commas across both
+  files. `terminology` and `emdash` are now fully clean repo-wide, zero output, first time this has
+  been true since the blog was merged. (`content-lint`'s front-matter-key gotcha on these same
+  scaffolding files is unrelated and intentionally left alone, per the earlier documented decision
+  not to touch check-script scope without a specific ask.)
+- **Stale reference fixed:** `social/queue/ypo-alternatives-for-founders-derivatives.md`'s
+  `source_article` still pointed at the deleted `content/drafts/ypo-alternatives-for-founders.md`;
+  updated to `content/blog/...`, `status` to `published`, `route` to the real `/registration` URL.
+- **Atomized all 7 newly-published pieces into social derivatives**, matching the existing YPO
+  file's format exactly (LinkedIn Court Voice, LinkedIn FounderNexus Voice, 2 short posts, 1
+  newsletter blurb — 5 pieces per article, per campaign-lanes.md's "3-5 LinkedIn posts" guidance):
+  `founder-nexus-vs-eo-derivatives.md`, `founder-nexus-vs-hampton-derivatives.md`,
+  `first-senior-hire-seed-derivatives.md`, `series-a-operating-layer-derivatives.md`,
+  `board-dynamics-after-series-b-derivatives.md`, `founder-led-sales-limits-derivatives.md`,
+  `founder-decision-quality-derivatives.md`. The EO/Hampton derivatives keep the same discipline as
+  the existing YPO file: the competitor is never named in the actual post copy (verified by grepping
+  the body content, excluding front-matter), only in `source_article`/context fields, carrying the
+  same `review_flag` caution.
+- Verified: `contract`/`terminology`/`emdash`/`links` all fully clean, zero output, across the whole
+  repo. `named-entity` correctly flags the 3 competitor-adjacent derivative files (via their
+  `source_article` front-matter field, not body copy, confirmed by direct grep) with the
+  "has a sign-off marker, confirm before publishing" note, matching the source articles' own status.
+  `next build` clean at 17 static pages (social derivatives aren't part of the Next.js build; this
+  confirms the content/substrate edits didn't break anything).
+- **Not done:** the 7 new derivative files are drafted, not sent. Per engagement-guardrails.md §1
+  ("Automation prepares. Humans send."), nothing here posts to LinkedIn or anywhere else — a human
+  still reviews and clicks send on each one.
+
 ## 2026-07-07 (real cover photos + real scheduling CTA)
 
 - **Real cover photos.** User pointed at `~/foundernexus/09-assets/events/foundernexus-event-images`
