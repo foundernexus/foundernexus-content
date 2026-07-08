@@ -48,7 +48,20 @@ clusters:
     keywords:
       - term: "warm intro to VC vs cold outreach"
         intent: comparison
-        status: unwritten
+        status: published
+        url: /blog/warm-intro-vs-cold-outreach
+      - term: "how founders get a fast-pass into VC conversations"
+        intent: informational
+        status: published
+        url: /blog/fast-pass-into-vc-conversations
+      - term: "what actually gets a VC to read your deck"
+        intent: informational
+        status: published
+        url: /blog/what-gets-a-vc-to-read-your-deck
+      - term: "cold email to VCs: does it ever work"
+        intent: comparison
+        status: published
+        url: /blog/cold-email-to-vcs
 
   - id: founder-decision-quality
     pillar: judgment-infrastructure
