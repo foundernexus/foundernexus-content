@@ -37,6 +37,14 @@ clusters:
         intent: comparison
         status: published # user-authored; names Hampton; publish approved 2026-07-07 by Robroy (not a formal Court/legal review)
         url: /blog/founder-nexus-vs-hampton
+      - term: "FounderNexus vs Vistage"
+        intent: comparison
+        status: drafted # names Vistage; held_review pending Court+legal sign-off (QA passed 2026-07-08)
+        draft: content/drafts/compare-vistage.md
+      - term: "FounderNexus vs Chief"
+        intent: comparison
+        status: drafted # names Chief; held_review pending Court+legal sign-off (QA passed 2026-07-08)
+        draft: content/drafts/compare-chief.md
 
   - id: vc-fast-pass-signal
     pillar: judgment-infrastructure
@@ -104,3 +112,51 @@ clusters:
         intent: informational
         status: published
         url: /blog/founder-led-sales-limits
+      - term: "when to raise a bridge round"
+        intent: informational
+        status: published
+        url: /blog/bridge-round-timing
+      - term: "co-founder conflict and when to split"
+        intent: informational
+        status: published
+        url: /blog/cofounder-conflict
+      - term: "pricing your first enterprise deal"
+        intent: informational
+        status: published
+        url: /blog/first-enterprise-pricing
+
+  - id: founder-nomination-flywheel
+    pillar: judgment-infrastructure
+    lane: founder-nomination
+    asset_type: article
+    funnel: application
+    status: approved # NEW lane opened 2026-07-07 by Robroy; first content in the Founder Nomination lane
+    priority: 1
+    cadence: monthly
+    keywords:
+      - term: "what makes a founder worth nominating"
+        intent: informational
+        status: published
+        url: /blog/what-makes-a-founder-worth-nominating
+      - term: "how to know if a founder belongs in your room"
+        intent: informational
+        status: published
+        url: /blog/who-belongs-in-a-founder-room
+
+  - id: peer-room-in-practice
+    pillar: judgment-infrastructure
+    lane: linkedin-assisted-demand
+    asset_type: article
+    funnel: newsletter
+    status: approved # approved 2026-07-07 by Robroy; proof/newsletter-funnel informational pieces
+    priority: 3
+    cadence: monthly
+    keywords:
+      - term: "how founders actually use a peer room"
+        intent: informational
+        status: published
+        url: /blog/how-founders-use-a-peer-room
+      - term: "what changes after one good decision conversation"
+        intent: informational
+        status: published
+        url: /blog/after-one-good-decision-conversation

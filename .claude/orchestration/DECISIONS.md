@@ -4,6 +4,35 @@ Non-obvious calls, with the _why_, so a future session does not re-litigate them
 
 ---
 
+## 2026-07-08 — Opened the Founder Nomination lane; its CTA routes to cal.com, not /nominate
+
+**Decision.** Created the `founder-nomination-flywheel` cluster (lane `founder-nomination`), the first
+content in that lane, and set its CTA to "Nominate a founder" pointed at
+`https://cal.com/karink/nexus-partner-intro-call` rather than the lane's canonical `/nominate`.
+
+**Why.** `campaign-lanes.md` §2 calls Founder Nomination the highest-leverage lane, and it had zero
+content. `routing-rules.md` §2a records `/nominate` as a live 404 — there is no nomination page. Rather
+than block the whole lane on a page that does not exist, the pieces route to the real, live Nexus
+Partner call, where a member can raise a nomination. This mirrors how every other missing-route piece
+this project has been handled. The real fix is a live `/nominate` page; when it exists, repoint the
+lane. Documented so a future session doesn't "discover" the 404 and think it's a mistake.
+
+---
+
+## 2026-07-08 — For batches larger than ~3, builders touch only their own files
+
+**Decision.** When dispatching 9 parallel builders, each was told to write ONLY its own content draft
+and its own task brief's Result section, and NOT to edit `CHANGELOG.md`/`HANDOVER.md`/registry. The
+orchestrator did all shared-doc updates centrally after the batch landed.
+
+**Why.** Earlier 4-wide batches had builders append to the shared docs, which caused
+"file modified since read" contention and wasted retries. At 9 wide that contention would be severe.
+Since the verify/doc-gate hooks are dormant without an `.active-task` (and this batch intentionally
+ran without one), builders skipping the shared docs is safe. Centralizing the doc updates also
+produces a cleaner, single-voice changelog entry instead of 9 interleaved ones.
+
+---
+
 ## 2026-07-07 (cleanup) — Reassign founder-decision-quality's lane, don't just flag it forever
 
 **Decision.** Changed `founder-decision-quality`'s lane in `keywords.yaml` from `proof-capture` to

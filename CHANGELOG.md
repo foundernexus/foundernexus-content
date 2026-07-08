@@ -2,6 +2,57 @@
 
 Append an entry per task (doc-gate enforces this when a task is active). Newest first.
 
+## 2026-07-08 (9-article batch: 7 published, 2 held; new Founder Nomination lane)
+
+- User asked for more articles across all four proposed directions. Scoped to 9 (tasks 006-014),
+  expanded `keywords.yaml` (2 new clusters + additions to 2 existing), scaffolded 9 briefs, and
+  dispatched 9 `fnx-builder` agents in parallel (no worktree isolation; builders instructed to write
+  ONLY their own draft + own brief Result and NOT touch shared docs, so the orchestrator handled
+  CHANGELOG/HANDOVER/registry centrally — avoided the write-contention that 9 concurrent agents on 3
+  shared files would otherwise cause). Then 4 grouped `fnx-qa` agents (by cluster, so adjacent pieces
+  cross-check each other).
+- **Published (7)** to `content/blog/`, all with real event-photo covers (+ navy hero overlay) and
+  atomized to `social/queue/`:
+  - `stage-decision-guides` (existing cluster): `bridge-round-timing`, `cofounder-conflict`,
+    `first-enterprise-pricing`. CTA -> cal.com Nexus Partner call, matching the cluster's published
+    siblings.
+  - `founder-nomination-flywheel` (**NEW lane `founder-nomination`**, opened this batch):
+    `what-makes-a-founder-worth-nominating`, `who-belongs-in-a-founder-room`. Member-facing,
+    peer-to-peer tone; CTA "Nominate a founder" routed to the cal.com call because `/nominate` is a
+    known 404 (no live nomination page — flagged as the real fix for this lane).
+  - `peer-room-in-practice` (**NEW cluster**, newsletter-funnel): `how-founders-use-a-peer-room`,
+    `after-one-good-decision-conversation`. CTA -> `/registration`. These two are pure prose (no
+    pull/checkbox components), so each got a real inline event photo per the established
+    text-heavy-post rule.
+- **QA found and fixed 3 real issues before publish** (mechanical floor was already clean repo-wide;
+  the value was in the judgment layer):
+  - 007 (co-founder conflict): decision named in body sentence 3, not the first two. Fixed by
+    hoisting it into the opening.
+  - 013 vs 014 (peer-room pair): material overlap — 013's "How the value shows up after" section
+    re-ran 014's entire thesis (changed-decision tell + compounding trust). Fixed by replacing 013's
+    section with an in-room reciprocity-mechanics section, leaving 014 to own the after-effect
+    argument. Also noted (not a defect, watch it): the "confidence-vs-changed-decision" tell now
+    appears lightly in 013, 014, AND `founder-decision-quality.md` — defensible as house theme, but a
+    4th reuse would read as boilerplate.
+- **Held for Court + legal sign-off (2)**, kept in `content/drafts/` (registry status `blocked`):
+  `compare-vistage.md`, `compare-chief.md`. Both PASSED QA — an adversarial factual audit with web
+  spot-checks found every claim about Vistage/Chief accurate and safely general (no membership
+  numbers, no pricing, no quotes, respectful/self-select tone). They are NOT published; publishing
+  named-competitor content requires the same explicit sign-off as the EO/Hampton/YPO pieces did.
+- **Check-script gap reconfirmed:** `named-entity.mjs` does not catch "Chief" (not in its NETWORKS
+  list), so for the Chief piece the front-matter `review_flag` is the ONLY automated gate. A future
+  Chief draft written without that flag would pass silently. Follow-up: add "Chief" (and consider
+  "Vistage" is already present) to `named-entity.mjs` NETWORKS. Not done here — hook edits need a
+  specific user-approved change per the earlier session pattern.
+- **Cosmetic artifact noted, not fixed:** the already-live EO/Hampton/YPO blog posts now show "NO
+  sign-off marker" in `named-entity.mjs` output, because the published blog schema doesn't carry the
+  draft's `review_flag`. Those are approved-and-live (per keywords.yaml "publish approved by Robroy"
+  - prior CHANGELOG); the advisory just can't see that approval trail in the post front-matter.
+- Verified: `contract`/`terminology`/`emdash`/`links` clean repo-wide; `next build` clean at 41
+  static pages (20 blog posts now); screenshot- + DOM-verified a nomination-lane post (hero overlay,
+  cal.com CTA, cross-link to the good-founder-room post) and an inline image render; no console
+  errors. `rm -rf .next` before the final build (standing rule now for any image-file change).
+
 ## 2026-07-07 (VC Fast-Pass cluster published; /social review surface; premium hero treatment; inline images)
 
 - **VC Fast-Pass cluster complete.** User asked to generate articles for the `vc-fast-pass-signal`

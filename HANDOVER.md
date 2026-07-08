@@ -424,3 +424,35 @@ quality`, `what-gets-a-vc-to-read-your-deck`) — specifically the ones with no 
   tomorrow's (or even ten-minutes-later's) different batch Y.
 - **Next moves:** none outstanding. Photo library still has unused images if more posts get covers
   or inline art later (used roughly 17 of ~24 available across covers + inline so far).
+
+---
+
+## 2026-07-08 (9-article batch) — 20 posts live, new nomination lane, 2 comparisons held
+
+- **State:** 20 blog posts live (was 13). This batch added 7: 3 stage-decision guides
+  (bridge-round-timing, cofounder-conflict, first-enterprise-pricing), 2 in the **new
+  `founder-nomination` lane** (what-makes-a-founder-worth-nominating, who-belongs-in-a-founder-room),
+  2 newsletter-funnel peer-room pieces (how-founders-use-a-peer-room,
+  after-one-good-decision-conversation). All have real covers + navy hero overlay; the 2 peer-room
+  pieces also got inline images. All 7 atomized to `social/queue/` (19 files there now). Tasks
+  006-010, 013, 014 archived pass.
+- **Held, NOT published:** `content/drafts/compare-vistage.md` and `content/drafts/compare-chief.md`
+  (registry `blocked`). Both passed a rigorous QA factual audit but name real competitors, so they
+  wait on Court + legal sign-off exactly like EO/Hampton/YPO did. Do not promote without explicit
+  user confirmation.
+- **New lane precedent set:** `founder-nomination` pieces use CTA "Nominate a founder" pointed at the
+  cal.com Nexus Partner call, because `/nominate` is a 404. The real fix is a live `/nominate` page;
+  until then every nomination-lane piece inherits the cal.com workaround. Repoint the whole lane once
+  `/nominate` exists.
+- **Parallel-builder pattern that worked:** for a 9-wide batch, builders wrote ONLY their own draft +
+  own brief; the orchestrator did all shared-doc updates (CHANGELOG/HANDOVER/registry/keywords)
+  centrally afterward. This avoided the write-contention 9 concurrent agents would cause on 3 shared
+  files. Recommended for any future batch larger than ~3.
+- **Two open check-script gaps (documented, not fixed — need user-approved hook edits):**
+  (1) `named-entity.mjs` doesn't catch "Chief"; the Chief draft's only automated gate is its
+  front-matter `review_flag`. (2) The already-live EO/Hampton/YPO posts show "NO sign-off marker" in
+  named-entity output because the blog schema drops the draft's `review_flag` — cosmetic, they're
+  approved-and-live.
+- **Next moves:** (a) decide on the 2 held comparisons (publish w/ sign-off, or leave held). (b) If
+  the nomination lane matters, build a real `/nominate` page. (c) Photo library ~fully used across
+  covers+inline now; new posts may need fresh art or deliberate reuse.
