@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   return [
     { url: SITE, lastModified: STATIC_LASTMOD },
+    { url: `${SITE}/mission`, lastModified: STATIC_LASTMOD },
     { url: `${SITE}/blog`, lastModified: STATIC_LASTMOD },
     ...listingPages,
     ...posts.map((p) => ({

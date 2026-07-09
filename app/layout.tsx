@@ -85,6 +85,12 @@ export default function RootLayout({
             </Link>
             <nav className="flex items-center gap-6 text-sm">
               <Link
+                href="/mission"
+                className="text-muted hover:text-fg transition-colors"
+              >
+                Mission
+              </Link>
+              <Link
                 href="/blog"
                 className="text-muted hover:text-fg transition-colors"
               >
