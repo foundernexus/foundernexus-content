@@ -17,6 +17,12 @@ const config: Config = {
         accent: "#007BE4", // primary action blue (blue-500)
         "accent-soft": "#0072BA", // action hover (blue-600)
         "accent-ink": "#FFFFFF", // text on accent-colored surfaces
+        // Brand blue ramp (tokens/colors.css — completes the Figma-exported scale).
+        "blue-100": "#D3EAFD", // soft blue chip / selected surface
+        "blue-200": "#A6D2F7", // light blue borders / stage-2 chip
+        "blue-300": "#66B2F0", // eyebrow blue on dark surfaces
+        "blue-400": "#2196F3", // small accents / list markers
+        "blue-action": "#215BE3", // action-blue gradient endpoint
         "hero-navy": "#061B2C", // rich navy hero-image tint (tokens/colors.css: "dark surfaces, event hero")
       },
       fontFamily: {

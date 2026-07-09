@@ -91,6 +91,12 @@ export default function RootLayout({
                 Mission
               </Link>
               <Link
+                href="/membership"
+                className="text-muted hover:text-fg transition-colors"
+              >
+                Membership
+              </Link>
+              <Link
                 href="/blog"
                 className="text-muted hover:text-fg transition-colors"
               >
