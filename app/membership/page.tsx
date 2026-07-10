@@ -32,8 +32,8 @@ const heroPhotos = [
     alt: "Founders in a working session around a table",
   },
   {
-    src: "/images/blog/series-a-operating-layer/cover.png",
-    alt: "A FounderNexus room mid-conversation",
+    src: "/images/blog/first-senior-hire-seed/cover.png",
+    alt: "Two founders talking through a decision in a FounderNexus room",
   },
   {
     src: "/images/blog/board-dynamics-after-series-b/cover.png",
@@ -514,9 +514,9 @@ export default function MembershipPage() {
             stake, vendor agenda, or investor incentive in your answer.
           </p>
           <div className="mt-4 max-w-3xl border-t border-blue-200 pt-3 text-[13.5px] leading-snug text-muted">
-            <strong className="font-semibold text-fg">Why it matters: </strong>
-            a network of founders at exactly your stage is the hardest network
-            to build on your own, and the one that actually moves your next
+            <strong className="font-semibold text-fg">Why it matters: </strong>a
+            network of founders at exactly your stage is the hardest network to
+            build on your own, and the one that actually moves your next
             decision.
           </div>
         </div>
