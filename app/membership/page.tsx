@@ -306,8 +306,8 @@ export default function MembershipPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
             FounderNexus is the room venture-scale founders turn to when the
             stakes are high. You bring the decision you are weighing, talk it
-            through with founders who have already made the same call, and leave
-            with a clear next move.
+            through with founders who have already made the same call, and come
+            away seeing it far more clearly.
           </p>
           <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/55">
             This overview explains what membership looks like at each stage:
