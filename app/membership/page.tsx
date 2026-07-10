@@ -49,12 +49,12 @@ const whatWhyHow = [
   },
   {
     eyebrow: "The stakes",
-    title: "Get the expensive decisions right.",
+    title: "Better judgment on the expensive calls.",
     body: "Founders rarely fail for lack of ambition. They fail on the expensive calls made alone, under pressure, with no one in the room who has faced that decision before.",
   },
   {
     eyebrow: "The session",
-    title: "Leave with your next move decided.",
+    title: "Leave seeing your decision more clearly.",
     body: "Rooms convene around the choice you are carrying now, and every session ends with a captured next step, followed up within 48 hours.",
   },
 ];
