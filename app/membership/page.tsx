@@ -43,15 +43,18 @@ const heroPhotos = [
 
 const whatWhyHow = [
   {
-    lead: "The room is the product.",
-    body: "Not a networking community. Curated, stage-specific founder rooms with the experience, judgment, and trust to pressure-test the tradeoffs that matter.",
+    eyebrow: "The peers",
+    title: "Founders who have already made your call.",
+    body: "Not a networking community. Curated, stage-specific rooms with the experience, judgment, and trust to pressure-test the tradeoffs that matter.",
   },
   {
-    lead: "Outcomes are shaped by decision environments.",
+    eyebrow: "The stakes",
+    title: "Get the expensive decisions right.",
     body: "Founders rarely fail for lack of ambition. They fail on expensive decisions, made under pressure without relevant pattern recognition around them.",
   },
   {
-    lead: "Organized by stage and decision.",
+    eyebrow: "The session",
+    title: "Leave with your next move decided.",
     body: "Rooms convene around the choice you are carrying now, and every session ends with a captured next step, followed up within 48 hours.",
   },
 ];
@@ -342,11 +345,14 @@ export default function MembershipPage() {
         <div className="grid gap-5 sm:grid-cols-3">
           {whatWhyHow.map((c) => (
             <div
-              key={c.lead}
+              key={c.title}
               className="flex flex-col gap-2 rounded-xl border border-line/70 bg-panel p-7 shadow-sm"
             >
+              <div className="text-xs font-semibold uppercase tracking-[0.09em] text-accent">
+                {c.eyebrow}
+              </div>
               <h3 className="text-[15.5px] font-bold tracking-tight text-fg">
-                {c.lead}
+                {c.title}
               </h3>
               <p className="text-[14.5px] leading-relaxed text-muted">
                 {c.body}
