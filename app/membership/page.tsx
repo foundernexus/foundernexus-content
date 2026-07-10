@@ -309,10 +309,6 @@ export default function MembershipPage() {
             through with founders who have already made the same call, and come
             away seeing it far more clearly.
           </p>
-          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/55">
-            This overview explains what membership looks like at each stage:
-            what you are deciding, why the room helps, and how to step into one.
-          </p>
         </div>
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid grid-cols-3 gap-4 pt-4">
