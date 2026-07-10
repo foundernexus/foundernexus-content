@@ -43,19 +43,16 @@ const heroPhotos = [
 
 const whatWhyHow = [
   {
-    label: "The product",
     lead: "The room is the product.",
-    body: "Not a networking community. These are curated, stage-specific founder rooms with relevant experience, practical judgment, and enough trust to pressure-test the tradeoffs that matter.",
+    body: "Not a networking community. Curated, stage-specific founder rooms with the experience, judgment, and trust to pressure-test the tradeoffs that matter.",
   },
   {
-    label: "The premise",
     lead: "Outcomes are shaped by decision environments.",
-    body: "Founders rarely fail for lack of ambition. They fail making expensive decisions under pressure, with incomplete context and too little relevant pattern recognition around them.",
+    body: "Founders rarely fail for lack of ambition. They fail on expensive decisions, made under pressure without relevant pattern recognition around them.",
   },
   {
-    label: "The mechanism",
     lead: "Organized by stage and decision.",
-    body: "Rooms convene around the choice you are actually carrying, and every session ends with a stated, captured next step, followed up within 48 hours, while the decision is still live.",
+    body: "Rooms convene around the choice you are carrying now, and every session ends with a captured next step, followed up within 48 hours.",
   },
 ];
 
@@ -345,14 +342,13 @@ export default function MembershipPage() {
         <div className="grid gap-5 sm:grid-cols-3">
           {whatWhyHow.map((c) => (
             <div
-              key={c.label}
-              className="flex flex-col gap-2.5 rounded-xl border border-line/70 bg-panel p-7 shadow-sm"
+              key={c.lead}
+              className="flex flex-col gap-2 rounded-xl border border-line/70 bg-panel p-7 shadow-sm"
             >
-              <div className="text-xs font-semibold uppercase tracking-[0.09em] text-accent">
-                {c.label}
-              </div>
-              <p className="text-[15px] leading-relaxed text-muted">
-                <strong className="font-semibold text-fg">{c.lead}</strong>{" "}
+              <h3 className="text-[15.5px] font-bold tracking-tight text-fg">
+                {c.lead}
+              </h3>
+              <p className="text-[14.5px] leading-relaxed text-muted">
                 {c.body}
               </p>
             </div>
@@ -367,7 +363,7 @@ export default function MembershipPage() {
             The four stages
           </div>
           <h2 className="mt-3 text-3xl font-bold tracking-tight leading-[1.15]">
-            Stage determines relevance. Not industry, not city.
+            Stage determines relevance.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted">
             The most useful experience for your decision is a founder one step
