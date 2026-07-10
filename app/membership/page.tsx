@@ -432,10 +432,13 @@ export default function MembershipPage() {
                     {s.deciding.map((d) => (
                       <li
                         key={d}
-                        className="flex items-baseline gap-2.5 text-[15px] leading-snug text-fg"
+                        className="flex gap-2.5 text-[15px] leading-snug text-fg"
                       >
-                        <span className="flex-none translate-y-[5px] h-[5px] w-[5px] rounded-full bg-blue-400" />
-                        {d}
+                        <span
+                          aria-hidden
+                          className="mt-[7px] h-1.5 w-1.5 flex-none rounded-full bg-blue-400"
+                        />
+                        <span>{d}</span>
                       </li>
                     ))}
                   </ul>
