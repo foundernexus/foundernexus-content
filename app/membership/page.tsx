@@ -279,10 +279,10 @@ function Icon({ name }: { name: string }) {
   );
 }
 
-function WhyItMatters({ children }: { children: React.ReactNode }) {
+function Payoff({ children }: { children: React.ReactNode }) {
   return (
     <div className="mt-auto border-t border-line/60 pt-3 text-[13.5px] leading-snug text-muted">
-      <strong className="font-semibold text-fg">Why it matters: </strong>
+      <strong className="font-semibold text-fg">The payoff: </strong>
       {children}
     </div>
   );
@@ -516,7 +516,7 @@ export default function MembershipPage() {
             stake, vendor agenda, or investor incentive in your answer.
           </p>
           <div className="mt-4 max-w-3xl border-t border-blue-200 pt-3 text-[13.5px] leading-snug text-muted">
-            <strong className="font-semibold text-fg">Why it matters: </strong>a
+            <strong className="font-semibold text-fg">The payoff: </strong>a
             network of founders at exactly your stage is the hardest network to
             build on your own, and the one that actually moves your next
             decision.
@@ -536,7 +536,7 @@ export default function MembershipPage() {
               <p className="text-[14.5px] leading-relaxed text-muted text-pretty">
                 {c.body}
               </p>
-              <WhyItMatters>{c.why}</WhyItMatters>
+              <Payoff>{c.why}</Payoff>
             </div>
           ))}
         </div>
@@ -558,7 +558,7 @@ export default function MembershipPage() {
               <p className="text-[14.5px] leading-relaxed text-muted text-pretty">
                 {c.body}
               </p>
-              <WhyItMatters>{c.why}</WhyItMatters>
+              <Payoff>{c.why}</Payoff>
             </div>
           ))}
         </div>
