@@ -65,14 +65,16 @@ const stages = [
     chipClass: "bg-blue-100 text-fg",
     barClass: "bg-blue-100",
     title: "Finding the wedge",
-    band: "First company or new idea → early revenue",
+    band: "$0-2M ARR · Pre-Seed / Seed",
     inRoom:
-      "Founders slightly ahead on the same path, through validation, first revenue, and first capital, with nothing to sell you.",
+      "Founders one step ahead on the same path, still searching for product-market fit and raising a first seed round, with nothing to sell you.",
     deciding: [
-      "Direction and validation",
-      "The first wedge",
-      "Cofounder choice",
-      "Early capital",
+      "MVP development",
+      "ICP discovery",
+      "Co-founder selection",
+      "Early GTM motion",
+      "Searching for PMF",
+      "Seed capital",
     ],
     whyRoom:
       "Signal before the decision gets expensive. Free advice and broad content are everywhere; relevant judgment is not. The founder one step ahead of your exact problem can see the tradeoff before it becomes obvious, so you don't spend a year on the wrong wedge. And no one in the room has anything to sell you.",
@@ -85,18 +87,17 @@ const stages = [
     chipClass: "bg-blue-200 text-fg",
     barClass: "bg-blue-200",
     title: "Making it repeatable",
-    band: "$0-2M ARR · pre-seed to seed",
+    band: "$2-10M ARR · Series A",
     inRoom:
-      "Same-stage founders mid-flight on GTM, pricing, and early hires. The ones worth learning from are busy; this room puts them at the same table.",
+      "Same-stage founders building a repeatable sales motion and their first real leadership team. The ones worth learning from are busy; this room puts them at the same table.",
     deciding: [
-      "First go-to-market motion",
-      "Pricing",
-      "Early pilots",
-      "Seed extension",
-      "First senior hire",
+      "Repeatable sales motion",
+      "Customer profiling",
+      "Outbound marketing",
+      "The early leadership team",
     ],
     whyRoom:
-      "A room convened around the decision you are carrying now, not a fixed group on a fixed calendar, and not one retained opinion. Breadth of relevant venture-scale peers matters here: the relevant comparison is not another community fee, it is the cost of an avoidable pricing or GTM mistake.",
+      "A room convened around the decision you are carrying now, not a fixed group on a fixed calendar, and not one retained opinion. Breadth of relevant venture-scale peers matters here: the relevant comparison is not another community fee, it is the cost of an avoidable sales or GTM mistake.",
     wayIn: [
       "A decision-specific session, a founder dinner, or a fit conversation built around your current problem.",
     ],
@@ -105,18 +106,18 @@ const stages = [
     chip: "Stage 3",
     chipClass: "bg-accent text-white",
     barClass: "bg-accent",
-    title: "Founder-led to team-led",
-    band: "$2-10M ARR · Series A and scaling",
+    title: "Building the leadership layer",
+    band: "$10-50M ARR · Series B / C",
     inRoom:
-      "Operators who have made the founder-to-team transition, plus an advisor bench of exited founders. Peers this relevant are genuinely scarce; most founders never find this room on their own.",
+      "Operators who have built out the senior team and the leadership layer at scale, plus an advisor bench of exited founders. Peers this relevant are genuinely scarce; most founders never find this room on their own.",
     deciding: [
-      "Founder-led to team-led GTM",
-      "The first management layer",
-      "Leadership systems",
-      "Capital readiness",
+      "Senior and executive hires",
+      "The leadership layer",
+      "Board dynamics",
+      "The first hard scaling decisions",
     ],
     whyRoom:
-      "Operator pattern recognition for your specific problem, this quarter. Many peers one step ahead of the founder-to-team transition, without trading equity for one hired opinion. Your advocate inside FounderNexus surfaces the right room, peer, expert, or resource, so the room comes to you.",
+      "Operators who have already solved your exact problem, this quarter. Peers one step ahead of the same senior-hiring and scaling decisions, without trading equity for one hired opinion. Your advocate inside FounderNexus surfaces the right room, peer, expert, or resource, so the room comes to you.",
     wayIn: [
       "A stage-matched room or a private dinner.",
       "Founder30, the founding cohort at this stage, is open by invitation.",
@@ -127,17 +128,12 @@ const stages = [
     chipClass: "bg-fg text-white",
     barClass: "bg-fg",
     title: "Leading at scale",
-    band: "$10M+ ARR · growth stage",
+    band: "$50M+ ARR · Series D+",
     inRoom:
-      "A small number of operators who have carried scale. Peers like this are nearly impossible to assemble yourself; a room like this only exists when someone builds it on purpose.",
-    deciding: [
-      "Strategic capital",
-      "Board dynamics",
-      "The executive team",
-      "Market expansion",
-    ],
+      "A small number of operators who have led a large, mature venture-scale company. Peers like this are nearly impossible to assemble yourself; a room like this only exists when someone builds it on purpose.",
+    deciding: ["Executive redesign", "Board pressure", "Market expansion"],
     whyRoom:
-      "The useful contrast is not more advice. It is a small room of operators who have carried comparable tradeoffs, chosen for candor. Peers with no board seat, no fund position, and no stake in your answer.",
+      "The useful contrast is not more advice. It is a small room of operators who have carried comparable tradeoffs at scale, chosen for candor. Peers with no board seat, no fund position, and no stake in your answer.",
     wayIn: [
       "By introduction, through a member or an investor partner. Rooms at this stage convene by invitation only.",
     ],
