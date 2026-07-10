@@ -5,7 +5,7 @@ import { SITE, BRAND } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Membership",
   description:
-    "What FounderNexus membership looks like at each stage: what you are deciding, why a curated stage-specific room helps, and how to step into one.",
+    "What FounderNexus membership looks like at each stage: what you are deciding, why a stage-specific room helps, and how to step into one.",
   alternates: { canonical: `${SITE}/membership` },
   openGraph: {
     type: "website",
@@ -45,12 +45,12 @@ const whatWhyHow = [
   {
     eyebrow: "The peers",
     title: "Founders who have already made your call.",
-    body: "Not a networking community. Curated, stage-specific rooms with the experience, judgment, and trust to pressure-test the tradeoffs that matter.",
+    body: "Not a networking community. Stage-specific rooms with the experience, judgment, and trust to challenge your thinking on the calls that matter.",
   },
   {
     eyebrow: "The stakes",
     title: "Get the expensive decisions right.",
-    body: "Founders rarely fail for lack of ambition. They fail on expensive decisions, made under pressure without relevant pattern recognition around them.",
+    body: "Founders rarely fail for lack of ambition. They fail on the expensive calls made alone, under pressure, with no one in the room who has faced that decision before.",
   },
   {
     eyebrow: "The session",
@@ -129,7 +129,7 @@ const stages = [
     title: "Leading at scale",
     band: "$10M+ ARR · growth stage",
     inRoom:
-      "A small number of operators who have carried scale. Peers like this are nearly impossible to assemble yourself; curation is the only way this room exists.",
+      "A small number of operators who have carried scale. Peers like this are nearly impossible to assemble yourself; a room like this only exists when someone builds it on purpose.",
     deciding: [
       "Strategic capital",
       "Board dynamics",
@@ -137,7 +137,7 @@ const stages = [
       "Market expansion",
     ],
     whyRoom:
-      "The useful contrast is not more advice. It is a small room of operators who have carried comparable tradeoffs, curated for candor. Peers with no board seat, no fund position, and no stake in your answer.",
+      "The useful contrast is not more advice. It is a small room of operators who have carried comparable tradeoffs, chosen for candor. Peers with no board seat, no fund position, and no stake in your answer.",
     wayIn: [
       "By introduction, through a member or an investor partner. Rooms at this stage convene by invitation only.",
     ],
@@ -308,10 +308,10 @@ export default function MembershipPage() {
             Better decisions start with the right room.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
-            FounderNexus is judgment infrastructure for venture-scale founders.
-            Through curated, stage-specific rooms, members pressure-test their
-            highest-stakes decisions with peers who have seen the same patterns
-            before, and leave with a practical next step.
+            FounderNexus is the room venture-scale founders turn to when the
+            stakes are high. You bring the decision you are weighing, talk it
+            through with founders who have already made the same call, and leave
+            with a clear next move.
           </p>
           <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/55">
             This overview explains what membership looks like at each stage:
@@ -373,9 +373,9 @@ export default function MembershipPage() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted">
             The most useful experience for your decision is a founder one step
-            ahead of that exact problem. Same-stage rooms work because timelines
-            are desynchronized: someone in the room is always slightly ahead of
-            the problem you are carrying now.
+            ahead of that exact problem. Same-stage rooms work because someone
+            is always a year or two ahead of you, already through the problem
+            you are carrying now.
           </p>
         </div>
 
@@ -385,7 +385,7 @@ export default function MembershipPage() {
           </div>
           <p className="mt-2 text-[15px] leading-relaxed text-muted text-pretty">
             Each stage up, founders who have carried your exact tradeoffs get
-            scarcer, and harder to reach. A curated seat among them is worth
+            scarcer, and harder to reach. A hand-picked seat among them is worth
             more at every step, because it becomes less possible to assemble on
             your own. That is the compounding value of membership: the network
             builds with you, stage after stage.
@@ -509,11 +509,11 @@ export default function MembershipPage() {
             A stage-specific peer room
           </div>
           <p className="mt-2.5 max-w-3xl text-[15.5px] leading-relaxed text-muted text-pretty">
-            The product itself. Members are selected by stage and decision
-            context, and fit is observed by peers, not just approved internally.
-            Because timelines in a same-stage room are desynchronized, someone
-            is always slightly ahead of your current problem, with no equity
-            stake, vendor agenda, or investor incentive in your answer.
+            This is the core of membership. Members are selected by stage and
+            the decision they are carrying, and fit is judged by peers, not just
+            approved internally. Someone in the room is always a step or two
+            ahead of you, already through what you are facing now, with no
+            equity stake, vendor agenda, or investor incentive in your answer.
           </p>
           <div className="mt-4 max-w-3xl border-t border-blue-200 pt-3 text-[13.5px] leading-snug text-muted">
             <strong className="font-semibold text-fg">The payoff: </strong>a
