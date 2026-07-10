@@ -27,17 +27,17 @@ const pageLd = {
 
 const whatWhyHow = [
   {
-    label: "What it is",
+    label: "The product",
     lead: "The room is the product.",
     body: "Not a networking community. These are curated, stage-specific founder rooms with relevant experience, practical judgment, and enough trust to pressure-test the tradeoffs that matter.",
   },
   {
-    label: "Why it exists",
+    label: "The premise",
     lead: "Outcomes are shaped by decision environments.",
     body: "Founders rarely fail for lack of ambition. They fail making expensive decisions under pressure, with incomplete context and too little relevant pattern recognition around them.",
   },
   {
-    label: "How it works",
+    label: "The mechanism",
     lead: "Organized by stage and decision.",
     body: "Rooms convene around the choice you are actually carrying, and every session ends with a stated, captured next step, followed up within 48 hours, while the decision is still live.",
   },
@@ -372,9 +372,9 @@ export default function MembershipPage() {
             stake, vendor agenda, or investor incentive in your answer.
           </p>
           <div className="mt-4 max-w-3xl border-t border-blue-200 pt-3 text-[13.5px] leading-snug text-muted">
-            <strong className="font-semibold text-fg">Why it matters: </strong>
-            a network of founders at exactly your stage is the hardest network
-            to build on your own, and the one that actually moves your next
+            <strong className="font-semibold text-fg">Why it matters: </strong>a
+            network of founders at exactly your stage is the hardest network to
+            build on your own, and the one that actually moves your next
             decision.
           </div>
         </div>
