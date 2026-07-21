@@ -1,13 +1,14 @@
 # OpenSEO integration: keyword driver for the fnx pipeline
 
 **TL;DR.** OpenSEO becomes the driver of our keyword layer, adopted in two decoupled stages.
-**Stage one (now) is standalone:** turn OpenSEO on as its own team capability (hosted web app
-plus an MCP connection in Claude Code) with zero changes to this repo. It informs keyword picks;
-a human still drops chosen terms into `keywords.yaml` by hand. **Stage two (later, only once it
-earns it) is integration:** wire OpenSEO into the pipeline so it proposes `keywords.yaml` blocks
-directly. Our side always owns strategy and guardrails: lane, terminology, anti-slop, legal
-sign-off, and the approve-then-publish gate. No new CMS, no new rendering path, no automation
-that posts.
+**Stage one (now) is hosted and repo-anchored:** we keep OpenSEO's compute on the hosted app,
+but everything we control lives in this repo under PR review, the connection config, the skills,
+and a research log, so all keyword activity is tracked. OpenSEO informs keyword picks; a human
+still drops chosen terms into `keywords.yaml` by hand. Stage one touches no machine contract and
+no content pipeline. **Stage two (later, only once it earns it) is integration:** wire OpenSEO
+into the pipeline so it proposes `keywords.yaml` blocks directly. Our side always owns strategy
+and guardrails: lane, terminology, anti-slop, legal sign-off, and the approve-then-publish gate.
+No new CMS, no new rendering path, no automation that posts.
 
 Status: approved design 2026-07-21 by Robroy. Standalone-first. Implementation tracked separately.
 
@@ -41,38 +42,46 @@ pipeline we already own. It also contradicts "automation prepares, humans send."
 - **The fnx pipeline writes and verifies.** Orchestrator, `fnx-planner`, `fnx-builder`,
   `fnx-qa`, and the Node hooks operate exactly as today.
 
-## Stage one: standalone capability (now)
+## Stage one: hosted, repo-anchored (now)
 
-No changes to `foundernexus-content`. Reversible. Usable today.
+Hosted compute, but every artifact we control is committed to `foundernexus-content` and passes
+through PR review, so activity is tracked. No changes to the machine contract (`keywords.yaml`
+schema, `contract.mjs`) and no changes to the content pipeline. Reversible.
 
 1. **Hosted OpenSEO web app** (app.openseo.so) as the shared team tool. The account and project
    already exist. Non-technical people log in and use it directly. On the hosted plan OpenSEO
    supplies the SEO data, so no DataForSEO key is required at this stage.
-2. **OpenSEO MCP at user scope** for anyone using Claude Code:
-   `claude mcp add --transport http --scope user openseo https://app.openseo.so/mcp`. First use
-   runs an OAuth login through the browser (account already exists). This makes keyword research,
-   clustering, and competitor analysis available in any session, for any FounderNexus property,
-   not tied to one repo.
-3. **Agent Skills** installed per OpenSEO docs so the client knows how to drive the MCP tools.
-4. **Manual handoff.** OpenSEO informs keyword picks. A human hand-enters chosen terms into
-   `keywords.yaml` using the existing flow. Nothing new can bypass a guardrail because nothing is
-   wired in.
+2. **Committed MCP connection.** `.mcp.json` at the repo root pins the project-scope OpenSEO MCP
+   (`https://app.openseo.so/mcp`, http transport). The connection is version-controlled and shared
+   with the team and agents. Each person runs the OAuth login once on first use; the config itself
+   is in Git, not a personal machine.
+3. **Vendored skills.** The core OpenSEO Agent Skills are committed under `.claude/skills/`
+   (`keyword-research`, `keyword-clustering`, `competitor-analysis`, `seo-project-setup`), rather
+   than installed to a personal `~/.claude`. Workflows are version-controlled and reviewable. More
+   skills can be added from `every-app/open-seo` the same way.
+4. **Tracked research log.** Each research session commits a dated note under `substrate/research/`
+   (see its README), capturing seeds, the OpenSEO output that mattered, the decision, and a link to
+   the `keywords.yaml` change. This is the audit trail.
+5. **Manual handoff.** OpenSEO informs keyword picks. A human hand-enters chosen terms into
+   `keywords.yaml` using the existing flow. Nothing can bypass a guardrail because nothing writes
+   to the machine contract automatically.
 
 Exit criteria for stage one: the team has used OpenSEO to inform at least one real keyword
-decision that shipped a post, and we judge the data good enough to automate.
+decision that shipped a post, with the research logged and the `keywords.yaml` change reviewed,
+and we judge the data good enough to automate.
 
 ## Stage two: integration (later, only if stage one earns it)
 
-Wire OpenSEO into the machine contract so it proposes directly. All changes land inside
-`foundernexus-content`.
+Wire OpenSEO into the machine contract so it proposes directly. The connection and the research
+skills are already committed from stage one; stage two adds the automation and the schema. All
+changes land inside `foundernexus-content`.
 
-1. **MCP at project scope.** Commit `.mcp.json` so the team and agents share the connection
-   without per-person setup.
-2. **A `keyword-research` skill** at `.claude/skills/keyword-research/SKILL.md`. The orchestrator
-   runs it (the operating model has the planner request research from the orchestrator): given a
-   pillar and candidate lane, call OpenSEO tools, then emit `status: proposed` cluster and keyword
-   blocks that conform to the `keywords.yaml` schema. It proposes only.
-3. **Additive `keywords.yaml` fields**, alongside the existing `gsc_impressions` and `gsc_ctr`:
+1. **A proposing skill** at `.claude/skills/keyword-propose/SKILL.md`, distinct from the stage-one
+   research skills. The orchestrator runs it (the operating model has the planner request research
+   from the orchestrator): given a pillar and candidate lane, call OpenSEO tools, then emit
+   `status: proposed` cluster and keyword blocks that conform to the `keywords.yaml` schema. It
+   proposes only.
+2. **Additive `keywords.yaml` fields**, alongside the existing `gsc_impressions` and `gsc_ctr`:
    - `volume` (integer, monthly search volume)
    - `difficulty` (integer 0 to 100, keyword difficulty)
    - `source` (string, e.g. `openseo`, records provenance)
@@ -83,7 +92,7 @@ Wire OpenSEO into the machine contract so it proposes directly. All changes land
 
 ## Data flow (stage two)
 
-1. Orchestrator runs the `keyword-research` skill against a pillar.
+1. Orchestrator runs the `keyword-propose` skill against a pillar.
 2. OpenSEO MCP returns terms, volume, difficulty, clusters, competitor and SERP gaps.
 3. The skill writes `status: proposed` clusters and keywords into `keywords.yaml` on a branch.
 4. A human reviews and approves lane, priority, and terms (the strategy gate).
